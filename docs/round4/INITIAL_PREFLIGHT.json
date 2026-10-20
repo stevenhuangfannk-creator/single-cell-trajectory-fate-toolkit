@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-20",
+  "round3_manifest_files_checked": 431,
+  "round3_hash_mismatches": [],
+  "protected_files": 275,
+  "account": "stevenhuangfannk-creator",
+  "target": "stevenhuangfannk-creator/single-cell-trajectory-fate-toolkit",
+  "target_before_creation": "NOT_FOUND",
+  "existing_local_git": "NOT_INITIALIZED",
+  "visibility_authorized": "PRIVATE",
+  "third_party_review": "Existing notices retained; Artistic-2.0 small Slingshot example and CC-BY-4.0 GO derivative attribution retained; runtime/raw data/model excluded",
+  "license": "Owner code all rights reserved pending explicit license choice; third-party notices remain applicable",
+  "real_PI_run": false,
+  "protected_existing_repositories_modified": false
+}

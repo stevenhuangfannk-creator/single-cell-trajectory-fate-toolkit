@@ -1,0 +1,4 @@
+partition	root_node	root_candidate_cells	rule
+1	Y_13	78	earliest nonempty embryo.time.bin 210-270
+2	Y_107	2	earliest nonempty embryo.time.bin 270-330
+3	Y_138	24	earliest nonempty embryo.time.bin 390-450

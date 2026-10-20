@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.rds binary
+*.rda binary
+# 历史原件和原Slingshot按原始字节保留，避免换行转换破坏审查校验。
+docs/first_round/** -text
+methods/Slingshot/** -text
+
+# 第四轮不得更改第三轮三方法与组合的既有字节。
+methods/tradeSeq/** -text
+methods/Monocle3/** -text
+combinations/Slingshot_tradeSeq_Monocle3/** -text

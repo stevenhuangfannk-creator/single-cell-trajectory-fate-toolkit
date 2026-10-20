@@ -1,0 +1,7 @@
+{
+  "entry": "run_slingshot.ps1",
+  "script_completed": true,
+  "all_numeric_tsv_hashes_identical": true,
+  "scope": "Re-run of final documented user entry, fixed official data and seed; checks repeatable numeric outputs",
+  "utc": "2026-10-19T14:59:13.6654514Z"
+}

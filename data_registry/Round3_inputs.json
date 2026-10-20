@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-19",
+  "Slingshot_round2": "Unchanged original coordinate-only example; not reused as expression counts",
+  "tradeSeq": {
+    "source": "tradeSeq 1.26.0 official package countMatrix/crv/celltype; Paul15 selected subset",
+    "shape": [
+      240,
+      2660
+    ],
+    "lineages": 2,
+    "input_bundle_sha256": "143f29951dbf8fe0dcf3b638cc02db7854ba0b7d79daa351fabcbddbac6ddac2",
+    "binary_manifest": "environments/round3_tradeSeq_downloads.csv",
+    "license_scope": "Package MIT declaration retained; no separate upstream data license inferred"
+  },
+  "Monocle3": {
+    "source": "monocle3 v1.4.27 inst/extdata/worm_embryo; Packer neuron subset",
+    "shape": [
+      10000,
+      1805
+    ],
+    "files": [
+      {
+        "name": "worm_embryo_coldata.rds",
+        "bytes": 163625,
+        "sha256": "425ee0efdad1af38e18dee109e1a371b5ebefd85365abd5c81e6daa7b57fd6e3"
+      },
+      {
+        "name": "worm_embryo_expression_matrix.rds",
+        "bytes": 1646028,
+        "sha256": "79fef2d296a982a537ea925728b14e4b779bf162536d23f181fa6f711a5f198a"
+      },
+      {
+        "name": "worm_embryo_rowdata.rds",
+        "bytes": 129018,
+        "sha256": "e93a2ff0f404b0b71a76e75b6c0c23d6deb5ddc196cca9fc333912a747b30950"
+      }
+    ],
+    "input_bundle_sha256": "9a966cfd0836b98f2d3a6fc7d952641214cf6b6e4e60163a91333d2a2f90f813",
+    "selection_NOTES_url": "https://github.com/cole-trapnell-lab/monocle3/blob/v1.4.27/inst/extdata/worm_embryo/NOTES"
+  },
+  "combination": {
+    "shape": [
+      10000,
+      650
+    ],
+    "selection": "Official cell.type in Neuroblast_ASG_AWA, ASG_AWA, ASG, AWA, fixed before trajectory comparison",
+    "input_bundle_sha256": "ba4c2a448a75705986a7d6b8a3877bce6c4185cb8699fc3fd5d80a2d69a2fcc2",
+    "cell_ID_file": "combinations/Slingshot_tradeSeq_Monocle3/results/common_cells.tsv",
+    "fit_gene_selection": "Top 300 variance genes; full provided 10000-gene count library offset",
+    "GO_provenance": "combinations/Slingshot_tradeSeq_Monocle3/example_data/GO_provenance.json"
+  },
+  "redistribution": "No source runtime or install archives included; raw/fit RDS remain local and are excluded from Git candidate by .gitignore; small derived tables/own figures carry provenance. Separate dataset rights require review before any broader redistribution."
+}

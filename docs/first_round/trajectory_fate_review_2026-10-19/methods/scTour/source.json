@@ -1,0 +1,178 @@
+{
+  "method": "scTour",
+  "id": "sctour",
+  "language": "Python",
+  "official_sources": [
+    {
+      "label": "Official GitHub",
+      "url": "https://github.com/LiQian-XC/sctour",
+      "purpose": "原作者/官方实现代码与发行信息"
+    },
+    {
+      "label": "Documentation",
+      "url": "https://sctour.readthedocs.io/en/latest/",
+      "purpose": "版本与功能"
+    },
+    {
+      "label": "Basic inference",
+      "url": "https://sctour.readthedocs.io/en/latest/notebook/scTour_inference_basic.html",
+      "purpose": "raw counts、检测基因数、训练和模型输出"
+    },
+    {
+      "label": "Direction adjustment",
+      "url": "https://sctour.readthedocs.io/en/latest/notebook/scTour_inference_PostInference_adjustment.html",
+      "purpose": "方向可能反转及真实小subset"
+    },
+    {
+      "label": "Publisher article",
+      "url": "https://link.springer.com/article/10.1186/s13059-023-02988-9",
+      "purpose": "原始VAE/ODE方法及软件存档"
+    }
+  ],
+  "bioconductor": null,
+  "license": {
+    "identifier": "MIT",
+    "evidence": "GitHub LICENSE/API及作者论文software availability",
+    "source_url": "https://raw.githubusercontent.com/LiQian-XC/sctour/4d26abb936b7872706e6540f38bab6251159a475/setup.py"
+  },
+  "environment": {
+    "declared_minimum": "setup.py Python>=3.7；最低版本不等于与现在最新依赖组合可解",
+    "dependencies": [
+      "torch>=1.9.1",
+      "torchdiffeq>=0.2.2",
+      "numpy>=1.19.2",
+      "scanpy>=1.7.1",
+      "anndata>=0.7.5",
+      "scipy>=1.5.2",
+      "tqdm>=4.32.2",
+      "scikit-learn>=0.24.1",
+      "leidenalg>=0.8.4",
+      "教程seurat_v3 HVG另需匹配scikit-misc"
+    ],
+    "system_constraints": [
+      "PyTorch/ODE训练需记录CPU/GPU、设备及seed；本轮不测试CUDA或硬件。",
+      "setup.py标OS Independent，但老教程pandas inplace及Scanpy API需兼容核查，不能认为现代依赖自动兼容。",
+      "官方主教程36318细胞、400epochs，不能把它当默认允许的小型测试或未经许可启动。"
+    ]
+  },
+  "input": {
+    "matrix": "AnnData .X为raw UMI counts用于默认nb likelihood；其他loss/表达尺度须按API另核实",
+    "object": "计算每细胞检测基因数（先calculate_qc_metrics）并保留后再选HVG；cell×gene顺序一致",
+    "upstream": "已有QC/注释、HVG策略、训练/验证切分、seed和方向审查；不要求S/U分层",
+    "spliced_unspliced_required": false
+  },
+  "outputs": [
+    "learned pseudotime（可能须有依据地reverse）",
+    "编码与ODE混合latent space",
+    "latent vector field与保存模型；query预测为额外功能"
+  ],
+  "representative_figures": [
+    {
+      "name": "UMAP并列细胞注释、伪时序和vector-field stream/quiver",
+      "functions": [
+        "scanpy.pl.umap",
+        "sctour.vf.plot_vector_field"
+      ]
+    },
+    {
+      "name": "跨数据预测/模型latent space可视化",
+      "functions": [
+        "sctour.predict（按1.0.0独立预测API核查）"
+      ]
+    }
+  ],
+  "tutorials": [
+    {
+      "url": "https://sctour.readthedocs.io/en/latest/notebook/scTour_inference_basic.html",
+      "entry": "human cortex真实主例36318细胞，非小数据"
+    },
+    {
+      "url": "https://sctour.readthedocs.io/en/latest/notebook/scTour_inference_PostInference_adjustment.html",
+      "entry": "GSE95315颗粒细胞谱系subset4007×14545；训练前2000 HVGs"
+    }
+  ],
+  "example_data": [
+    {
+      "name": "GSE95315 dentate-gyrus subset（须按教程过滤）",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95315",
+      "access": "原文件GSE95315_10X_expression_data_v2.tab，教程筛5类后4007细胞；未下载",
+      "smallness": "较主教程小但仍需训练，不是免许可即跑的toy",
+      "data_kind": "REAL_PUBLIC_EXAMPLE",
+      "download_status": "NOT_TESTED"
+    },
+    {
+      "name": "官方human cortex数据目录",
+      "url": "https://drive.google.com/drive/folders/1zGr_Gqio8zpJWAdLj0g66kN004PyYq_x?usp=sharing",
+      "access": "作者教程链接，未列目录或下载数据",
+      "smallness": "36318细胞，NOT_SMALL",
+      "data_kind": "REAL_PUBLIC_EXAMPLE",
+      "download_status": "NOT_TESTED"
+    }
+  ],
+  "scientific_boundaries": [
+    "不依赖S/U不意味着测得RNA剪接动力学；latent vector field不是RegVelo/scVelo式机理速度。",
+    "无手动root并不保证方向正确：官方承认ODE反方向及检测基因数与发育潜能规则失效，需独立生物依据确认reverse。",
+    "预测未见细胞/跨数据状态不能当实验验证；batch-insensitive是作者报告性能，不是任意数据保证。",
+    "拟合/seed/训练收敛和外推适用范围需要另行验证，当前一律未运行。"
+  ],
+  "version_caveats": [
+    "正式release/setup.py为1.0.0（2023-07-30），截至日期的repo SHA更新至2025-07-20；论文版另存Zenodo DOI10.5281/zenodo.7538567。",
+    "误猜installation.html得到404；真实安装说明就在docs首页。"
+  ],
+  "paper": {
+    "title": "scTour: a deep learning architecture for robust inference and accurate prediction of cellular dynamics",
+    "doi": "10.1186/s13059-023-02988-9",
+    "doi_url": "https://doi.org/10.1186/s13059-023-02988-9",
+    "journal": "Genome Biology",
+    "published_date_parts": [
+      [
+        2023,
+        6,
+        23
+      ]
+    ],
+    "crossref_url": "https://api.crossref.org/works/10.1186%2Fs13059-023-02988-9",
+    "verification_status": "VERIFIED_CROSSREF_PRIMARY_METADATA",
+    "checked_date": "2026-10-19"
+  },
+  "code": {
+    "github_url": "https://github.com/LiQian-XC/sctour",
+    "sha_asof_date": "4d26abb936b7872706e6540f38bab6251159a475",
+    "commit_date": "2025-07-20T21:29:06Z",
+    "commit_url": "https://github.com/LiQian-XC/sctour/commit/4d26abb936b7872706e6540f38bab6251159a475",
+    "query_url": "https://api.github.com/repos/LiQian-XC/sctour/commits?until=2026-10-19T23:59:59Z&per_page=1",
+    "release_query_url": "https://api.github.com/repos/LiQian-XC/sctour/releases?per_page=10",
+    "latest_nonprerelease_in_queried_10_releases": {
+      "tag_name": "1.0.0",
+      "published_at": "2023-07-30T20:33:29Z",
+      "html_url": "https://github.com/LiQian-XC/sctour/releases/tag/1.0.0"
+    },
+    "checked_date": "2026-10-19",
+    "metadata_url_at_sha": "https://raw.githubusercontent.com/LiQian-XC/sctour/4d26abb936b7872706e6540f38bab6251159a475/setup.py",
+    "description_version_at_sha": "1.0.0"
+  },
+  "status": {
+    "installation": "NOT_TESTED",
+    "execution": "NOT_TESTED",
+    "example_run": "NOT_TESTED",
+    "real_data_analysis": "NOT_TESTED"
+  },
+  "new_installation_status": "NOT_TESTED",
+  "small_sample_validation_status": "NOT_TESTED",
+  "runtime_status": "NOT_TESTED",
+  "scientific_validation_status": "NOT_TESTED",
+  "checked_date": "2026-10-19",
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "不依赖S/U不意味着测得RNA剪接动力学；latent vector field不是RegVelo/scVelo式机理速度。",
+    "无手动root并不保证方向正确：官方承认ODE反方向及检测基因数与发育潜能规则失效，需独立生物依据确认reverse。",
+    "预测未见细胞/跨数据状态不能当实验验证；batch-insensitive是作者报告性能，不是任意数据保证。",
+    "拟合/seed/训练收敛和外推适用范围需要另行验证，当前一律未运行。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

@@ -1,0 +1,28 @@
+{
+  "method": "Monocle3",
+  "scope": "Official worm_embryo extdata; not entire paper or large tutorial dataset",
+  "version": "1.4.27",
+  "INSTALL": "PASS_WITH_RECORDED_WARNINGS",
+  "INPUT": "PASS",
+  "RUN": "PASS",
+  "FIGURE": "PASS",
+  "TUTORIAL_CN": "COMPLETE_REVIEWED",
+  "genes_input": 10000,
+  "cells": 1805,
+  "partitions": 3,
+  "graph_nodes": 148,
+  "finite_pseudotime": 1805,
+  "genes_tested": 5921,
+  "graph_test_OK": 5921,
+  "q05": 3294,
+  "figures": 6,
+  "limitations": [
+    "root support differs by partition",
+    "pseudotime is not cross-partition comparable",
+    "RDS does not preserve nearest-neighbor indices",
+    "BPCells disk-object migration not tested",
+    "deprecated ggplot API warnings retained"
+  ],
+  "user_entry_fresh_session": "PASS",
+  "numeric_repeat_check": "47 TSV hashes unchanged across three modules"
+}

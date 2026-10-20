@@ -1,0 +1,8 @@
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+using C compiler: 'gcc.exe (GCC) 14.3.0'
+gcc  -I"C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/include" -DNDEBUG     -I"C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/include"      -O1 -g0 -c work/round3/test_compile.c -o work/round3/test_compile.o
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+gcc -shared -s -static-libgcc -o work/round3/test_compile.dll tmp.def work/round3/test_compile.o -LC:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/x64 -LC:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib -LC:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/bin/x64 -lR

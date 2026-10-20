@@ -1,0 +1,15 @@
+method,INSTALL_OK,INPUT_OK,RUN_OK,FIGURE_OK,scope,historical_status
+Cell2fate,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+CellRank,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+CytoTRACE2,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+FitDevo,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+Monocle2,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+Monocle3,PASS,PASS,PASS,PASS,official_worm_embryo_extdata_with_recorded_warnings,
+PAGA,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+Palantir,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+Slingshot,PASS,PASS,PASS,PASS,official_minimal_simulation,
+VECTOR,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+WOT,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+scTour,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,PARTIAL; not revalidated in current environment
+scVelo,NOT_TESTED,NOT_TESTED,NOT_TESTED,NOT_TESTED,source_review_only,
+tradeSeq,PASS,PASS,PASS,PASS,official_small_example_with_recorded_numerical_limits,

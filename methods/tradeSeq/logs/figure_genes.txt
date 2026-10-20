@@ -1,0 +1,3 @@
+association gene: Apoe
+pattern gene: Mpo
+heatmap genes: Apoe,Elane,Car2,Fam132a,Ftl1,Ncl,Prdx2,Ctse,P4hb,Hsp90b1,Hspa5,Erp29,Ybx1,Blvrb,Tuba1b,Zfpm1,Actb,Coro1a,Sh3bgrl3,Cst3,Srgn,Calm1,Csda,Ermap,Gstm1,Tubb5,Hmbs,Cfl1,Tspo,Phb2

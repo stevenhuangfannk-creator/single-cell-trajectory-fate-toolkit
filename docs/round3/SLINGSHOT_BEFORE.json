@@ -1,0 +1,397 @@
+[
+  {
+    "path": "methods\\Slingshot\\README_CN.md",
+    "bytes": 17450,
+    "sha256": "CA0A0297974FBCC888C3CDC38D2773716FF70D0E3A526AF838A5473B621A6407"
+  },
+  {
+    "path": "methods\\Slingshot\\SOURCE_CARD.md",
+    "bytes": 3704,
+    "sha256": "238B3C91B2B5CDE8AE5965594FAD2336F790E78F6A83B807064FF91866DDCEE2"
+  },
+  {
+    "path": "methods\\Slingshot\\source.json",
+    "bytes": 6314,
+    "sha256": "6E82FCE0A1148820A865190F9D0D1BD6557E50066043B5167B112B5FC661E499"
+  },
+  {
+    "path": "methods\\Slingshot\\STATUS.json",
+    "bytes": 1583,
+    "sha256": "2C78D18AC90EAA7AFFAE4B71D0458A6F47C067C5BD36706937B7B9F4BE6E91D5"
+  },
+  {
+    "path": "methods\\Slingshot\\example_data\\official_data_help.txt",
+    "bytes": 680,
+    "sha256": "650AF93E57C2A6A44BF6E57062B0CC9F6CE30BDF8B565C57EC67FD31567007B1"
+  },
+  {
+    "path": "methods\\Slingshot\\example_data\\slingshotExample.rda",
+    "bytes": 3190,
+    "sha256": "F553110D1DD138196DA208AE6A4EF459555C754DE3A60C30C1D30E357E13F483"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S01_cluster_MST.pdf",
+    "bytes": 13684,
+    "sha256": "65AE2610F289BBD17B664C16565BC604537323865918571B9DDF35BD166FBF39"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S01_cluster_MST.png",
+    "bytes": 25402,
+    "sha256": "8DC3995C52877171043D2298B7D4B3C7C2A9C35B0D96318DA7D17E2D6298156C"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S01_cluster_MST.svg",
+    "bytes": 110827,
+    "sha256": "735EC169EB8EE8733EA15776CE85FC5D648B2E8044E4D093DEBF3DB54670F4AB"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S02_principal_curves.pdf",
+    "bytes": 15027,
+    "sha256": "377126691ED33B1ADB89E96A4C2A83E0BA4DD427601281E569AC379F408BEB41"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S02_principal_curves.png",
+    "bytes": 25806,
+    "sha256": "C387C4A4D026F8CE7FFA12E67963E582324A3CF81D2AE0F91141A8236F7E25E0"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S02_principal_curves.svg",
+    "bytes": 115409,
+    "sha256": "77093E0E62ED7445F4E33607ACCAAAE0E88DEBC40AA87393066355A93AE7244F"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S03_Lineage1_pseudotime.pdf",
+    "bytes": 15594,
+    "sha256": "1C9621D7DAD4D30E7705B5BF7D92E0E8FF71E1D7FE27D07428084CD82A68FADC"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S03_Lineage1_pseudotime.png",
+    "bytes": 31560,
+    "sha256": "5448E897C1BE0D6F81BBA03BAF5EF220705F75591951FA39BE476BF2CD1AA33D"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S03_Lineage1_pseudotime.svg",
+    "bytes": 152957,
+    "sha256": "2AB405F28B07E7CA7EF907E373F0AE5D83734895ECAEAC15616F5CB4058AF6EF"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S03_Lineage2_pseudotime.pdf",
+    "bytes": 15595,
+    "sha256": "9217E3556EFD5EB553E19C3C715386AE7DD94B23A2B9BB00281F81C03F4B33D4"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S03_Lineage2_pseudotime.png",
+    "bytes": 31714,
+    "sha256": "B33374C8D0A1277BB6752833F7E6FA75CD71AD54454829D112AF9B7954AE5BDD"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S03_Lineage2_pseudotime.svg",
+    "bytes": 153703,
+    "sha256": "C4D049612CF4590F6FF25824D6C89C41D7C66D2A4C0AED3F87EE0FE2447F969D"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S04_Lineage1_curve_weight.pdf",
+    "bytes": 15431,
+    "sha256": "B1C2E8863551018BB73052B8BB393B2CCE65970999CEF1A3964AA05FE7207FAC"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S04_Lineage1_curve_weight.png",
+    "bytes": 31601,
+    "sha256": "7DEC5C331495722EC8E30F33B3C48FAB6A3E1FCFDECF10BACCF33B6019F165EC"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S04_Lineage1_curve_weight.svg",
+    "bytes": 153071,
+    "sha256": "0C1B0694B8402EB601672A3301B38BD2CFB402BE6836B6E21AB15B4FA554923A"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S04_Lineage2_curve_weight.pdf",
+    "bytes": 15384,
+    "sha256": "87CC28C240465FCDDEF7FC0209CAF0FAB24E75083872634B45C0A7B96DF22139"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S04_Lineage2_curve_weight.png",
+    "bytes": 31596,
+    "sha256": "D9C0B137B5A8B5BB4DF8B0DDB7855945087242D386C74A4C3B1576A624B58EDC"
+  },
+  {
+    "path": "methods\\Slingshot\\figures\\S04_Lineage2_curve_weight.svg",
+    "bytes": 153814,
+    "sha256": "0AA40CE77434B9773BE4BBF2D30D88437B683BD7D8C8D9D01818F07BD51A3466"
+  },
+  {
+    "path": "methods\\Slingshot\\figure_notes\\S01_cluster_MST_CN.md",
+    "bytes": 2507,
+    "sha256": "76D7A1C92A87F5688B1F8270FAF13C3B9F46A17A403F5BBA236EF9AE89B838E7"
+  },
+  {
+    "path": "methods\\Slingshot\\figure_notes\\S02_principal_curves_CN.md",
+    "bytes": 2582,
+    "sha256": "7E97202FA5CAE73C59824BC2905E2B05F6D2F4ECD42C08FC2B0B914E5B3F3A10"
+  },
+  {
+    "path": "methods\\Slingshot\\figure_notes\\S03_Lineage1_pseudotime_CN.md",
+    "bytes": 2578,
+    "sha256": "6B6F78894B7B414F4B77CEAED0EC85B5C308E6E91A8D862C9DB1168434566C04"
+  },
+  {
+    "path": "methods\\Slingshot\\figure_notes\\S03_Lineage2_pseudotime_CN.md",
+    "bytes": 2578,
+    "sha256": "75057365274928060048A004FD23C00D1404A342C47B82E55F4C1F8D6FA465DD"
+  },
+  {
+    "path": "methods\\Slingshot\\figure_notes\\S04_Lineage1_curve_weight_CN.md",
+    "bytes": 2593,
+    "sha256": "D94E384CB684DBFD9E2A32B1741AD32A455CC324D44B69A9645D2C67EFD792AF"
+  },
+  {
+    "path": "methods\\Slingshot\\figure_notes\\S04_Lineage2_curve_weight_CN.md",
+    "bytes": 2559,
+    "sha256": "71B924CB7CE1E9B1594A2318F3FD319F7ED364778EA512782443953FD4DD52E0"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\00_install_attempt2_exit.json",
+    "bytes": 77,
+    "sha256": "02F722B48F8CB48DBA36D4F0F861D13E80A5ADC82DB6F35C1E6552E89B2176B1"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\00_install_attempt2.log",
+    "bytes": 8239,
+    "sha256": "AEA551BA4DE3E8AF80E20804758D4781711ACA2A6D23D3200307A227523E1C45"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\00_install_final_exit.json",
+    "bytes": 190,
+    "sha256": "CB86130243F244F7AC07A3C73799435D0B8D0616642671F0D4F299D8E1521E3B"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\00_install_final.log",
+    "bytes": 8094,
+    "sha256": "230BB602538345453822789F17E3C2650604CA3BA32CEA8C61191D094F9CAEF1"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\00_install.log",
+    "bytes": 9802,
+    "sha256": "486C87E118B411E9C11B49053B5D5E05F13997E9D2FE2B5B3C6FFB7AE537E531"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\01_execution_record.json",
+    "bytes": 311,
+    "sha256": "A1FFB1FB582262CB8FD8485FB32B78E6D344AA8C07386F014CAD0A7B62D1C3C7"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\01_run_stderr.log",
+    "bytes": 348,
+    "sha256": "39789EE849077C1DA7168BC76D7FC328FD04E0DFBDF1D8F7FBF3AC46B9707EDB"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\01_run_stdout.log",
+    "bytes": 65,
+    "sha256": "C9F7FC12C777D4C4C6A655A70B16B7B34476FC39CD3C1C6E3E2B0ADA9FBB1A65"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\02_execution_record.json",
+    "bytes": 352,
+    "sha256": "6518E3B8A94A9F6922695E180FDA6153EC3487C25B534ED529B6E879D3923E88"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\02_run_stderr.log",
+    "bytes": 3285,
+    "sha256": "02EB091BA2CB7D5BB4236021103DFA63EAEF873DE25C80312BBB0D9FE7237C5E"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\02_run_stdout.log",
+    "bytes": 529,
+    "sha256": "6397DF215E86418D103F4C85FBE22F09150AEC361B83B3F3056D851BDAFCA5C4"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\03_execution_record.json",
+    "bytes": 278,
+    "sha256": "E61CDC8EEDACEA2B45F6C11D1D4F23BE53278E519F32366D286E0F13D0740C44"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\03_run_stderr.log",
+    "bytes": 3099,
+    "sha256": "37F62346980877C4CE7AFCA41F718638865BAFC11D060AB169CF9A578D4226B4"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\03_run_stdout.log",
+    "bytes": 2005,
+    "sha256": "ADC29FA5405D696F064627B39B5FC3D52221C959A4696566600DACD5A02ED183"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\04_execution_record.json",
+    "bytes": 452,
+    "sha256": "0EDD95BD99150D9FC6B09783B5FF48873AFEB37B3D70759F23469D9259D24C3F"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\04_run_stderr.log",
+    "bytes": 3099,
+    "sha256": "37F62346980877C4CE7AFCA41F718638865BAFC11D060AB169CF9A578D4226B4"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\04_run_stdout.log",
+    "bytes": 2172,
+    "sha256": "5325357DD9C533E67544D81336C0790DA226896C9AFF3131ACAF2EDAADB39876"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\05_replot_record.json",
+    "bytes": 149,
+    "sha256": "1146A6F29438EC6CA538C6045CCB9A38B7AF5C9366D2F43E1F15FFB278DD8C27"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\05_replot_stderr.log",
+    "bytes": 3099,
+    "sha256": "37F62346980877C4CE7AFCA41F718638865BAFC11D060AB169CF9A578D4226B4"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\05_replot_stdout.log",
+    "bytes": 1346,
+    "sha256": "0CC51AA7BCC5860D976E313D95FBE95291EFE4670272BC1EBB3A47DB91802CD3"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\06_user_entry_verification.json",
+    "bytes": 272,
+    "sha256": "BFFC4FE6DE58052623D2B552685205D2BC2236CE0D3728E6B6D9D8D2379EC2AC"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\20261019_095908_exit.json",
+    "bytes": 221,
+    "sha256": "D533A4EF135FA1429230C4894CAEC144D2C200591CC06B73058316A4A46EAE78"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\20261019_095908_stderr.log",
+    "bytes": 3099,
+    "sha256": "37F62346980877C4CE7AFCA41F718638865BAFC11D060AB169CF9A578D4226B4"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\20261019_095908_stdout.log",
+    "bytes": 2173,
+    "sha256": "FDE1F4988C72ED841C6E661023DD6AA35529AF122AB5AF970094AA1E2436C558"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\artifact_checks.json",
+    "bytes": 5033,
+    "sha256": "6FD7CD37FACCBEEE6963FB7CAD7EC0CF4126972FDCF87CC12CE2CBDA36DA0924"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\bootstrap_executed.R",
+    "bytes": 3551,
+    "sha256": "7111BD01506D843657E9F2C0338ECADC0C07BA814C063EEFF7B0184FA55D9E77"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\ENVIRONMENT_FIX_CN.md",
+    "bytes": 1874,
+    "sha256": "6A5C2BA38C9F10FA2601BF0647DCA6F2CECC918057AD59047F4715704DF18D2A"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\fit_parameters.txt",
+    "bytes": 392,
+    "sha256": "288D1455A766B7DDC9C40BA14804ED7A31735C99C8F0121CA6C39A05F5380C2B"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\R-install.log",
+    "bytes": 1958551,
+    "sha256": "EC94D5242BAB1185D2157161C56C4DC31DB81E3198A18EA59BA338151660494E"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\sessionInfo.txt",
+    "bytes": 1626,
+    "sha256": "76FDE7C897B64AF03829F20A62BC89E6AC31433735D1818ADA34E20D31A51ECC"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\shutdown_dependency_probes_level2.json",
+    "bytes": 390,
+    "sha256": "1C525F27F3D8DF8CEE325E1E65546CFE87984E44955ABED229609C9E65433EFA"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\shutdown_dependency_probes.json",
+    "bytes": 375,
+    "sha256": "8EB8690A3E84DD7BD60FB787F03433989675965BCCCC99B7D7D17B614480912C"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\syntax_check.json",
+    "bytes": 65,
+    "sha256": "2C0E19888F157886A3C8C1986C0454F0E5BE75DBAEECA593B5A93FB68018FF5E"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\syntax_check.log",
+    "bytes": 21,
+    "sha256": "CFF0407EE3DF341AC7226AC7135768833B326884CD613A84885056DCB68993AC"
+  },
+  {
+    "path": "methods\\Slingshot\\logs\\VISUAL_QA_CN.md",
+    "bytes": 1359,
+    "sha256": "3B4C0D6463A45C4BEC82E25D66E62135E2C2F07E88648D65E8DBAE1037D0B72F"
+  },
+  {
+    "path": "methods\\Slingshot\\results\\checked_input.rds",
+    "bytes": 3024,
+    "sha256": "5EB631DE0053713606F7AFF20C42F3AC2D3C04C178D759969CBF361DD9427624"
+  },
+  {
+    "path": "methods\\Slingshot\\results\\cluster_sizes.tsv",
+    "bytes": 44,
+    "sha256": "ED4C5D1BC4F89FA3055D1C12A4742B883B08769DA632BC3670004A66DCA9C9AE"
+  },
+  {
+    "path": "methods\\Slingshot\\results\\curve_weights.tsv",
+    "bytes": 3789,
+    "sha256": "9C5E31F7776870AFC873F89604BAA26133F2BC1E79382597089E21D9B2147523"
+  },
+  {
+    "path": "methods\\Slingshot\\results\\input_check.tsv",
+    "bytes": 97,
+    "sha256": "F7EDEE7B62FE6CA7980166E559AEC7E7DFE2CA6F2D114F2C23D1E22A2D547463"
+  },
+  {
+    "path": "methods\\Slingshot\\results\\input_coordinates.tsv",
+    "bytes": 7800,
+    "sha256": "0632A51C56BDBE4941252D46D0D0BEB1A72A17489E54ED6AEA423B44DCE1C7BA"
+  },
+  {
+    "path": "methods\\Slingshot\\results\\lineage_summary.tsv",
+    "bytes": 184,
+    "sha256": "D5CC8471487E3A6ACC6E5A9B42084257370A81B8F321382C3B2B703EA3F061C9"
+  },
+  {
+    "path": "methods\\Slingshot\\results\\lineages.tsv",
+    "bytes": 76,
+    "sha256": "C1A3F2E40B2BD36D581EE8F39F42C2DE68272AC87B4F5CE39A9C283B62A0E1CA"
+  },
+  {
+    "path": "methods\\Slingshot\\results\\pseudotime.tsv",
+    "bytes": 6363,
+    "sha256": "53672BEB958A98A443D65C5E50DE0083660EBD26EDFF5DD299DD45AA7421B15C"
+  },
+  {
+    "path": "methods\\Slingshot\\results\\slingshot_fit.rds",
+    "bytes": 19147,
+    "sha256": "D1BEC1F02F5B68DE2263740D7DCECA6CDFE85DE29802D859BD14F0FADA0CD744"
+  },
+  {
+    "path": "methods\\Slingshot\\scripts\\01_Load_and_Check.R",
+    "bytes": 1628,
+    "sha256": "95867D98F349767DE5880DD24A4AACFC77136758D27FF373FF897A3F8BD57C7D"
+  },
+  {
+    "path": "methods\\Slingshot\\scripts\\02_Infer_Lineages_and_Curves.R",
+    "bytes": 2308,
+    "sha256": "84534700B3317D653AD4471154E5243C1AF2C5B9121D4BC5B73F189171BDDE61"
+  },
+  {
+    "path": "methods\\Slingshot\\scripts\\03_Plot_and_Export.R",
+    "bytes": 3732,
+    "sha256": "72E683CAB14D915E237F883DC5741E471C248DF4D6B519A9D0C15BC1F42834F5"
+  },
+  {
+    "path": "methods\\Slingshot\\scripts\\replot_saved_fit.R",
+    "bytes": 344,
+    "sha256": "50725225A261E331D55012F75850E78B73BB2FF25E4354E8E42E4465499E8B52"
+  },
+  {
+    "path": "methods\\Slingshot\\scripts\\run_example.R",
+    "bytes": 639,
+    "sha256": "6A7C7F81DA10C4425DE4BFA970B44C2603116C19B9A9DC778E6C1D5A3586C8AA"
+  }
+]

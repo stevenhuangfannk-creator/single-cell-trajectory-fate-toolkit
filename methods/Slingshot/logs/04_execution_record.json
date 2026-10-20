@@ -1,0 +1,11 @@
+{
+  "start_utc": "2026-10-19T14:46:03.1610896Z",
+  "end_utc": "2026-10-19T14:46:08.4136795Z",
+  "exit_code": 0,
+  "peak_sampled_working_set_bytes": 756379648,
+  "sampling_interval_ms": 100,
+  "threads_requested": 1,
+  "locale": "English_United States.utf8",
+  "architecture_fix": "00_Start.R derives missing AMD64 variable from verified x86_64 R architecture",
+  "data": "Official slingshotExample simulated reduced dimensions; 140 cells"
+}

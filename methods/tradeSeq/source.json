@@ -1,0 +1,181 @@
+{
+  "method": "tradeSeq",
+  "id": "tradeseq",
+  "language": "R",
+  "official_sources": [
+    {
+      "label": "Official GitHub",
+      "url": "https://github.com/statOmics/tradeSeq",
+      "purpose": "原作者/官方实现代码与发行信息"
+    },
+    {
+      "label": "Bioconductor3.23",
+      "url": "https://bioconductor.org/packages/3.23/bioc/html/tradeSeq.html",
+      "purpose": "发行版/许可/依赖"
+    },
+    {
+      "label": "Workflow",
+      "url": "https://statomics.github.io/tradeSeq/articles/tradeSeq.html",
+      "purpose": "NB-GAM输入、统计检验、示例及绘图"
+    },
+    {
+      "label": "fitGAM details",
+      "url": "https://statomics.github.io/tradeSeq/articles/fitGAM.html",
+      "purpose": "协变量、knots与拟合说明入口"
+    },
+    {
+      "label": "Publisher paper",
+      "url": "https://www.nature.com/articles/s41467-020-14766-3",
+      "purpose": "方法和统计解释"
+    }
+  ],
+  "bioconductor": {
+    "package": "tradeSeq",
+    "release": "3.23",
+    "version": "1.26.0",
+    "release_R": "4.6",
+    "url": "https://bioconductor.org/packages/3.23/bioc/html/tradeSeq.html",
+    "package_doi": "10.18129/B9.bioc.tradeSeq"
+  },
+  "license": {
+    "identifier": "MIT + file LICENSE",
+    "evidence": "DESCRIPTION及BioC；GitHub自动分类Other",
+    "source_url": "https://raw.githubusercontent.com/statOmics/tradeSeq/02a9050674d8f0c0ebae8688fa9326dd76360d7d/DESCRIPTION"
+  },
+  "environment": {
+    "declared_minimum": "R>=3.6；BioC3.23发行栈为R4.6",
+    "dependencies": [
+      "mgcv",
+      "edgeR",
+      "SingleCellExperiment",
+      "SummarizedExperiment",
+      "slingshot",
+      "TrajectoryUtils",
+      "BiocParallel",
+      "Biobase",
+      "princurve",
+      "igraph",
+      "Matrix",
+      "ggplot2",
+      "matrixStats"
+    ],
+    "system_constraints": [
+      "BioC3.23提供Windows/macOS二进制；本机未测试。",
+      "每基因NB-GAM拟合可很耗时，完整基因组和多lineages不属默认小测试；应由用户确认运行规模。",
+      "BiocParallel后端与Windows多进程策略需单独设定，不承诺fork行为可跨平台。"
+    ]
+  },
+  "input": {
+    "matrix": "gene×cell非负counts；NB模型需匹配计数尺度与offset/normalization",
+    "object": "已有cell×lineage pseudotime与cellWeights，或Slingshot对象；可配协变量/condition design",
+    "upstream": "明确上游轨迹及cell/gene顺序；本方法不重新决定root、分支或拓扑",
+    "spliced_unspliced_required": false
+  },
+  "outputs": [
+    "逐基因NB-GAM模型、converged标记及拟合曲线",
+    "associationTest/startVsEndTest/diffEndTest/patternTest/earlyDETest统计",
+    "predictSmooth与基因模式聚类（可选）"
+  ],
+  "representative_figures": [
+    {
+      "name": "各lineage的基因表达平滑曲线",
+      "functions": [
+        "plotSmoothers"
+      ]
+    },
+    {
+      "name": "低维空间基因counts与轨迹/knots",
+      "functions": [
+        "plotGeneCount"
+      ]
+    },
+    {
+      "name": "evaluateK AIC与平滑表达模式热图",
+      "functions": [
+        "evaluateK",
+        "predictSmooth"
+      ]
+    }
+  ],
+  "tutorials": [
+    {
+      "url": "https://statomics.github.io/tradeSeq/articles/tradeSeq.html",
+      "entry": "随包提供的Paul15 subset countMatrix、crv、celltype"
+    }
+  ],
+  "example_data": [
+    {
+      "name": "countMatrix/crv/celltype随包例子",
+      "url": "https://statomics.github.io/tradeSeq/articles/tradeSeq.html#load-data",
+      "access": "data(countMatrix,package='tradeSeq'); data(crv); data(celltype)，未加载",
+      "smallness": "真实Paul15筛选subset；教程拟合converged显示240基因，未下载独立复核全部维度",
+      "data_kind": "REAL_PUBLIC_EXAMPLE_SUBSET",
+      "download_status": "NOT_TESTED"
+    }
+  ],
+  "scientific_boundaries": [
+    "这是轨迹下游DE框架，不是新的轨迹推断方法；上游错误不会被自动修复。",
+    "统计结论依赖轨迹、knots、offset、convergence和检验对比；需保存失败基因，不能把NA当显著。",
+    "p值/FDR不代表因果驱动，拟合条件于估计轨迹；普通逐细胞检验不能替代供者/生物重复设计。",
+    "patternTest比较不同lineage等相对位置需慎重，伪时序尺度不必等同真实时间；多重检验和效应量需明确。"
+  ],
+  "version_caveats": [
+    "BioC3.23为1.26.0；GitHub master固定SHA DESCRIPTION仍1.13.12，GitHub release v0.99.46为2019旧发布，不能称当前版本。"
+  ],
+  "paper": {
+    "title": "Trajectory-based differential expression analysis for single-cell sequencing data",
+    "doi": "10.1038/s41467-020-14766-3",
+    "doi_url": "https://doi.org/10.1038/s41467-020-14766-3",
+    "journal": "Nature Communications",
+    "published_date_parts": [
+      [
+        2020,
+        3,
+        5
+      ]
+    ],
+    "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41467-020-14766-3",
+    "verification_status": "VERIFIED_CROSSREF_PRIMARY_METADATA",
+    "checked_date": "2026-10-19"
+  },
+  "code": {
+    "github_url": "https://github.com/statOmics/tradeSeq",
+    "sha_asof_date": "02a9050674d8f0c0ebae8688fa9326dd76360d7d",
+    "commit_date": "2025-06-17T14:45:33Z",
+    "commit_url": "https://github.com/statOmics/tradeSeq/commit/02a9050674d8f0c0ebae8688fa9326dd76360d7d",
+    "query_url": "https://api.github.com/repos/statOmics/tradeSeq/commits?until=2026-10-19T23:59:59Z&per_page=1",
+    "release_query_url": "https://api.github.com/repos/statOmics/tradeSeq/releases?per_page=10",
+    "latest_nonprerelease_in_queried_10_releases": {
+      "tag_name": "v0.99.46",
+      "published_at": "2019-09-03T15:37:09Z",
+      "html_url": "https://github.com/statOmics/tradeSeq/releases/tag/v0.99.46"
+    },
+    "checked_date": "2026-10-19",
+    "metadata_url_at_sha": "https://raw.githubusercontent.com/statOmics/tradeSeq/02a9050674d8f0c0ebae8688fa9326dd76360d7d/DESCRIPTION",
+    "description_version_at_sha": "1.13.12"
+  },
+  "status": {
+    "installation": "NOT_TESTED",
+    "execution": "NOT_TESTED",
+    "example_run": "NOT_TESTED",
+    "real_data_analysis": "NOT_TESTED"
+  },
+  "new_installation_status": "NOT_TESTED",
+  "small_sample_validation_status": "NOT_TESTED",
+  "runtime_status": "NOT_TESTED",
+  "scientific_validation_status": "NOT_TESTED",
+  "checked_date": "2026-10-19",
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "这是轨迹下游DE框架，不是新的轨迹推断方法；上游错误不会被自动修复。",
+    "统计结论依赖轨迹、knots、offset、convergence和检验对比；需保存失败基因，不能把NA当显著。",
+    "p值/FDR不代表因果驱动，拟合条件于估计轨迹；普通逐细胞检验不能替代供者/生物重复设计。",
+    "patternTest比较不同lineage等相对位置需慎重，伪时序尺度不必等同真实时间；多重检验和效应量需明确。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

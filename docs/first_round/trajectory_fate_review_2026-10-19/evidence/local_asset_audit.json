@@ -1,0 +1,1293 @@
+{
+  "audit_date": "2026-10-19",
+  "timezone": "Asia/Singapore",
+  "mode": "READ_ONLY_LOCAL_AUDIT",
+  "search_roots": [
+    "C:/Users/13683/Documents/Codex",
+    "C:/Users/13683/Desktop/scriptsR",
+    "C:/Users/13683/Documents/ChatGPT/Research_OS"
+  ],
+  "scope_extension": "Only two exact user-named PI_Research reference R files, located by existing audit hash manifest and authorized by parent",
+  "no_install": true,
+  "no_training": true,
+  "no_large_objects_loaded": true,
+  "no_git_mutations": true,
+  "no_download_or_fetch": true,
+  "repositories": [
+    {
+      "name": "single-cell-dynamics-perturbation",
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation",
+      "origin": [
+        "origin\thttps://github.com/stevenhuangfannk-creator/single-cell-dynamics-perturbation.git (fetch)",
+        "origin\thttps://github.com/stevenhuangfannk-creator/single-cell-dynamics-perturbation.git (push)"
+      ],
+      "branch": "main",
+      "head": "c7b58d1d25b75e2d32ad0d3f27ed228ea3ce6ebc",
+      "last_commit": "c7b58d1d25b75e2d32ad0d3f27ed228ea3ce6ebc|2026-10-12 23:39:13 +0800|记录最终内容发布核验 / Record final content publication verification",
+      "status_short_branch": [
+        "## main...origin/main"
+      ],
+      "dirty": false,
+      "dirty_entries": [],
+      "remote_fetched_this_audit": false
+    },
+    {
+      "name": "regvelo-grn-dynamics",
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-10\\files-pasted-by-the-user-codex\\outputs\\regvelo-grn-dynamics",
+      "origin": [
+        "origin\thttps://github.com/stevenhuangfannk-creator/regvelo-grn-dynamics.git (fetch)",
+        "origin\thttps://github.com/stevenhuangfannk-creator/regvelo-grn-dynamics.git (push)"
+      ],
+      "branch": "main",
+      "head": "6ffd33057b5c4841c19bd0706691038fb51aacbe",
+      "last_commit": "6ffd33057b5c4841c19bd0706691038fb51aacbe|2026-10-10 22:17:51 +0800|独立发布RegVelo科研模块、真实复现与中文指南 / Publish standalone RegVelo workflow",
+      "status_short_branch": [
+        "## main...origin/main"
+      ],
+      "dirty": false,
+      "dirty_entries": [],
+      "remote_fetched_this_audit": false
+    },
+    {
+      "name": "research-scripts-r-regvelo-reverted",
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-10\\files-pasted-by-the-user-codex\\outputs\\research-scripts-r",
+      "origin": [
+        "origin\thttps://github.com/stevenhuangfannk-creator/research-scripts-r.git (fetch)",
+        "origin\thttps://github.com/stevenhuangfannk-creator/research-scripts-r.git (push)"
+      ],
+      "branch": "feat/regvelo-grn-dynamics",
+      "head": "c3edd0f17c9740f107a47a058f793478c7281736",
+      "last_commit": "c3edd0f17c9740f107a47a058f793478c7281736|2026-10-10 22:18:24 +0800|Revert \"新增RegVelo真实官方复现、27图及PI准入审计 / Add executed RegVelo module\"",
+      "status_short_branch": [
+        "## feat/regvelo-grn-dynamics...origin/feat/regvelo-grn-dynamics"
+      ],
+      "dirty": false,
+      "dirty_entries": [],
+      "remote_fetched_this_audit": false
+    },
+    {
+      "name": "research-scripts-r-zh",
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-07\\research-scripts-r-zh",
+      "origin": [
+        "origin\thttps://github.com/stevenhuangfannk-creator/research-scripts-r.git (fetch)",
+        "origin\thttps://github.com/stevenhuangfannk-creator/research-scripts-r.git (push)"
+      ],
+      "branch": "docs/chinese-usage-guide",
+      "head": "30d2ff3fc2d2aa3b1ae8b6067e2a316b598a20a5",
+      "last_commit": "30d2ff3fc2d2aa3b1ae8b6067e2a316b598a20a5|2026-10-08 20:29:08 +0800|feat: add parallel UMAP displays / 新增并列真实图例",
+      "status_short_branch": [
+        "## docs/chinese-usage-guide...origin/main"
+      ],
+      "dirty": false,
+      "dirty_entries": [],
+      "remote_fetched_this_audit": false
+    },
+    {
+      "name": "scriptsR-primary",
+      "path": "C:\\Users\\13683\\Desktop\\scriptsR",
+      "origin": [
+        "origin\thttps://github.com/stevenhuangfannk-creator/research-scripts-r.git (fetch)",
+        "origin\thttps://github.com/stevenhuangfannk-creator/research-scripts-r.git (push)"
+      ],
+      "branch": "phase4-flagship-reconstruction",
+      "head": "2f12bd7850407fdae44497a116fab8368613526b",
+      "last_commit": "2f12bd7850407fdae44497a116fab8368613526b|2026-10-01 00:00:40 +0800|analysis: map PI spatial and document depth QC blocker",
+      "status_short_branch": [
+        "## phase4-flagship-reconstruction",
+        "?? reproductions/lin_2026_peri_implantitis/notes/PHASE4B_PI_MAPPING_SENSITIVITY.md",
+        "?? reproductions/lin_2026_peri_implantitis/scripts/24_pi_density_calibration.py",
+        "?? reproductions/lin_2026_peri_implantitis/scripts/25_pi_prior_sensitivity.py",
+        "?? reproductions/lin_2026_peri_implantitis/scripts/26_compare_pi_sensitivity.py"
+      ],
+      "dirty": true,
+      "dirty_entries": [
+        "?? reproductions/lin_2026_peri_implantitis/notes/PHASE4B_PI_MAPPING_SENSITIVITY.md",
+        "?? reproductions/lin_2026_peri_implantitis/scripts/24_pi_density_calibration.py",
+        "?? reproductions/lin_2026_peri_implantitis/scripts/25_pi_prior_sensitivity.py",
+        "?? reproductions/lin_2026_peri_implantitis/scripts/26_compare_pi_sensitivity.py"
+      ],
+      "remote_fetched_this_audit": false
+    },
+    {
+      "name": "Research_OS",
+      "path": "C:\\Users\\13683\\Documents\\ChatGPT\\Research_OS",
+      "origin": [],
+      "branch": "phase4-flagship-reconstruction",
+      "head": "52be79b7217f7a1c155a8ce4b98057920b35105c",
+      "last_commit": "52be79b7217f7a1c155a8ce4b98057920b35105c|2026-09-28 21:32:08 +0800|docs: link peri-implantitis flagship reproduction",
+      "status_short_branch": [
+        "## phase4-flagship-reconstruction",
+        "A  .obsidian/graph.json",
+        "A  01_Literature/Inbox/bunneHowBuildVirtual2024.md",
+        "AM 01_Literature/Inbox/heSquidiffPredictingCellular2026.md",
+        "AM 01_Literature/Inbox/heumosPertpyEndtoendFramework2026.md",
+        "A  01_Literature/Inbox/suterDrugSinglecellGene2026.md",
+        "A  01_Literature/Inbox/wencksternVirtualTissuesFoundation2026.md",
+        " M 01_Literature/Radar/seen_papers.md",
+        " M 10_Projects/README.md",
+        "M  references/library.bib",
+        "?? .vscode/",
+        "?? \"01_Literature/Inbox/\\346\\226\\207\\347\\214\\256\\351\\230\\205\\350\\257\\273\\345\\220\\257\\345\\212\\250\\346\\214\\207\\345\\215\\227.md\"",
+        "?? 01_Literature/Notes/bunneHowBuildVirtual2024.md",
+        "?? 01_Literature/Notes/heSquidiffPredictingCellular2026.md",
+        "?? 01_Literature/Notes/heumosPertpyEndtoendFramework2026.md",
+        "?? 01_Literature/Notes/suterDrugSinglecellGene2026.md",
+        "?? 01_Literature/Notes/wencksternVirtualTissuesFoundation2026.md",
+        "?? 01_Literature/Radar/2026_Penarando_KMT9_PMN_MDSC.md",
+        "?? 01_Literature/Radar/2026_Wang_DietaryFat_LungNeutrophils.md",
+        "?? 01_Literature/Radar/2026_Wu_ICAM1high_ReverseMigration.md",
+        "?? 01_Literature/Radar/2026_Zhu_Neutrophil_Progenitor_Feedback.md",
+        "?? 01_Literature/Radar/Reports/2026-09-29.md",
+        "?? 01_Literature/Radar/Reports/2026-10-02.md",
+        "?? 01_Literature/Radar/Reports/2026-10-05.md",
+        "?? 01_Literature/Radar/Reports/2026-10-08.md",
+        "?? 01_Literature/Radar/Reports/2026-10-11.md",
+        "?? 01_Literature/Radar/Reports/2026-10-17.md",
+        "?? 01_Literature/Reading_Queues/",
+        "?? 03_Methods/R_VSCode_Diagnostics_20261014/"
+      ],
+      "dirty": true,
+      "dirty_entries": [
+        "A  .obsidian/graph.json",
+        "A  01_Literature/Inbox/bunneHowBuildVirtual2024.md",
+        "AM 01_Literature/Inbox/heSquidiffPredictingCellular2026.md",
+        "AM 01_Literature/Inbox/heumosPertpyEndtoendFramework2026.md",
+        "A  01_Literature/Inbox/suterDrugSinglecellGene2026.md",
+        "A  01_Literature/Inbox/wencksternVirtualTissuesFoundation2026.md",
+        " M 01_Literature/Radar/seen_papers.md",
+        " M 10_Projects/README.md",
+        "M  references/library.bib",
+        "?? .vscode/",
+        "?? \"01_Literature/Inbox/\\346\\226\\207\\347\\214\\256\\351\\230\\205\\350\\257\\273\\345\\220\\257\\345\\212\\250\\346\\214\\207\\345\\215\\227.md\"",
+        "?? 01_Literature/Notes/bunneHowBuildVirtual2024.md",
+        "?? 01_Literature/Notes/heSquidiffPredictingCellular2026.md",
+        "?? 01_Literature/Notes/heumosPertpyEndtoendFramework2026.md",
+        "?? 01_Literature/Notes/suterDrugSinglecellGene2026.md",
+        "?? 01_Literature/Notes/wencksternVirtualTissuesFoundation2026.md",
+        "?? 01_Literature/Radar/2026_Penarando_KMT9_PMN_MDSC.md",
+        "?? 01_Literature/Radar/2026_Wang_DietaryFat_LungNeutrophils.md",
+        "?? 01_Literature/Radar/2026_Wu_ICAM1high_ReverseMigration.md",
+        "?? 01_Literature/Radar/2026_Zhu_Neutrophil_Progenitor_Feedback.md",
+        "?? 01_Literature/Radar/Reports/2026-09-29.md",
+        "?? 01_Literature/Radar/Reports/2026-10-02.md",
+        "?? 01_Literature/Radar/Reports/2026-10-05.md",
+        "?? 01_Literature/Radar/Reports/2026-10-08.md",
+        "?? 01_Literature/Radar/Reports/2026-10-11.md",
+        "?? 01_Literature/Radar/Reports/2026-10-17.md",
+        "?? 01_Literature/Reading_Queues/",
+        "?? 03_Methods/R_VSCode_Diagnostics_20261014/"
+      ],
+      "remote_fetched_this_audit": false
+    },
+    {
+      "name": "workbench-link-reverted",
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-10\\files-pasted-by-the-user-codex\\outputs\\bioinformatics-research-workbench",
+      "origin": [
+        "origin\thttps://github.com/stevenhuangfannk-creator/bioinformatics-research-workbench.git (fetch)",
+        "origin\thttps://github.com/stevenhuangfannk-creator/bioinformatics-research-workbench.git (push)"
+      ],
+      "branch": "feat/regvelo-module-link",
+      "head": "064a03fcd1ab830bfd457c8fd9beec44f599bcf2",
+      "last_commit": "064a03fcd1ab830bfd457c8fd9beec44f599bcf2|2026-10-10 22:18:24 +0800|Revert \"关联RegVelo方法与真实Gallery / Link executed RegVelo module\"",
+      "status_short_branch": [
+        "## feat/regvelo-module-link"
+      ],
+      "dirty": false,
+      "dirty_entries": [],
+      "remote_fetched_this_audit": false
+    }
+  ],
+  "canonical_sctour_repository": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation",
+  "canonical_sctour_module": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour",
+  "historical_sctour_work": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour",
+  "execution_evidence_basis": "Stored small run_summary/config/log/report files plus artifact file-stat; this audit did not re-execute or load checkpoints/H5AD",
+  "sctour_runs": [
+    {
+      "run": "A90_seed0",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 4007,
+      "hvg": 500,
+      "train_fraction": 0.9,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 407.9802880000789,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A.log",
+      "log_exists": true,
+      "log_bytes": 99199,
+      "log_sha256": "B1210538988DED0C524FB182974C5BD46F21F3D32DB2CC52A1822C832969EA01",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A\\inferred.h5ad",
+          "bytes": 2976744,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A\\model.pth",
+          "bytes": 6472994,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A\\loss.tsv",
+          "bytes": 16883,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A\\train_cells.tsv",
+          "bytes": 93791,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A\\validation_cells.tsv",
+          "bytes": 9369,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A\\inference.tsv.gz",
+          "bytes": 338721,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A\\environment.json",
+          "bytes": 436,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A\\config_used.json",
+          "bytes": 416,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A\\run_summary.json",
+          "bytes": 778,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "A90_seed1",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 4007,
+      "hvg": 500,
+      "train_fraction": 0.9,
+      "seed": 1,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 359.70882659987547,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1.log",
+      "log_exists": true,
+      "log_bytes": 86288,
+      "log_sha256": "D91039A754994EF31ED6276B15AB30DF0FAF9286909AFABCC069A66BFF10A788",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1\\inferred.h5ad",
+          "bytes": 2976623,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1\\model.pth",
+          "bytes": 6467554,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1\\loss.tsv",
+          "bytes": 16861,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1\\train_cells.tsv",
+          "bytes": 93791,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1\\validation_cells.tsv",
+          "bytes": 9369,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1\\inference.tsv.gz",
+          "bytes": 335893,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1\\environment.json",
+          "bytes": 436,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1\\config_used.json",
+          "bytes": 416,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A_seed1\\run_summary.json",
+          "bytes": 779,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "A20_seed0",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 4007,
+      "hvg": 500,
+      "train_fraction": 0.2,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 518.4696540001314,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20.log",
+      "log_exists": true,
+      "log_bytes": 85694,
+      "log_sha256": "56705E9C7623D962A1E062A54ED7ABCC4CD71224DD5B198157D157EB34F09600",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20\\inferred.h5ad",
+          "bytes": 2986399,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20\\model.pth",
+          "bytes": 6481122,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20\\loss.tsv",
+          "bytes": 16728,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20\\train_cells.tsv",
+          "bytes": 20861,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20\\validation_cells.tsv",
+          "bytes": 2089,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20\\inference.tsv.gz",
+          "bytes": 337497,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20\\environment.json",
+          "bytes": 813,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20\\config_used.json",
+          "bytes": 446,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_A20\\run_summary.json",
+          "bytes": 987,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "smoke_A",
+      "status": "RUN_OK",
+      "smoke": true,
+      "epochs": 3,
+      "cells": 200,
+      "hvg": 500,
+      "train_fraction": 0.8,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 14.272627800004557,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A.log",
+      "log_exists": true,
+      "log_bytes": 2762,
+      "log_sha256": "9D6DB538FC8328BC1C66A8DBE3D4871A096E4869D6F80CEEFC4F5D9B47D283C8",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A\\inferred.h5ad",
+          "bytes": 336263,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A\\model.pth",
+          "bytes": 1925986,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A\\loss.tsv",
+          "bytes": 164,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A\\train_cells.tsv",
+          "bytes": 4169,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A\\validation_cells.tsv",
+          "bytes": 425,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A\\inference.tsv.gz",
+          "bytes": 18320,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A\\environment.json",
+          "bytes": 436,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A\\config_used.json",
+          "bytes": 413,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\smoke_A\\run_summary.json",
+          "bytes": 771,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "B_1",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 15174,
+      "hvg": 2000,
+      "train_fraction": 0.01,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 349.26560649997555,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1.log",
+      "log_exists": true,
+      "log_bytes": 85770,
+      "log_sha256": "BF39028097B3BE4549712BD2788B308019966934FA6F7A9BB50CD5E7020EBBCA",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1\\inferred.h5ad",
+          "bytes": 28400960,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1\\model.pth",
+          "bytes": 103891746,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1\\loss.tsv",
+          "bytes": 15945,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1\\train_cells.tsv",
+          "bytes": 3809,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1\\validation_cells.tsv",
+          "bytes": 384,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1\\inference.tsv.gz",
+          "bytes": 1253800,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1\\environment.json",
+          "bytes": 813,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1\\config_used.json",
+          "bytes": 430,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_1\\run_summary.json",
+          "bytes": 1011,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "B_10",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 15174,
+      "hvg": 2000,
+      "train_fraction": 0.1,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 690.2413502999116,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10.log",
+      "log_exists": true,
+      "log_bytes": 85758,
+      "log_sha256": "66E900281375EBA8E5C2C43550DC62D7BB69848806AB2F9410BC0E2CA763F3C0",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10\\inferred.h5ad",
+          "bytes": 28391812,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10\\model.pth",
+          "bytes": 103824674,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10\\loss.tsv",
+          "bytes": 16113,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10\\train_cells.tsv",
+          "bytes": 37959,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10\\validation_cells.tsv",
+          "bytes": 3784,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10\\inference.tsv.gz",
+          "bytes": 1248011,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10\\environment.json",
+          "bytes": 814,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10\\config_used.json",
+          "bytes": 429,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_10\\run_summary.json",
+          "bytes": 1003,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "B_20",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 15174,
+      "hvg": 2000,
+      "train_fraction": 0.2,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 2032.9467492001131,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20.log",
+      "log_exists": true,
+      "log_bytes": 85562,
+      "log_sha256": "39CF2A4D10277ABAD12AFD7370C276CBD2ED54D63441621E644A6F1435366011",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20\\inferred.h5ad",
+          "bytes": 28383937,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20\\model.pth",
+          "bytes": 103855906,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20\\loss.tsv",
+          "bytes": 16092,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20\\train_cells.tsv",
+          "bytes": 75884,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20\\validation_cells.tsv",
+          "bytes": 7584,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20\\inference.tsv.gz",
+          "bytes": 1261571,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20\\environment.json",
+          "bytes": 436,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20\\config_used.json",
+          "bytes": 399,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_20\\run_summary.json",
+          "bytes": 817,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "B_40",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 15174,
+      "hvg": 2000,
+      "train_fraction": 0.4,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 1731.7986597998533,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40.log",
+      "log_exists": true,
+      "log_bytes": 85730,
+      "log_sha256": "4153E967D362D59B93BE2546E7C8D6071C8EDF7ED012577C871B8CDB896EEBDE",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40\\inferred.h5ad",
+          "bytes": 28366326,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40\\model.pth",
+          "bytes": 103837474,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40\\loss.tsv",
+          "bytes": 16087,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40\\train_cells.tsv",
+          "bytes": 151759,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40\\validation_cells.tsv",
+          "bytes": 15184,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40\\inference.tsv.gz",
+          "bytes": 1261824,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40\\environment.json",
+          "bytes": 815,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40\\config_used.json",
+          "bytes": 429,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_40\\run_summary.json",
+          "bytes": 1011,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "B_5",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 15174,
+      "hvg": 2000,
+      "train_fraction": 0.05,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 655.4700423001777,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5.log",
+      "log_exists": true,
+      "log_bytes": 85846,
+      "log_sha256": "6CE797C2CF8C860DBE158EAFF6FD5823DA98B6B98CDFC45C72E82CB6A5A7B9BC",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5\\inferred.h5ad",
+          "bytes": 28400833,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5\\model.pth",
+          "bytes": 103890466,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5\\loss.tsv",
+          "bytes": 15976,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5\\train_cells.tsv",
+          "bytes": 18984,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5\\validation_cells.tsv",
+          "bytes": 1884,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5\\inference.tsv.gz",
+          "bytes": 1258350,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5\\environment.json",
+          "bytes": 812,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5\\config_used.json",
+          "bytes": 430,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_5\\run_summary.json",
+          "bytes": 1012,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "B_60",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 15174,
+      "hvg": 2000,
+      "train_fraction": 0.6,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 2147.9761264999397,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60.log",
+      "log_exists": true,
+      "log_bytes": 85708,
+      "log_sha256": "98A948B34654DAA8C74CCFC2248CF74BD65E54490A0D62BA2CEAE24923280611",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60\\inferred.h5ad",
+          "bytes": 28363306,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60\\model.pth",
+          "bytes": 103821986,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60\\loss.tsv",
+          "bytes": 16069,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60\\train_cells.tsv",
+          "bytes": 227634,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60\\validation_cells.tsv",
+          "bytes": 22759,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60\\inference.tsv.gz",
+          "bytes": 1266429,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60\\environment.json",
+          "bytes": 813,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60\\config_used.json",
+          "bytes": 429,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_60\\run_summary.json",
+          "bytes": 998,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "B_80",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 15174,
+      "hvg": 2000,
+      "train_fraction": 0.8,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 3419.9980254999828,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80.log",
+      "log_exists": true,
+      "log_bytes": 86054,
+      "log_sha256": "01D55A917100A9019353AA9E14DD533AEA47A390248037A571541FC56B3CCCB4",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80\\inferred.h5ad",
+          "bytes": 28361358,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80\\model.pth",
+          "bytes": 103847138,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80\\loss.tsv",
+          "bytes": 16254,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80\\train_cells.tsv",
+          "bytes": 303509,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80\\validation_cells.tsv",
+          "bytes": 30359,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80\\inference.tsv.gz",
+          "bytes": 1268241,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80\\environment.json",
+          "bytes": 813,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80\\config_used.json",
+          "bytes": 429,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_80\\run_summary.json",
+          "bytes": 1009,
+          "content_loaded_this_audit": true
+        }
+      ]
+    },
+    {
+      "run": "B_95",
+      "status": "PARTIAL",
+      "smoke": false,
+      "epochs": 400,
+      "cells": 15174,
+      "hvg": 2000,
+      "train_fraction": 0.95,
+      "seed": 0,
+      "roundtrip_ptime_max_error": 0.0,
+      "training_seconds": 1518.8275487998035,
+      "local_output": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95",
+      "log_path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\full_B95.log",
+      "log_exists": true,
+      "log_bytes": 86238,
+      "log_sha256": "82769FEFD83B3C4F421D783F485C26059A6D1FB1194B036B0852153F7B11541B",
+      "model_and_h5ad_content_loaded": false,
+      "artifacts": [
+        {
+          "name": "inferred.h5ad",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95\\inferred.h5ad",
+          "bytes": 28375333,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "model.pth",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95\\model.pth",
+          "bytes": 103831522,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "loss.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95\\loss.tsv",
+          "bytes": 16100,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "train_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95\\train_cells.tsv",
+          "bytes": 360409,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "validation_cells.tsv",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95\\validation_cells.tsv",
+          "bytes": 18959,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "inference.tsv.gz",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95\\inference.tsv.gz",
+          "bytes": 1272229,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "environment.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95\\environment.json",
+          "bytes": 436,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "config_used.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95\\config_used.json",
+          "bytes": 400,
+          "content_loaded_this_audit": false
+        },
+        {
+          "name": "run_summary.json",
+          "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\subsamples\\B_95\\run_summary.json",
+          "bytes": 816,
+          "content_loaded_this_audit": true
+        }
+      ]
+    }
+  ],
+  "formal_model_count": 11,
+  "formal_epochs_sum": 4400,
+  "smoke_model_count": 1,
+  "figure_manifest_entries": 17,
+  "actual_figure_format_counts": {
+    "png": 17,
+    "pdf": 17,
+    "svg": 17
+  },
+  "small_file_hashes": [
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\README.md",
+      "bytes": 6842,
+      "sha256": "E241DE8CB1F7CDC444F71A2CD7468C8D641D8F6957CB74AC84062B4B5EB7C938"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\README_CN.md",
+      "bytes": 13959,
+      "sha256": "2A88C3A20455F78332A5AB9274487F73A091993F502A125E9B962C6CF2008418"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\config\\paper_A.json",
+      "bytes": 311,
+      "sha256": "4F02FB01F09DEE272AB0868F9BB30B2589CF0AFC8620541A7BF3084D4D6849DC"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\config\\paper_B20.json",
+      "bytes": 294,
+      "sha256": "3ACFF378F483543D5A7B1460BF5AAEA2864FCC18C631FE9C355A3E51F3911169"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\config\\plot.json",
+      "bytes": 358,
+      "sha256": "39112033056540659152410E2ED491CA30EA587BA726D93C72C83FD6568A705E"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\scripts\\run_sctour.py",
+      "bytes": 12075,
+      "sha256": "9FEF45BAC6A252E1DC41FEED5D4DF3CE2486EF92AD68859D76F7209CB0BA8570"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\scripts\\plot_figure2.py",
+      "bytes": 21173,
+      "sha256": "D0CB4EA526DBFDEE0D74D9261CB6EA20587E19BE6D7BA80CDCF28E3C27078FFE"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\scripts\\prepare_custom.py",
+      "bytes": 3548,
+      "sha256": "CB68865022B3F9FAB6BE5300FB0AA73FFA6236E6283855EB263CA19B4D362147"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\reports\\REPRODUCTION_CN.md",
+      "bytes": 18770,
+      "sha256": "3C3A270044DD818B6425ABA4057031B1F57941F8B59241C9A12F30206DCACA42"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\reports\\tests_final.log",
+      "bytes": 6348,
+      "sha256": "D18BF21B39E9226EEA50B30F9EB041A1DF8F18576071A48F301BCA993A5112B5"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\reports\\figure_visual_qa.json",
+      "bytes": 1276,
+      "sha256": "284689D71633198EA1C9E45CBEBD393C65BAFBFA68F432A50D7FA63AE8406532"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\figures\\figure_manifest.json",
+      "bytes": 17291,
+      "sha256": "D1C15D89FD3F32F4B0955009A2BFA60ECE70A654EDA2DC2BE8987716F07B508F"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\results\\run_comparison.tsv",
+      "bytes": 1704,
+      "sha256": "4E7FE74C03A11EE1BB45B30A21D1E99797EC7B613BDE6EECB60D390071ED243D"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\modules\\03_scTour\\results\\subsampling_robustness.tsv",
+      "bytes": 794,
+      "sha256": "58BEF2B30D16F45E311CDEDAF87CFD9A16D6E705ECF8919A7D5DC8295B3EC212"
+    },
+    {
+      "path": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\environments\\sctour-lock.txt",
+      "bytes": 1038,
+      "sha256": "9B2032B4A4CBDBD6FEA0E586F41C40578D3573373436F9C161F5C79928924B9A"
+    }
+  ],
+  "style_references": [
+    {
+      "name": "01_PI_UMAP_Main_v3.R",
+      "path": "C:\\Users\\13683\\Documents\\ChatGPT\\PI_Research\\scripts\\Step01_Data_Preparation\\confirmed_plots\\01_PI_UMAP_Main_v3.R",
+      "bytes": 12886,
+      "sha256": "33CFDC808B2EDB0D77943E05B9ADFB300D87F403E8D6840ADAF5589806126713",
+      "hash_matches_20261015_snapshot": true,
+      "content_read": true,
+      "executed": false
+    },
+    {
+      "name": "03_PI_UMAP_StyleB_v1.R",
+      "path": "C:\\Users\\13683\\Documents\\ChatGPT\\PI_Research\\scripts\\Step01_Data_Preparation\\confirmed_plots\\03_PI_UMAP_StyleB_v1.R",
+      "bytes": 9850,
+      "sha256": "4B491A4B935E8F284D61E9530715EE66FF84F05DE832B0E116A5A73D10E48C00",
+      "hash_matches_20261015_snapshot": true,
+      "content_read": true,
+      "executed": false
+    }
+  ],
+  "sctour_environment": {
+    "python": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\work\\sctour\\.venv\\Scripts\\python.exe",
+    "python_path_exists": true,
+    "python_version_in_pyvenv": "3.11.11",
+    "lock": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\environments\\sctour-lock.txt",
+    "setup": "C:\\Users\\13683\\Documents\\Codex\\2026-10-12\\files-pasted-by-the-user-codex\\outputs\\single-cell-dynamics-perturbation\\environments\\sctour-setup.ps1",
+    "stored_core_versions": {
+      "matplotlib": "3.8.4",
+      "torch": "2.5.1+cu121",
+      "anndata": "0.10.8",
+      "numpy": "1.26.4",
+      "torchdiffeq": "0.2.5",
+      "pandas": "2.2.3",
+      "scanpy": "1.9.8",
+      "scipy": "1.13.1",
+      "sctour": "1.0.0"
+    },
+    "current_import_test": "NOT_RUN",
+    "current_dependency_check": "NOT_RUN"
+  },
+  "scientific_assessment": {
+    "status": "PARTIAL",
+    "confirmed_from_stored_evidence": [
+      "11 formal400epoch model summaries and nonempty logs",
+      "A4007 and B15174cells per reported lineage criteria",
+      "Full eight B training fractions1/5/10/20/40/60/80/95",
+      "17scTour figure manifest entries,10main plus7diagnostic; files exist",
+      "12historical runner/cache/plot regression log PASS, separate1compositeboundaryPASS",
+      "Counts bridge and exact ID safeguards implemented, historical publicA bridge evidence"
+    ],
+    "not_established": [
+      "Strict reproduction of all paperS2 parameters",
+      "A20/A90 developmental monotonicity; stored evidence failed",
+      "B1/B5 terminal stage order; stored evidence failed",
+      "Bmultiple seeds or fullCPU retraining",
+      "PI/Healthy formalmodel analysis",
+      "Experimental lineage, fate or interventioncausality",
+      "Present environment imports or modelreload readiness"
+    ],
+    "reuse": [
+      "OfficialscTour1.0.0runner/config and sourceSHA provenance",
+      "Sharedrawcounts/MEX/stringID validation",
+      "Saved inference vectors/time/embedding by user-approved output paths",
+      "Standalonepanelrenderer and plot.json with source/figure manifest",
+      "Storedfailureandpartialresults without relabeling",
+      "ExactPI_Research style scripts as readability/preview/export patterns"
+    ],
+    "preserve": [
+      "All11formalmodeloutputs,smoke,rawdownloads,preparedcounts,andoldlogs",
+      "A20/A90nonmonotonicfailureandB1/B5counterexamples",
+      "Existingcoordinates,cellIDs,annotationsandcolors",
+      "Cleanpublishedsingle-cell-dynamics-perturbationandregvelo-grn-dynamicsmain",
+      "DirtyDesktop/scriptsRandResearch_OSwork",
+      "PI01usesv3annotation;PI03usesv1and12panels—noinferredannotationupgrade"
+    ]
+  },
+  "minimal_workspace": {
+    "recommendation": "Do not create or migrate a new repository in first-round audit. Keep source/module links to existing independent published repositories. If user later confirms a standalone trajectory/fate toolkit, create only a small orchestration/docs/figure-script workspace with explicit external roots and fresh per-Figure output paths.",
+    "proposed_location": "Current task work/trajectory_review for audit only",
+    "existing_sctour_adapter": "External root + modules/03_scTour/scripts; no copied datasets/models/environments",
+    "existing_regvelo_adapter": "Standalone outputs/regvelo-grn-dynamics, not reverted research-scripts-r module",
+    "style_adaptation": "Readable top explanation → centralized Chinese parameters → explicit packages → validate light saved inputs → core per-Figure steps → interactive preview → opt-in export; existing scTour Agg CLI needs a future separate interactive layer, not unapproved replacement",
+    "new_toolkit_not_found": "No existing single-cell-trajectory-fate-toolkit README/path in bounded filename scan; not a claim about entire disk"
+  },
+  "read_only_preservation": {
+    "status": "PASS",
+    "small_files_and_logs_rehashed": 29,
+    "changed_paths": [],
+    "git_repositories_rechecked": 7,
+    "changed_git_snapshots": [],
+    "scope": "Audit start snapshot versus end recheck; matrices and model contents not opened or hashed"
+  },
+  "proposal_review": {
+    "documents": [
+      "03_REPOSITORY_PROPOSAL.md",
+      "04_COMBINATION_FEASIBILITY.md",
+      "05_ENVIRONMENT_AND_PRIORITY.md",
+      "06_FIRST_BATCH_AND_ACCEPTANCE.md"
+    ],
+    "path": "outputs/trajectory_fate_review_2026-10-19",
+    "status": "PASS_WITH_MINOR_CLARIFICATIONS",
+    "no_new_implementation_or_execution_claims": true,
+    "confirmation_pending_for_major_choices": true,
+    "sctour_partial_status_preserved": true,
+    "vector_identity_not_unresolved": true,
+    "blocking_findings": [],
+    "optional_clarifications": [
+      "Add exact scTour canonical repository/env lock paths from local audit",
+      "Mention PI Main v3 and StyleB v1 annotation versions must remain distinct",
+      "State existing scTour Agg CLI needs a separate future interactive Figure layer; do not imply present script already supports VS Code plot preview",
+      "Keep R per-method package-library selection explicit if later 00_Start.R supports multiple historical dependencies"
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "method": "Slingshot",
+  "id": "slingshot",
+  "language": "R",
+  "official_sources": [
+    {
+      "label": "Official GitHub",
+      "url": "https://github.com/kstreet13/slingshot",
+      "purpose": "原作者/官方实现代码与发行信息"
+    },
+    {
+      "label": "Bioconductor 3.23",
+      "url": "https://bioconductor.org/packages/3.23/bioc/html/slingshot.html",
+      "purpose": "release/依赖/许可"
+    },
+    {
+      "label": "Release vignette",
+      "url": "https://bioconductor.org/packages/3.23/bioc/vignettes/slingshot/inst/doc/vignette.html",
+      "purpose": "最小输入、principal curves及小例子"
+    },
+    {
+      "label": "Original paper record",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29914354/",
+      "purpose": "论文题名与DOI"
+    }
+  ],
+  "bioconductor": {
+    "package": "slingshot",
+    "release": "3.23",
+    "version": "2.20.0",
+    "release_R": "4.6",
+    "url": "https://bioconductor.org/packages/3.23/bioc/html/slingshot.html",
+    "package_doi": "10.18129/B9.bioc.slingshot"
+  },
+  "license": {
+    "identifier": "Artistic-2.0",
+    "evidence": "DESCRIPTION及BioC3.23页面；GitHub license API null",
+    "source_url": "https://raw.githubusercontent.com/kstreet13/slingshot/3fa552f37148a24a9ef4f7bb5ec00e594a39d8cf/DESCRIPTION"
+  },
+  "environment": {
+    "declared_minimum": "R>=4.0；BioC3.23对应R4.6",
+    "dependencies": [
+      "princurve>=2.0.4",
+      "TrajectoryUtils",
+      "igraph",
+      "matrixStats",
+      "S4Vectors",
+      "SingleCellExperiment",
+      "SummarizedExperiment"
+    ],
+    "system_constraints": [
+      "BioC提供Windows/macOS二进制；本机兼容性未测试。",
+      "算法在已有低维矩阵上运行，不需要GPU；上游降维/聚类软件不属于其最小输入。",
+      "源码编译依赖及R/BioC版本需配套；不要将GitHub旧DESCRIPTION版本当最新BioC。"
+    ]
+  },
+  "input": {
+    "matrix": "cell×dimension低维坐标（如已有PCA）；cluster labels与行顺序对应",
+    "object": "SingleCellExperiment或低维矩阵+聚类标签",
+    "upstream": "复用已确认embedding/cluster；start.clus和end.clus可结合科学依据指定",
+    "spliced_unspliced_required": false
+  },
+  "outputs": [
+    "cluster-level MST及lineage cluster序列",
+    "同时principal curves",
+    "cell×lineage pseudotime与curve weights"
+  ],
+  "representative_figures": [
+    {
+      "name": "低维散点叠加MST与lineage曲线",
+      "functions": [
+        "plot",
+        "lines(SlingshotDataSet)"
+      ]
+    },
+    {
+      "name": "按lineage pseudotime着色及沿轨迹表达图",
+      "functions": [
+        "slingPseudotime",
+        "slingCurveWeights"
+      ]
+    }
+  ],
+  "tutorials": [
+    {
+      "url": "https://bioconductor.org/packages/3.23/bioc/vignettes/slingshot/inst/doc/vignette.html",
+      "entry": "官方140点分叉示例与300细胞模拟counts示例（均明确是模拟）"
+    }
+  ],
+  "example_data": [
+    {
+      "name": "slingshotExample",
+      "url": "https://bioconductor.org/packages/3.23/bioc/vignettes/slingshot/inst/doc/vignette.html#datasets",
+      "access": "data(\"slingshotExample\")；示例rd为140×2，cl长140",
+      "smallness": "官方小型接口/画图例子；模拟数据不作为真实科学结果",
+      "data_kind": "AUTHOR_SIMULATED_EXAMPLE",
+      "download_status": "NOT_TESTED"
+    }
+  ],
+  "scientific_boundaries": [
+    "对已有聚类与降维依赖明显；稀少/缺失中间状态可能改变MST。",
+    "主要为树样分化及分叉的光滑lineages，不应宣称已证明循环或汇聚谱系。",
+    "curve weights是曲线归属权重，不是经实验校准的命运概率；pseudotime不是时间或因果证据。"
+  ],
+  "version_caveats": [
+    "GitHub main固定SHA DESCRIPTION为2.7.0（2023），BioC3.23为2.20.0；README提到的Python实现不替代本次审查的官方R包。"
+  ],
+  "paper": {
+    "title": "Slingshot: cell lineage and pseudotime inference for single-cell transcriptomics",
+    "doi": "10.1186/s12864-018-4772-0",
+    "doi_url": "https://doi.org/10.1186/s12864-018-4772-0",
+    "journal": "BMC Genomics",
+    "published_date_parts": [
+      [
+        2018,
+        6,
+        19
+      ]
+    ],
+    "crossref_url": "https://api.crossref.org/works/10.1186%2Fs12864-018-4772-0",
+    "verification_status": "VERIFIED_CROSSREF_PRIMARY_METADATA",
+    "checked_date": "2026-10-19"
+  },
+  "code": {
+    "github_url": "https://github.com/kstreet13/slingshot",
+    "sha_asof_date": "3fa552f37148a24a9ef4f7bb5ec00e594a39d8cf",
+    "commit_date": "2023-03-29T19:36:15Z",
+    "commit_url": "https://github.com/kstreet13/slingshot/commit/3fa552f37148a24a9ef4f7bb5ec00e594a39d8cf",
+    "query_url": "https://api.github.com/repos/kstreet13/slingshot/commits?until=2026-10-19T23:59:59Z&per_page=1",
+    "release_query_url": "https://api.github.com/repos/kstreet13/slingshot/releases?per_page=10",
+    "latest_nonprerelease_in_queried_10_releases": null,
+    "checked_date": "2026-10-19",
+    "metadata_url_at_sha": "https://raw.githubusercontent.com/kstreet13/slingshot/3fa552f37148a24a9ef4f7bb5ec00e594a39d8cf/DESCRIPTION",
+    "description_version_at_sha": "2.7.0"
+  },
+  "status": {
+    "installation": "NOT_TESTED",
+    "execution": "NOT_TESTED",
+    "example_run": "NOT_TESTED",
+    "real_data_analysis": "NOT_TESTED"
+  },
+  "new_installation_status": "NOT_TESTED",
+  "small_sample_validation_status": "NOT_TESTED",
+  "runtime_status": "NOT_TESTED",
+  "scientific_validation_status": "NOT_TESTED",
+  "checked_date": "2026-10-19",
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "对已有聚类与降维依赖明显；稀少/缺失中间状态可能改变MST。",
+    "主要为树样分化及分叉的光滑lineages，不应宣称已证明循环或汇聚谱系。",
+    "curve weights是曲线归属权重，不是经实验校准的命运概率；pseudotime不是时间或因果证据。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

@@ -1,0 +1,17 @@
+Round3 project: C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/outputs/single-cell-trajectory-fate-toolkit ; serial cores= 1 
+TEST association 
+TEST association_eigen_sensitivity 
+TEST startVsEnd 
+TEST pattern 
+TEST diffEnd 
+TEST earlyDE_knots1_2 
+                           test genes valid_p significant
+1                   association   240     114         110
+2 association_eigen_sensitivity   240     240         240
+3                    startVsEnd   240     240         230
+4                       pattern   240     240         235
+5                       diffEnd   240     240         206
+6              earlyDE_knots1_2   240     240         170
+Error in draw() : object 'celltype' not found
+Calls: source ... export_plot -> tryCatch -> tryCatchList -> draw -> factor
+Execution halted

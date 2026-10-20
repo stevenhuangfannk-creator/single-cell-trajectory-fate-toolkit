@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-20",
+  "candidate_files_before_audit_record": 422,
+  "prohibited_or_large_files": [],
+  "credential_pattern_findings_paths_only": [],
+  "README_images_valid_and_in_candidates": 4,
+  "protected_files_checked": 275,
+  "protected_files_changed": [],
+  "all_RDS_ignored": true,
+  "status": "PASS"
+}

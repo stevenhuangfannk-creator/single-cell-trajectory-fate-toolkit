@@ -1,0 +1,7 @@
+test	genes	valid_p	significant
+association	240	114	110
+association_eigen_sensitivity	240	240	240
+startVsEnd	240	240	230
+pattern	240	240	235
+diffEnd	240	240	206
+earlyDE_knots1_2	240	240	170

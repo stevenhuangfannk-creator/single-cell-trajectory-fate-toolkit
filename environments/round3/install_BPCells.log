@@ -1,0 +1,43 @@
+* installing to library 'C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library'
+* installing *source* package 'BPCells' ...
+** this is package 'BPCells' version '0.3.1'
+** using staged installation
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/c/PROGRA~1/Git/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+Skipping install count metrics
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+Testing hdf5 by compiling example program...
+Found working hdf5
+HDF5_CFLAGS=''
+HDF5_LIBS='-lhdf5 -lz -lsz'
+
+Testing C++17 filesystem feature support...
+
+Unable to compile program with C++17 std::filesystem.
+Please install a newer compiler version and set CC and CXX in ~/.R/Makevars
+ERROR: configuration failed for package 'BPCells'
+* removing 'C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library/BPCells'

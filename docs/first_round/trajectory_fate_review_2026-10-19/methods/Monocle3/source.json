@@ -1,0 +1,172 @@
+{
+  "method": "Monocle3",
+  "id": "monocle3",
+  "language": "R",
+  "official_sources": [
+    {
+      "label": "Official GitHub",
+      "url": "https://github.com/cole-trapnell-lab/monocle3",
+      "purpose": "原作者/官方实现代码与发行信息"
+    },
+    {
+      "label": "Installation",
+      "url": "https://cole-trapnell-lab.github.io/monocle3/docs/installation/",
+      "purpose": "推荐R/BioC及系统编译要求"
+    },
+    {
+      "label": "Getting started",
+      "url": "https://cole-trapnell-lab.github.io/monocle3/docs/getting_started/",
+      "purpose": "CDS输入与示例数据"
+    },
+    {
+      "label": "Trajectory tutorial",
+      "url": "https://cole-trapnell-lab.github.io/monocle3/docs/trajectories/",
+      "purpose": "partition、root及不可达细胞"
+    },
+    {
+      "label": "Original article",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6434952/",
+      "purpose": "2019年器官发生论文及Monocle3方法"
+    }
+  ],
+  "bioconductor": null,
+  "license": {
+    "identifier": "MIT + file LICENSE",
+    "evidence": "DESCRIPTION；LICENSE注明2019 Cole Trapnell，GitHub自动分类Other不代表禁止复用",
+    "source_url": "https://raw.githubusercontent.com/cole-trapnell-lab/monocle3/536f1033d6de7c957f26a1f403f81efbd825e0db/DESCRIPTION"
+  },
+  "environment": {
+    "declared_minimum": "固定SHA DESCRIPTION R>=4.0.0；安装页为最新功能推荐R>=4.4.1、BioC3.21、monocle3>=1.4.25",
+    "dependencies": [
+      "SingleCellExperiment",
+      "Biobase",
+      "BPCells（GitHub remote）",
+      "batchelor",
+      "HDF5Array",
+      "DelayedArray",
+      "igraph>=1.5.0",
+      "leidenbase>=0.1.25",
+      "uwot>=0.1.8",
+      "sf",
+      "spdep",
+      "Rcpp",
+      "speedglm（GitHub remote）"
+    ],
+    "system_constraints": [
+      "NeedsCompilation=yes；BPCells需要HDF5开发库，sf可能需要GDAL/GEOS/PROJ；具体包版本与OS决定源码构建要求。",
+      "官方安装页提及Mac Xcode与gfortran问题；Python/reticulate从monocle3>=0.2.0起不再是必需。",
+      "BPCells磁盘矩阵保存应使用save_monocle_objects/load_monocle_objects，单独saveRDS可能遗失外部矩阵目录。",
+      "文档的R/BioC推荐组合与DESCRIPTION最低版本不同，均不是完整锁定环境，不能据此保证Windows或VS Code可运行。"
+    ]
+  },
+  "input": {
+    "matrix": "gene×cell绝对转录本/UMI counts；Matrix稀疏矩阵优先",
+    "object": "cell_data_set(SingleCellExperiment派生)；cell_metadata行名=矩阵列名，gene_metadata行名=矩阵行名且含gene_short_name",
+    "upstream": "保留既有注释、批次与时间信息；learn_graph的partition/UMAP和order_cells roots需记录",
+    "spliced_unspliced_required": false
+  },
+  "outputs": [
+    "partition内principal_graph",
+    "根锚定pseudotime（根不可达时Inf）",
+    "graph_test或fit_models的基因关联/回归统计"
+  ],
+  "representative_figures": [
+    {
+      "name": "UMAP上principal graph并按注释/partition/pseudotime着色",
+      "functions": [
+        "plot_cells"
+      ]
+    },
+    {
+      "name": "基因表达与轨迹或3D图",
+      "functions": [
+        "plot_cells",
+        "plot_cells_3d"
+      ]
+    }
+  ],
+  "tutorials": [
+    {
+      "url": "https://cole-trapnell-lab.github.io/monocle3/docs/trajectories/",
+      "entry": "Packer胚胎神经元subset的轨迹教程"
+    }
+  ],
+  "example_data": [
+    {
+      "name": "官方C. elegans L2表达及配套metadata",
+      "url": "https://depts.washington.edu:/trapnell-lab/software/monocle3/celegans/data/cao_l2_expression.rds",
+      "companion_urls": [
+        "https://depts.washington.edu:/trapnell-lab/software/monocle3/celegans/data/cao_l2_colData.rds",
+        "https://depts.washington.edu:/trapnell-lab/software/monocle3/celegans/data/cao_l2_rowData.rds"
+      ],
+      "access": "getting_started中的原始URL，保留官方冒号写法；本轮只读教程未请求RDS",
+      "smallness": "NOT_VERIFIED；不能将整份L2或胚胎数据称作轻量toy；获准后应明确选真实subset做小测试",
+      "data_kind": "REAL_PUBLIC_EXAMPLE",
+      "download_status": "NOT_TESTED"
+    }
+  ],
+  "scientific_boundaries": [
+    "partition可断开，每个需有效root；不要为得到连续树而擅自合并不相干细胞类型。",
+    "pseudotime是图上相对距离，不是实测时间、速度或谱系追踪。",
+    "UMAP/邻域/partition与根会影响结构；graph_test自相关不能证明TF调控或因果。"
+  ],
+  "version_caveats": [
+    "可核实正式GitHub release为v1.4.27（2026-05-05）；官方历史论文API与当前API不能混写。",
+    "官方安装页未与R4.6/BioC3.23同步更新；本轮不替用户决定环境迁移。"
+  ],
+  "paper": {
+    "title": "The single-cell transcriptional landscape of mammalian organogenesis",
+    "doi": "10.1038/s41586-019-0969-x",
+    "doi_url": "https://doi.org/10.1038/s41586-019-0969-x",
+    "journal": "Nature",
+    "published_date_parts": [
+      [
+        2019,
+        2,
+        20
+      ]
+    ],
+    "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41586-019-0969-x",
+    "verification_status": "VERIFIED_CROSSREF_PRIMARY_METADATA",
+    "checked_date": "2026-10-19"
+  },
+  "code": {
+    "github_url": "https://github.com/cole-trapnell-lab/monocle3",
+    "sha_asof_date": "536f1033d6de7c957f26a1f403f81efbd825e0db",
+    "commit_date": "2026-05-04T22:44:38Z",
+    "commit_url": "https://github.com/cole-trapnell-lab/monocle3/commit/536f1033d6de7c957f26a1f403f81efbd825e0db",
+    "query_url": "https://api.github.com/repos/cole-trapnell-lab/monocle3/commits?until=2026-10-19T23:59:59Z&per_page=1",
+    "release_query_url": "https://api.github.com/repos/cole-trapnell-lab/monocle3/releases?per_page=10",
+    "latest_nonprerelease_in_queried_10_releases": {
+      "tag_name": "v1.4.27",
+      "published_at": "2026-05-05T00:05:13Z",
+      "html_url": "https://github.com/cole-trapnell-lab/monocle3/releases/tag/v1.4.27"
+    },
+    "checked_date": "2026-10-19",
+    "metadata_url_at_sha": "https://raw.githubusercontent.com/cole-trapnell-lab/monocle3/536f1033d6de7c957f26a1f403f81efbd825e0db/DESCRIPTION",
+    "description_version_at_sha": "1.4.27"
+  },
+  "status": {
+    "installation": "NOT_TESTED",
+    "execution": "NOT_TESTED",
+    "example_run": "NOT_TESTED",
+    "real_data_analysis": "NOT_TESTED"
+  },
+  "new_installation_status": "NOT_TESTED",
+  "small_sample_validation_status": "NOT_TESTED",
+  "runtime_status": "NOT_TESTED",
+  "scientific_validation_status": "NOT_TESTED",
+  "checked_date": "2026-10-19",
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "partition可断开，每个需有效root；不要为得到连续树而擅自合并不相干细胞类型。",
+    "pseudotime是图上相对距离，不是实测时间、速度或谱系追踪。",
+    "UMAP/邻域/partition与根会影响结构；graph_test自相关不能证明TF调控或因果。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

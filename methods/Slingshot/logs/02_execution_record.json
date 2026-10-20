@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-10-19T14:40:51.9287928Z",
+  "end_utc": "2026-10-19T14:41:01.8584899Z",
+  "exit_code": -1073741819,
+  "peak_sampled_working_set_bytes": 7274496,
+  "sampling_interval_ms": 150,
+  "threads_requested": 1,
+  "locale": "English_United States.utf8",
+  "scope": "Process working set sampled; not a strict memory reservation"
+}

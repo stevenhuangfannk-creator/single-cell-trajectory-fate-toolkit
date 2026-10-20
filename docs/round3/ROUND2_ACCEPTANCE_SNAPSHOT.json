@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local Slingshot official minimal simulated example and teaching-platform first increment",
+  "status": "PASS_WITH_EXPLICIT_SCOPE",
+  "methods_registered": 14,
+  "methods_newly_run": 1,
+  "Slingshot": {
+    "INSTALL_OK": "PASS",
+    "INPUT_OK": "PASS",
+    "RUN_OK": "PASS",
+    "FIGURE_OK": "PASS",
+    "tutorial_cn": "COMPLETE",
+    "figures": 6,
+    "formats_per_figure": 3,
+    "official_input_cells": 140,
+    "lineages": 2,
+    "full_run_exit_code": 0,
+    "fresh_session_replot_exit_code": 0,
+    "user_entry_repeat_numeric_tsv_identical": true
+  },
+  "local_links_checked": 306,
+  "broken_links": 0,
+  "first_round_files_preserved_byte_identical": 47,
+  "combination_tutorials": 6,
+  "combination_execution": "NOT_TESTED",
+  "PI_case_study": "DESIGN_ONLY; no real data run",
+  "historical_scTour_status": "PARTIAL; preserved",
+  "remote_repository_created": false,
+  "remote_modified": false,
+  "old_environments_modified": false,
+  "remaining_work": "tradeSeq, Monocle3 and other methods require their own full guides and actual reproductions; current cards retain source review only",
+  "scope_limits": "Not a full paper/vignette reproduction; no biological validation; default curve weights are not fate probabilities"
+}

@@ -1,0 +1,52 @@
+{
+  "source_GAF": "https://current.geneontology.org/annotations/wb.gaf.gz",
+  "source_OBO": "https://purl.obolibrary.org/obo/go/go-basic.obo",
+  "ontology_version": "releases/2026-07-26",
+  "GAF_header": [
+    "!gaf-version: 2.2",
+    "!",
+    "!generated-by: GOC",
+    "!",
+    "!date-generated: 2026-05-21T09:09",
+    "!",
+    "!Header from source association file:",
+    "!=================================",
+    "!",
+    "!generated-by: GOC",
+    "!",
+    "!date-generated: 2026-05-20T10:18",
+    "!",
+    "!Header from wb source association file:",
+    "!=================================",
+    "!generated-by: UniProt",
+    "!date-generated: 2026-04-30 09:19",
+    "!go-version: http://purl.obolibrary.org/obo/go/releases/2026-04-27/extensions/go-plus.ofn",
+    "!=================================",
+    "!",
+    "!Header copied from paint_wb_valid.gaf",
+    "!=================================",
+    "!Created on Mon Jan  5 19:02:40 2026.",
+    "!generated-by: PANTHER",
+    "!date-generated: 2026-01-05",
+    "!PANTHER version: v.19.0.",
+    "!GO version: 2025-10-05.",
+    "!",
+    "!=================================",
+    "!",
+    "!Documentation about this header can be found here: https://github.com/geneontology/go-site/blob/master/docs/gaf_validation.md",
+    "!"
+  ],
+  "GAF_rows_read": 103852,
+  "filter": "C. elegans taxon6239; BP; NOT excluded; IEA excluded; is_a + part_of ancestors; unique gene-term pairs",
+  "license": "GO CC BY 4.0; preserve GO/WormBase attribution; source files cached outside repository",
+  "files": {
+    "wb.gaf.gz": {
+      "bytes": 3849912,
+      "sha256": "bda92f6642cc68a16e485ba32eb5890320855895185b9cbcd448f52cf698fed2"
+    },
+    "go-basic.obo": {
+      "bytes": 32227785,
+      "sha256": "b08d45b268b8c24ccb2513dbbbc7d4df9f6521c099b413f79eb31e06e0fa3bcc"
+    }
+  }
+}

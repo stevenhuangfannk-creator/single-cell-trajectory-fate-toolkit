@@ -1,0 +1,266 @@
+{
+  "new_figures": 19,
+  "new_image_files": 57,
+  "format_validation": [
+    {
+      "figure": "methods/tradeSeq/figures/T01_official_trajectory.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "52e2e5e76403830a16597c3767810012b87071e53f2e243d1233a2928a6f65a6",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/tradeSeq/figures/T02_expression_smoothers.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "c7a74ff3e58aec3a2a73a20be1f0af7b7d9bedcbe65c48a78450dcc6cd79e711",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/tradeSeq/figures/T03_dynamic_gene_heatmap.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "2c6218ffe27c1d2bf8b4368f00886b0c328d4947fb9eba84e8c8efc75c5e3fd3",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/tradeSeq/figures/T04_lineage_pattern_difference.png",
+      "png_size": [
+        1800,
+        1080
+      ],
+      "png_sha256": "e237210d7c1f4053435b38e333326f5d2c057071294b3b0a48147f6d43572df2",
+      "pdf_size_points": [
+        720.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/tradeSeq/figures/T05_test_summary.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "1c41dbb45aaaf980f6f67f930aeebe5edcd68b44c57210e4bc8d50262e5d0101",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/Monocle3/figures/M01_celltypes_principal_graph.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "8d520f723eec9a16f63857ff8606583a6a73d48110d4eaeb8182c9653d332209",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/Monocle3/figures/M02_partitions.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "9d5e0effda72b5c73569c395799bdc1954587e8d7d345e9ac93f51026dd1499d",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/Monocle3/figures/M03_rooted_pseudotime.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "36333e55ca70e55c701e092cdf4c8c3f21ac655eb014835f03d1168afe402ae6",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/Monocle3/figures/M04_embryo_time.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "00494d0d414a8e4ed0f6f8cad7a8addb3ba18ad96ff7a031370c2149fbdd5a67",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/Monocle3/figures/M05_dynamic_gene_maps.png",
+      "png_size": [
+        1800,
+        1260
+      ],
+      "png_sha256": "2aab593bf6ea14ae1ddd29b967c2dbc296c128a55d49927142f0ff419f007a9e",
+      "pdf_size_points": [
+        720.0,
+        504.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "methods/Monocle3/figures/M06_gene_expression_pseudotime.png",
+      "png_size": [
+        1800,
+        1440
+      ],
+      "png_sha256": "a5b3b17518859e93f08992ca0ed7ec98ee7772513ad68557fa96456f70a26c36",
+      "pdf_size_points": [
+        720.0,
+        576.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "combinations/Slingshot_tradeSeq_Monocle3/figures/C01_independent_trajectory_comparison.png",
+      "png_size": [
+        2160,
+        1044
+      ],
+      "png_sha256": "e5bdfe9a9e5da24b95f7a4c0f3c82860fe821e86f2bf3e76fffcf33333f42296",
+      "pdf_size_points": [
+        864.0,
+        417.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "combinations/Slingshot_tradeSeq_Monocle3/figures/C02_per_lineage_pseudotime.png",
+      "png_size": [
+        1800,
+        990
+      ],
+      "png_sha256": "ed188ce71471cdb44e23c0a4e6f152ca43305010b79d76271dffeba4122b8a87",
+      "pdf_size_points": [
+        720.0,
+        396.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "combinations/Slingshot_tradeSeq_Monocle3/figures/C03_pseudotime_difference.png",
+      "png_size": [
+        1980,
+        1080
+      ],
+      "png_sha256": "078c5b56ff941f9362b98ece3cc97f6c4b97485e94a33e277f03898ec482a3ac",
+      "pdf_size_points": [
+        792.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "combinations/Slingshot_tradeSeq_Monocle3/figures/C04_tradeSeq_lineage_smoothers.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "7d2acb7c7391c2e0fb8805edb34be6052e1fde322f182fc561202042917a0637",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "combinations/Slingshot_tradeSeq_Monocle3/figures/C05_dynamic_gene_heatmap.png",
+      "png_size": [
+        1800,
+        1260
+      ],
+      "png_sha256": "a94edb1cf985251f9c3b0b66ec127fb08c941b616ba843069e6b9f696cca0fda",
+      "pdf_size_points": [
+        720.0,
+        504.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "combinations/Slingshot_tradeSeq_Monocle3/figures/C06_joint_gene_test_comparison.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "b21a2d12968b25acd56b07f1b50b29406be83b2edec892d28388d5a50868570f",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "combinations/Slingshot_tradeSeq_Monocle3/figures/C07_GO_dynamic_programs.png",
+      "png_size": [
+        2160,
+        1260
+      ],
+      "png_sha256": "2e2ef9322a5147fce03dd587e09893e883c5a7fa8efce841fccd44f395f02629",
+      "pdf_size_points": [
+        864.0,
+        504.0
+      ],
+      "formats_present": true
+    },
+    {
+      "figure": "combinations/Slingshot_tradeSeq_Monocle3/sensitivity_no_alignment/figures/C08_no_alignment_sensitivity.png",
+      "png_size": [
+        1440,
+        1080
+      ],
+      "png_sha256": "22ebfda86ae1299354be77cdf578014bd1a0f0f19d553bdea5fec14b232955d9",
+      "pdf_size_points": [
+        576.0,
+        432.0
+      ],
+      "formats_present": true
+    }
+  ],
+  "old_Slingshot_files_checked": 79,
+  "old_Slingshot_changed": [],
+  "numeric_tables_repeated": 47,
+  "numeric_tables_changed": [],
+  "SVG_render": {
+    "all": 19,
+    "status": "PASS"
+  },
+  "visual_review": {
+    "PNG": "All 19 viewed via 3 contact sheets; selected originals inspected",
+    "PDF_SVG": "All 19 PDFs and 19 SVGs rasterized; representative vector renders reviewed",
+    "notes": "White background, legends/axes present, no placeholder or blank scientific figures"
+  }
+}

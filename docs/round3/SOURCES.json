@@ -1,0 +1,97 @@
+{
+  "retrieved_date": "2026-10-19",
+  "checksums": "Local SHA256 for source retrieval; binary ZIPs additionally checked against repository MD5 metadata",
+  "failed_routes": [
+    "statomics.github.io and cole-trapnell-lab.github.io DNS unavailable; official raw sources used",
+    "unregistered Monocle3 R-universe routes empty/404",
+    "BPCells R-universe current build failure; source release built locally"
+  ],
+  "sources": [
+    {
+      "label": "tradeSeq official GitHub vignette",
+      "url": "https://raw.githubusercontent.com/statOmics/tradeSeq/02a9050674d8f0c0ebae8688fa9326dd76360d7d/vignettes/tradeSeq.Rmd",
+      "bytes": 17951,
+      "sha256": "2e2665a6c282397952d7c3a5933823c1bea4f9ba0ccfc9f88bc04abf0ec8a3b7"
+    },
+    {
+      "label": "tradeSeq fitting vignette",
+      "url": "https://raw.githubusercontent.com/statOmics/tradeSeq/master/vignettes/fitGAM.Rmd",
+      "bytes": 14934,
+      "sha256": "22e46e79b955e85a28fb9053aef03076385ba6fb659a5fcc9798fb77adf64a2a"
+    },
+    {
+      "label": "Bioconductor release page",
+      "url": "https://bioconductor.org/packages/3.23/bioc/html/tradeSeq.html",
+      "bytes": 35406,
+      "sha256": "8ed993e4fc8e5767689b604e41c474668a96774d670839eff580b98d196867c9"
+    },
+    {
+      "label": "Monocle3 official installation source",
+      "url": "https://raw.githubusercontent.com/cole-trapnell-lab/monocle3/gh-pages/docs/installation.html",
+      "bytes": 8444,
+      "sha256": "97973932283b44ad141fc06ba0f5e17ab8c147a9f5e9d200b67cc7c65d9e2098"
+    },
+    {
+      "label": "Monocle3 official trajectory source",
+      "url": "https://raw.githubusercontent.com/cole-trapnell-lab/monocle3/gh-pages/docs/trajectories.html",
+      "bytes": 21803,
+      "sha256": "810ebedb1978df948dd77c548224dbce0cba4b33ac390ffdbd3ac1335654f9e5"
+    },
+    {
+      "label": "Monocle3 official getting started source",
+      "url": "https://raw.githubusercontent.com/cole-trapnell-lab/monocle3/gh-pages/docs/getting_started.html",
+      "bytes": 15777,
+      "sha256": "6bfe3fa5d5b25c9bdd39fb3a9bd4e9b835241442b0915d577ca0ecd965f02b42"
+    },
+    {
+      "label": "Monocle3 release archive",
+      "url": "https://codeload.github.com/cole-trapnell-lab/monocle3/tar.gz/refs/tags/v1.4.27",
+      "bytes": 3913425,
+      "sha256": "34618523d3a96557af3e8980f88ddd42df4134ae0f8043d5f9ed44df29716952"
+    },
+    {
+      "label": "BPCells release archive",
+      "url": "https://codeload.github.com/bnprks/BPCells/tar.gz/refs/tags/v0.3.1",
+      "bytes": 4185716,
+      "sha256": "76f55ec77c9784d4b4ad80e7a0fc5c8139fa8101857edd5772ece70cbd8ae584"
+    },
+    {
+      "label": "Rtools full local toolchain",
+      "url": "https://cloud.r-project.org/bin/windows/Rtools/rtools45/files/rtools45-toolchain-libs-full-6768.tar.zst",
+      "bytes": 384123469,
+      "sha256": "6b5cece3bf2e5a7923f466ca7d521a55a3568922fef0690c764b901e4b704099"
+    },
+    {
+      "label": "MSYS make",
+      "url": "https://repo.msys2.org/msys/x86_64/make-4.4.1-2-x86_64.pkg.tar.zst",
+      "bytes": 519783,
+      "sha256": "2408af61717dae87b00c855b132769a125c708907fc94a46bb16dae076113e5c"
+    },
+    {
+      "label": "GO citation and CC BY 4.0 policy",
+      "url": "https://geneontology.org/docs/go-citation-policy/",
+      "bytes": 24216,
+      "sha256": "111200098f2b91fe35186405126241dba9e084a16ea79f435e7ed0ba09dd6c02"
+    }
+  ],
+  "Monocle3_release_ref": {
+    "ref": "refs/tags/v1.4.27",
+    "node_id": "MDM6UmVmMTY3NDQwMzQyOnJlZnMvdGFncy92MS40LjI3",
+    "url": "https://api.github.com/repos/cole-trapnell-lab/monocle3/git/refs/tags/v1.4.27",
+    "object": {
+      "sha": "536f1033d6de7c957f26a1f403f81efbd825e0db",
+      "type": "commit",
+      "url": "https://api.github.com/repos/cole-trapnell-lab/monocle3/git/commits/536f1033d6de7c957f26a1f403f81efbd825e0db"
+    }
+  },
+  "BPCells_release_ref": {
+    "ref": "refs/tags/v0.3.1",
+    "node_id": "MDM6UmVmMzkyMjQ3OTQ5OnJlZnMvdGFncy92MC4zLjE=",
+    "url": "https://api.github.com/repos/bnprks/BPCells/git/refs/tags/v0.3.1",
+    "object": {
+      "sha": "ae4a9405f234bfc45b9a0a5f66a7e3df9c984fb3",
+      "type": "tag",
+      "url": "https://api.github.com/repos/bnprks/BPCells/git/tags/ae4a9405f234bfc45b9a0a5f66a7e3df9c984fb3"
+    }
+  }
+}

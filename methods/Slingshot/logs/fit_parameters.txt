@@ -1,0 +1,48 @@
+$start.clus
+[1] "1"
+
+$end.clus
+[1] "5" "4"
+
+$start.given
+[1] TRUE
+
+$end.given
+[1] FALSE FALSE
+
+$omega
+[1] FALSE
+
+$omega_scale
+[1] 1.5
+
+$shrink
+[1] TRUE
+
+$extend
+[1] "y"
+
+$reweight
+[1] TRUE
+
+$reassign
+[1] TRUE
+
+$thresh
+[1] 0.001
+
+$maxit
+[1] 15
+
+$stretch
+[1] 2
+
+$smoother
+[1] "smooth.spline"
+
+$shrink.method
+[1] "cosine"
+
+$allow.breaks
+[1] TRUE
+

@@ -1,0 +1,112 @@
+* installing to library 'C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library'
+* installing *source* package 'BPCells' ...
+** this is package 'BPCells' version '0.3.1'
+** using staged installation
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/c/PROGRA~1/Git/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
++ '[' -z '' ']'
+Skipping install count metrics
++ ENABLE_INSTALL_COUNTING=no
++ '[' no == yes ']'
++ echo 'Skipping install count metrics'
+++ C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/bin/R CMD config CC
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
++ CC=gcc
+++ C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/bin/R CMD config CXX
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
++ CXX='g++ -std=gnu++20'
++ ENV_CFLAGS='-O1 -g0'
++ ENV_LDFLAGS=
+++ C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/bin/R CMD config CFLAGS
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
++ CFLAGS='-O1 -g0 -O1 -g0'
+++ C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/bin/R CMD config CXXFLAGS
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
++ CXXFLAGS='-O1 -g0 -O1 -g0'
+++ C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/bin/R CMD config LDFLAGS
+sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
++ LDFLAGS=' '
++ echo 'Testing hdf5 by compiling example program...'
+Testing hdf5 by compiling example program...
++ HDF5_CFLAGS=
++ HDF5_LIBS='-lhdf5 -lz -lsz'
++ HDF5_OK=
++ gcc tools/h5write.c -lhdf5 -lz -lsz -o tools/h5write
++ HDF5_OK=yes
++ '[' -z yes ']'
++ '[' -z yes ']'
++ echo 'Found working hdf5'
+Found working hdf5
++ echo 'HDF5_CFLAGS='\'''\'''
+HDF5_CFLAGS=''
++ echo 'HDF5_LIBS='\''-lhdf5 -lz -lsz'\'''
+HDF5_LIBS='-lhdf5 -lz -lsz'
++ CXX17_OK=
++ CXX_FS_FLAG=
++ printf '\nTesting C++17 filesystem feature support...'
+
++ g++ -std=gnu++20 tools/cxx17_filesystem.cc -O1 -g0 -O1 -g0 -std=c++17 -o tools/cxx17_filesystem
+Testing C++17 filesystem feature support...In file included from C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/locale:43,
+                 from C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/bits/fs_path.h:36,
+                 from C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/filesystem:52,
+                 from tools/../src/bpcells-cpp/utils/filesystem_compat.h:20,
+                 from tools/cxx17_filesystem.cc:2:
+C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/bits/locale_facets_nonio.h:2064:10: fatal error: bits/messages_members.h: No such file or directory
+ 2064 | #include <bits/messages_members.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
++ '[' -z ']'
++ CXX_FS_FLAG=-lstdc++fs
++ g++ -std=gnu++20 tools/cxx17_filesystem.cc -O1 -g0 -O1 -g0 -std=c++17 -lstdc++fs -o tools/cxx17_filesystem
+In file included from C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/locale:43,
+                 from C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/bits/fs_path.h:36,
+                 from C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/filesystem:52,
+                 from tools/../src/bpcells-cpp/utils/filesystem_compat.h:20,
+                 from tools/cxx17_filesystem.cc:2:
+C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/bits/locale_facets_nonio.h:2064:10: fatal error: bits/messages_members.h: No such file or directory
+ 2064 | #include <bits/messages_members.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
++ '[' '!' -z ']'
++ '[' -z ']'
++ CXX_FS_FLAG=-lc++fs
++ g++ -std=gnu++20 tools/cxx17_filesystem.cc -O1 -g0 -O1 -g0 -std=c++17 -lc++fs -o tools/cxx17_filesystem
+In file included from C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/locale:43,
+                 from C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/bits/fs_path.h:36,
+                 from C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/filesystem:52,
+                 from tools/../src/bpcells-cpp/utils/filesystem_compat.h:20,
+                 from tools/cxx17_filesystem.cc:2:
+C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/gcc/x86_64-w64-mingw32.static.posix/14.3.0/include/c++/bits/locale_facets_nonio.h:2064:10: fatal error: bits/messages_members.h: No such file or directory
+ 2064 | #include <bits/messages_members.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
++ '[' '!' -z ']'
++ '[' -z ']'
++ printf '\n\nUnable to compile program with C++17 std::filesystem.\nPlease install a newer compiler version and set CC and CXX in ~/.R/Makevars\n'
+
+
+Unable to compile program with C++17 std::filesystem.
+Please install a newer compiler version and set CC and CXX in ~/.R/Makevars
++ exit 1
+ERROR: configuration failed for package 'BPCells'
+* removing 'C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library/BPCells'

@@ -1,0 +1,196 @@
+{
+  "name": "CellRank",
+  "identity_status": "RESOLVED_PRIMARY_PAPER_AND_OFFICIAL_CODE",
+  "paper": {
+    "title": "CellRank 2: unified fate mapping in multiview single-cell data",
+    "doi": "10.1038/s41592-024-02303-9",
+    "url": "https://doi.org/10.1038/s41592-024-02303-9",
+    "crossref_url": "https://api.crossref.org/works/10.1038/s41592-024-02303-9",
+    "crossref_status": "VERIFIED_TITLE_DOI",
+    "published_date_parts": [
+      [
+        2024,
+        6,
+        13
+      ]
+    ]
+  },
+  "official_github": "https://github.com/scverse/cellrank",
+  "official_website_or_docs": "https://cellrank.readthedocs.io/en/stable/",
+  "bioconductor": {
+    "status": "NOT_APPLICABLE_OFFICIAL_DISTRIBUTION_USES_OTHER_CHANNEL",
+    "url": null,
+    "note": "核实的官方安装来源为GitHub/PyPI；未声称存在或检索排除所有Bioconductor同名包。"
+  },
+  "query_date": "2026-10-19",
+  "installation_status": "NOT_TESTED",
+  "import_status": "NOT_TESTED",
+  "run_status": "NOT_TESTED",
+  "real_data_analysis_status": "NOT_RUN",
+  "prototype_status": "NOT_RUN",
+  "additional_papers": [
+    {
+      "title": "CellRank for directed single-cell fate mapping",
+      "doi": "10.1038/s41592-021-01346-6",
+      "url": "https://doi.org/10.1038/s41592-021-01346-6",
+      "crossref_url": "https://api.crossref.org/works/10.1038/s41592-021-01346-6",
+      "crossref_status": "VERIFIED_TITLE_DOI",
+      "published_date_parts": [
+        [
+          2022,
+          1,
+          13
+        ]
+      ]
+    }
+  ],
+  "github_redirect_note": "原theislab/cellrank官方API重定向scverse/cellrank。",
+  "version": {
+    "query_date": "2026-10-19",
+    "latest_github_release_before_cutoff": {
+      "tag_name": "v2.3.3",
+      "published_at": "2026-09-16T09:41:27Z",
+      "html_url": "https://github.com/scverse/cellrank/releases/tag/v2.3.3"
+    },
+    "default_branch_sha": "d7821af1ff2665712b8329f0752580342abf93e4",
+    "commit_date": "2026-10-14T08:50:17Z",
+    "policy": "GitHub commit query bounded by 2026-10-19; distinguish release and development SHA.",
+    "pypi": {
+      "url": "https://pypi.org/project/cellrank/",
+      "current_info_version": "2.3.3",
+      "requires_python": ">=3.12",
+      "requires_dist": [
+        "anndata>=0.11",
+        "docrep>=0.3",
+        "joblib>=1.4",
+        "matplotlib>=3.9",
+        "networkx>=3.4",
+        "numba>=0.60",
+        "numpy>=2",
+        "pandas>=2.2",
+        "pygam>=0.10",
+        "pygpcca>=1.0.4",
+        "rich>=13",
+        "scanpy>=1.11",
+        "scikit-learn>=1.6",
+        "scipy>=1.14",
+        "seaborn>=0.13",
+        "session-info2>=0.2",
+        "wrapt>=1.16",
+        "jax; extra == \"jax\"",
+        "jaxlib; extra == \"jax\"",
+        "moscot; extra == \"moscot\"",
+        "petsc4py; extra == \"petsc\"",
+        "slepc4py; extra == \"petsc\"",
+        "adjusttext; extra == \"plot\"",
+        "rpy2>=3.3; extra == \"r\"",
+        "scvelo>=0.3; extra == \"scvelo\""
+      ],
+      "latest_uploads_before_cutoff": [
+        {
+          "version": "2.3.3",
+          "upload_time": "2026-09-16T09:41:53.568513Z"
+        },
+        {
+          "version": "2.3.2",
+          "upload_time": "2026-06-24T06:37:44.773514Z"
+        },
+        {
+          "version": "2.3.1",
+          "upload_time": "2026-06-09T15:26:31.629291Z"
+        }
+      ]
+    }
+  },
+  "license": {
+    "name": "BSD-3-Clause",
+    "url": "https://github.com/scverse/cellrank/blob/main/LICENSE"
+  },
+  "tutorials": [
+    {
+      "label": "PseudotimeKernel及官方教程入口",
+      "url": "https://cellrank.readthedocs.io/en/stable/api/_autosummary/kernels/cellrank.kernels.PseudotimeKernel.html"
+    },
+    {
+      "label": "RealTimeKernel及Experimental Time教程入口",
+      "url": "https://cellrank.readthedocs.io/en/stable/api/_autosummary/kernels/cellrank.kernels.RealTimeKernel.html"
+    }
+  ],
+  "small_example_data": [
+    {
+      "label": "官方pancreas dataset API（小于全重编程案例；本轮未查bytes）",
+      "url": "https://cellrank.readthedocs.io/en/stable/api/_autosummary/datasets/cellrank.datasets.pancreas.html",
+      "size_status": "BYTES_NOT_VERIFIED",
+      "download_status": "NOT_DOWNLOADED"
+    },
+    {
+      "label": "真实时间官方例reprogramming_schiebinger；不默认小文件",
+      "url": "https://cellrank.readthedocs.io/en/stable/api/_autosummary/datasets/cellrank.datasets.reprogramming_schiebinger.html",
+      "size_status": "NOT_CONFIRMED_SMALL",
+      "download_status": "NOT_DOWNLOADED"
+    }
+  ],
+  "dependencies_os_hardware": {
+    "current_release": "PyPI2.3.3: Python>=3.12、NumPy>=2、anndata>=0.11、Scanpy>=1.11、SciPy>=1.14、pandas>=2.2、matplotlib>=3.9、pygpcca>=1.0.4、pygam>=0.10等。",
+    "optional": "petsc4py/slepc4py为PETSc可选，scVelo/moscot/JAX等额外依赖按方法分支选择；不自动添加。",
+    "os": "项目分类包含Windows/macOS/Linux；官方声明不等于本机验证。PETSc/SLEPc可选原生依赖需单独核查，未安装。",
+    "hardware": "邻居/转移矩阵稀疏计算以CPU/RAM为主；无统一GPU要求。规模和求解器影响资源，最低RAM未实测。",
+    "compatibility": "不能原地升级历史RegVelo Python3.10/NumPy1.26环境来满足CellRank2.3.3；拟使用版本/环境待确认。"
+  },
+  "inputs": {
+    "pseudotime": "AnnData、已有kNN connectivities、adata.obs[time_key]的一维拟时序。",
+    "realtime": "AnnData，实验采样时间obs[time_key]必须categorical，预计算跨时间couplings或显式OT引擎。",
+    "fate": "选定kernel/transition，加审查后的terminal定义；RNA velocity仅VelocityKernel分支必需。"
+  },
+  "outputs": [
+    "行归一化transition matrix",
+    "GPCCA macrostates、initial/terminal states",
+    "指定终末集合的fate probabilities、driver关联/趋势"
+  ],
+  "representative_figures": [
+    "macrostates/terminal/fate probability UMAP",
+    "fate heatmap、circular projection、lineage gene trends",
+    "kernel projection/flow（注明kernel来源）"
+  ],
+  "api_contract": {
+    "pseudotime_signature": "PseudotimeKernel(adata, time_key, backward=False, **kwargs).compute_transition_matrix(threshold_scheme='hard', frac_to_keep=0.3, b=10.0, nu=0.5, ...)",
+    "pseudotime_semantics": "按已有拟时序对kNN边硬删除/软降权；time_key名字不是实验时间声明，流线也不是RNA velocity。",
+    "realtime_signature": "RealTimeKernel(adata, time_key, couplings=None, policy='sequential', **kwargs)",
+    "realtime_no_implicit_ot": "基础compute_coupling只查询couplings；None值要求子类实现，单独构造RealTimeKernel不会从表达矩阵自动求WOT。",
+    "external_couplings": "Mapping[(source_time,target_time)] -> ndarray/scipy sparse/AnnData；形状n_source×n_target，时间键匹配categorical类别。裸矩阵默认赋为该时间组obs顺序；建议显式named AnnData确保obs_names/var_names与对应cell IDs一致，验收有限非负与概率构造。",
+    "normalization_boundary": "RealTimeKernel拼接并行归一化为全细胞转移矩阵，存在阈值/自转移等选择；原WOT map是后代mass，不应被称为原始行概率。源码会对empty row发警告并填uniform，QC必须保留该变化。",
+    "from_wot_status": "since2.2 deprecated，planned removal3.0；官方称WOT unmaintained，可手动载入其couplings。",
+    "choices_requiring_user_decision": [
+      "冻结历史WOT和兼容CellRank版本",
+      "保留WOT计算，显式读取maps作为couplings传入当前RealTimeKernel",
+      "若用户明确批准另增moscot；本审查不替换WOT"
+    ]
+  },
+  "scientific_boundaries": [
+    "PseudotimeKernel的方向受输入ordering/root影响，拟时序不是实验采样时间。",
+    "RealTimeKernel需要真实时间，横断面healthy/disease不是合法自动时间轴。",
+    "fate概率以kernel和terminal集合为条件，不是体内观测命运频率或因果证明。"
+  ],
+  "official_install_reference": "pip install cellrank（本轮不执行；最新2.3.3依赖不同于历史版本）。",
+  "review_flags": [
+    "CURRENT_PYTHON312_NUMPY2",
+    "WOT_BRIDGE_DEPRECATED",
+    "OT_ENGINE_CHOICE_PENDING"
+  ],
+  "api_primary_sources": [
+    "https://github.com/scverse/cellrank/blob/v2.3.3/src/cellrank/kernels/_real_time_kernel.py",
+    "https://github.com/scverse/cellrank/blob/v2.3.3/src/cellrank/kernels/_pseudotime_kernel.py"
+  ],
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "PseudotimeKernel的方向受输入ordering/root影响，拟时序不是实验采样时间。",
+    "RealTimeKernel需要真实时间，横断面healthy/disease不是合法自动时间轴。",
+    "fate概率以kernel和terminal集合为条件，不是体内观测命运频率或因果证明。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

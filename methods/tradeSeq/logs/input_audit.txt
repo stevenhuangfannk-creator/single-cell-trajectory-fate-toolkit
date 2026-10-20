@@ -1,0 +1,50 @@
+$dim
+[1]  240 2660
+
+$lineages
+$lineages$Lineage1
+[1] "1" "4" "3" "7" "5"
+
+$lineages$Lineage2
+[1] "1" "2" "6"
+
+
+$parameters
+$parameters$start.clus
+[1] "1"
+
+$parameters$end.clus
+[1] "5" "6"
+
+$parameters$start.given
+[1] TRUE
+
+$parameters$end.given
+[1] FALSE FALSE
+
+$parameters$dist
+          1          7         6          5         2         4          3
+1  0.000000  52.294716  38.03063  62.200687  12.49590  5.415284  22.153043
+7 52.294716   0.000000 193.07829   9.788475 100.58178 27.226761   6.080329
+6 38.030626 193.078293   0.00000 172.048300   3.87456 85.241949 124.327824
+5 62.200687   9.788475 172.04830   0.000000  92.99224 28.525595  14.574917
+2 12.495897 100.581783   3.87456  92.992243   0.00000 34.769520  61.044515
+4  5.415284  27.226761  85.24195  28.525595  34.76952  0.000000   7.133173
+3 22.153043   6.080329 124.32782  14.574917  61.04452  7.133173   0.000000
+
+$parameters$shrink
+[1] TRUE
+
+$parameters$extend
+[1] "y"
+
+$parameters$reweight
+[1] TRUE
+
+$parameters$reassign
+[1] TRUE
+
+$parameters$shrink.method
+[1] "cosine"
+
+

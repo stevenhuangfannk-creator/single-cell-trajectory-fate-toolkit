@@ -1,0 +1,45 @@
+{
+  "same_cells": 650,
+  "same_input_genes": 10000,
+  "cell_ID_order_check": "PASS_AFTER_EXPLICIT_PCA_ID_RESTORATION",
+  "Slingshot_root": "Neuroblast_ASG_AWA",
+  "Monocle3_root": "Y_4, voted by the same progenitor annotation",
+  "lineage_mapping": "By terminal annotation and nearest-leaf audit, not numeric lineage ID",
+  "direction_auto_flipped": false,
+  "AWA_endpoint": "FAIL: late cells majority map to the Monocle root",
+  "ASG_endpoint": "PARTIAL: late-cell leaf mapping does not establish full topology",
+  "primary_correlations": [
+    {
+      "lineage": "Lineage1",
+      "terminal_cluster": "AWA",
+      "valid_cells": "471",
+      "spearman": "-0.0107881303175427",
+      "pearson_scaled": "-0.105349133285526",
+      "median_abs_scaled_difference": "0.485257317161934"
+    },
+    {
+      "lineage": "Lineage2",
+      "terminal_cluster": "ASG",
+      "valid_cells": "427",
+      "spearman": "0.759712151928781",
+      "pearson_scaled": "0.672481944891501",
+      "median_abs_scaled_difference": "0.401855303743852"
+    }
+  ],
+  "dynamic_overlap": {
+    "joint_universe": "298",
+    "tradeSeq_significant": "274",
+    "monocle_significant": "282",
+    "intersection": "263",
+    "union": "293",
+    "jaccard": "0.897610921501707"
+  },
+  "functional_summary": {
+    "tested": "3515",
+    "annotated_background": "2177",
+    "selected": "196",
+    "terms_tested": "948",
+    "significant": "22"
+  },
+  "scientific_status": "PARTIAL_COMPARABILITY; CONSENSUS_NOT_ESTABLISHED"
+}

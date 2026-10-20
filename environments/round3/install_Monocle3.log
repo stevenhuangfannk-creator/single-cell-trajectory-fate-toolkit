@@ -1,0 +1,29 @@
+* installing to library 'C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library'
+* installing *source* package 'monocle3' ...
+** this is package 'monocle3' version '1.4.27'
+** using staged installation
+** libs
+specified C++11
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+using C++ compiler: 'g++.exe (GCC) 14.3.0'
+g++ -std=gnu++20  -I"C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/include" -DNDEBUG  -I'C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library/Rcpp/include'   -I"C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/include"      -O1 -g0  -c RcppExports.cpp -o RcppExports.o
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+g++ -std=gnu++20  -I"C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/include" -DNDEBUG  -I'C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library/Rcpp/include'   -I"C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/include"      -O1 -g0  -c clustering.cpp -o clustering.o
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (English_United States.utf8): No such file or directory
+g++ -std=gnu++20 -shared -s -static-libgcc -o monocle3.dll tmp.def RcppExports.o clustering.o -LC:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib/x64 -LC:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/rtools45/x86_64-w64-mingw32.static.posix/lib -LC:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-4.6.1/bin/x64 -lR
+installing to C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library/00LOCK-monocle3-1.4.27/00new/monocle3/libs/x64
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+in method for 'saveRDS' with signature 'object="IterableMatrix"': no definition for class "IterableMatrix"
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (monocle3)

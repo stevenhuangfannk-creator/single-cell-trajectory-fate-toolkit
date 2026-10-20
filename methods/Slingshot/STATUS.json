@@ -1,0 +1,40 @@
+{
+  "method": "Slingshot",
+  "date": "2026-10-19",
+  "scope": "Official 140-point simulated minimal example; not full paper or full vignette; no real PI analysis",
+  "INSTALL_OK": "PASS",
+  "INPUT_OK": "PASS",
+  "RUN_OK": "PASS",
+  "FIGURE_OK": "PASS",
+  "TUTORIAL_CN_OK": "PASS",
+  "DATA_PROVENANCE_OK": "PASS",
+  "evidence": {
+    "install": "logs/00_install_final_exit.json",
+    "run": "logs/04_execution_record.json",
+    "saved_fit_replot": "logs/05_replot_record.json",
+    "documented_user_entry": "logs/06_user_entry_verification.json",
+    "artifact_checks": "logs/artifact_checks.json",
+    "visual_review": "logs/VISUAL_QA_CN.md"
+  },
+  "figures": 6,
+  "formats": [
+    "PNG",
+    "PDF",
+    "SVG"
+  ],
+  "image_files": 18,
+  "official_input_cells": 140,
+  "lineages": 2,
+  "visual_review": {
+    "png_contact_sheet": "PASS",
+    "pdf_all_pages_rendered_and_reviewed": "PASS",
+    "svg_xml_and_vector_structure": "PASS",
+    "svg_browser_font_rendering": "NOT_TESTED",
+    "svg_rasterized_with_sharp_and_reviewed": "PASS"
+  },
+  "VS_CODE_INTERACTIVE_EXECUTION": "NOT_TESTED; scripts support sequential source; batch Rscript tested",
+  "BIOLOGICAL_INTERPRETATION_LIMITS": "Simulation verifies interfaces and conditional structure/order; no patient lineage, real time, potency, causal regulation or fate probability validation. Slingshot default curve weights are not normalized fate probabilities.",
+  "limits_review_status": "PASS_DOCUMENTATION_ONLY",
+  "historical_failures_retained": true,
+  "remote_repository_created": false
+}

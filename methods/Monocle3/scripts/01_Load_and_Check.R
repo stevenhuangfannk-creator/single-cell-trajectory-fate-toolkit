@@ -1,0 +1,16 @@
+# 官方仓库 inst/extdata 的 Packer 胚胎神经元小数据；不是整份胚胎图谱。
+suppressPackageStartupMessages({library(monocle3);library(SingleCellExperiment);library(Matrix)})
+mdir<-init_module('methods/Monocle3')
+p<-system.file('extdata','worm_embryo',package='monocle3')
+if(!nzchar(p)) stop('Official extdata unavailable; run the pinned download script.')
+exprM<-readRDS(file.path(p,'worm_embryo_expression_matrix.rds'))
+metaM<-as.data.frame(readRDS(file.path(p,'worm_embryo_coldata.rds')))
+geneM<-as.data.frame(readRDS(file.path(p,'worm_embryo_rowdata.rds')))
+stopifnot(identical(colnames(exprM),rownames(metaM)),identical(rownames(exprM),rownames(geneM)),
+          !anyDuplicated(colnames(exprM)),!anyDuplicated(rownames(exprM)),all(exprM@x>=0),all(exprM@x==round(exprM@x)))
+cat('INPUT_OK',nrow(exprM),'genes',ncol(exprM),'cells; bytes',object.size(exprM),'\n')
+print(table(metaM$cell.type));print(table(metaM$time.point))
+cdsM<-new_cell_data_set(exprM,cell_metadata=metaM,gene_metadata=geneM)
+write_tsv(data.frame(cell_id=rownames(metaM),metaM,check.names=FALSE),file.path(mdir,'results/cell_metadata.tsv'))
+write_tsv(data.frame(gene_id=rownames(geneM),geneM,check.names=FALSE),file.path(mdir,'results/gene_metadata.tsv'))
+saveRDS(list(counts=exprM,cells=metaM,genes=geneM),file.path(mdir,'results/input_bundle.rds'))

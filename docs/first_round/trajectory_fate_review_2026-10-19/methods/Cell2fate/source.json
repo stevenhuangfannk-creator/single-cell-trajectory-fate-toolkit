@@ -1,0 +1,113 @@
+{
+  "name": "Cell2fate",
+  "identity_status": "RESOLVED_PRIMARY_PAPER_AND_OFFICIAL_CODE",
+  "paper": {
+    "title": "Cell2fate infers RNA velocity modules to improve cell fate prediction",
+    "doi": "10.1038/s41592-025-02608-3",
+    "url": "https://doi.org/10.1038/s41592-025-02608-3",
+    "crossref_url": "https://api.crossref.org/works/10.1038/s41592-025-02608-3",
+    "crossref_status": "VERIFIED_TITLE_DOI",
+    "published_date_parts": [
+      [
+        2025,
+        3,
+        3
+      ]
+    ]
+  },
+  "official_github": "https://github.com/BayraktarLab/cell2fate",
+  "official_website_or_docs": "https://cell2fate.readthedocs.io/en/latest/",
+  "bioconductor": {
+    "status": "NOT_APPLICABLE_OFFICIAL_DISTRIBUTION_USES_OTHER_CHANNEL",
+    "url": null,
+    "note": "核实的官方安装来源为GitHub/PyPI；未声称存在或检索排除所有Bioconductor同名包。"
+  },
+  "query_date": "2026-10-19",
+  "installation_status": "NOT_TESTED",
+  "import_status": "NOT_TESTED",
+  "run_status": "NOT_TESTED",
+  "real_data_analysis_status": "NOT_RUN",
+  "prototype_status": "NOT_RUN",
+  "version": {
+    "query_date": "2026-10-19",
+    "latest_github_release_before_cutoff": {
+      "tag_name": "v1.0.0",
+      "published_at": "2024-09-08T18:35:29Z",
+      "html_url": "https://github.com/BayraktarLab/cell2fate/releases/tag/v1.0.0"
+    },
+    "default_branch_sha": "c03d1ca0bb963f550001c6070d4986a61ec8456a",
+    "commit_date": "2025-03-20T12:26:08Z",
+    "policy": "GitHub commit query bounded by 2026-10-19; distinguish release and development SHA."
+  },
+  "version_note": "GitHub release v1.0.0（2024-09-08）；当前固定SHA setup.cfg metadata version=0.01a。两个字段不同；PyPI /pypi/cell2fate/json返回404，不编造PyPI稳定版。",
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/BayraktarLab/cell2fate/blob/main/LICENSE"
+  },
+  "tutorials": [
+    {
+      "label": "官方PancreasWithCC完整教程",
+      "url": "https://cell2fate.readthedocs.io/en/latest/notebooks/publication_figures/cell2fate_PancreasWithCC.html"
+    },
+    {
+      "label": "官方安装说明",
+      "url": "https://cell2fate.readthedocs.io/en/latest/installation.html"
+    },
+    {
+      "label": "论文重现notebooks（README指向）",
+      "url": "https://github.com/AlexanderAivazidis/cell2fate_notebooks"
+    }
+  ],
+  "small_example_data": [
+    {
+      "label": "官方教程拼出的Pancreas_with_cc H5AD；只记录链接",
+      "url": "https://cell2fate.cog.sanger.ac.uk/Pancreas_with_cc/Pancreas_with_cc_anndata.h5ad",
+      "size_status": "NOT_CONFIRMED_SMALL; 未对二进制URL作下载或大小探针",
+      "download_status": "NOT_DOWNLOADED"
+    }
+  ],
+  "dependencies_os_hardware": {
+    "documented_environment": "官方Python3.9独立conda环境；setup.cfg固定scvi-tools0.16.1、anndata0.8.0、torch1.11.0、NumPy1.23.5、SciPy1.8.0、Scanpy1.9.1、scVelo0.2.4、pandas1.4.2、JAX/JAXlib0.4.10、pyro-ppl>=1.8等。",
+    "os": "教程偏Linux/conda；Windows本轮NOT_TESTED，旧torch/JAX/scvi组合是否能在本机安装UNKNOWN。",
+    "hardware": "PyTorch/Pyro模型训练；README给新GPU/CUDA>10.2的torch/cu116替换提示，但会偏离setup pin，需要预先决定并测试，不自动覆盖环境。最低RAM/VRAM UNKNOWN。",
+    "compatibility": "与当前CellRank2.3.3的Python>=3.12/NumPy>=2及历史RegVelo环境均不宜混装。"
+  },
+  "inputs": {
+    "required": "AnnData layers['spliced']/['unspliced']真实raw UMI计数；setup_anndata(...,spliced_label='spliced',unspliced_label='unspliced')。",
+    "model_choices": "特征/细胞筛选、module数和训练参数需要框架预先确认，不能自动删除群或调参追求方向。"
+  },
+  "outputs": [
+    "模块化RNA velocity、逐cell模型时间",
+    "转录模块ON/OFF活动、基因负载及动力学参数",
+    "后验不确定性/模型QC对象"
+  ],
+  "representative_figures": [
+    "velocity UMAP",
+    "module activation/time图",
+    "module summary statistics、基因拟合/后验QC"
+  ],
+  "scientific_boundaries": [
+    "模块与速度为动力学模型预测，不是实验TF因果或真正追踪。",
+    "它不是无S/U的表达拟时序替代品；仅有counts不准入。",
+    "官方教程含按cluster筛选操作，不可在用户真实数据上未经确认照抄。"
+  ],
+  "official_install_reference": "官方conda Python3.9后pip install git+https://github.com/BayraktarLab/cell2fate；本轮未执行。",
+  "review_flags": [
+    "TAG_METADATA_VERSION_MISMATCH",
+    "OLD_PINNED_STACK",
+    "PYPI_NAME_404",
+    "GPU_COMPATIBILITY_UNKNOWN"
+  ],
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "模块与速度为动力学模型预测，不是实验TF因果或真正追踪。",
+    "它不是无S/U的表达拟时序替代品；仅有counts不准入。",
+    "官方教程含按cluster筛选操作，不可在用户真实数据上未经确认照抄。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

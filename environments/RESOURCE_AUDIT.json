@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-19",
+  "authorized_download_cap_bytes": 1073741824,
+  "authorized_runtime_cap_bytes": 4294967296,
+  "download_cache_on_disk_bytes": 132586108,
+  "download_measurement_limit": "Includes retained partial installer and CLI source; does not meter all HTTP transfer bytes or small metadata separately",
+  "runtime_on_disk_bytes": 260750360,
+  "download_cache_below_cap": true,
+  "runtime_below_cap": true,
+  "analysis_peak_sampled_process_working_set_bytes": 756379648,
+  "sampling_interval_ms": 100,
+  "parallel_methods": 1,
+  "threads_requested": 1,
+  "gpu_used": false,
+  "real_PI_data_run": false,
+  "R_installer": {
+    "url": "https://cloud.r-project.org/bin/windows/base/R-4.6.1-win.exe",
+    "bytes": 91749976,
+    "sha256": "c5424c40cd70ef85765a55d2ff96bb602b5f30ed536938ff004f14db5db3c2df",
+    "official_md5": "7907f3a20ec8ec88cd0da279024b8e27",
+    "official_md5_match": true
+  },
+  "non_base_packages_including_slingshot": 31,
+  "other_methods_installed": false
+}

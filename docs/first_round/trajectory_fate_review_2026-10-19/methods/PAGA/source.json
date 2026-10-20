@@ -1,0 +1,172 @@
+{
+  "method": "PAGA",
+  "id": "paga",
+  "language": "Python",
+  "official_sources": [
+    {
+      "label": "Official GitHub",
+      "url": "https://github.com/scverse/scanpy",
+      "purpose": "原作者/官方实现代码与发行信息"
+    },
+    {
+      "label": "Original paper repository",
+      "url": "https://github.com/theislab/paga",
+      "purpose": "论文图件重现notebooks；实际算法在Scanpy"
+    },
+    {
+      "label": "API",
+      "url": "https://scanpy.readthedocs.io/en/stable/api/scanpy.tl.paga.html",
+      "purpose": "邻域/partition输入和connectivity解释"
+    },
+    {
+      "label": "Official tutorial",
+      "url": "https://scanpy.readthedocs.io/en/stable/tutorials/trajectories/paga-paul15.html",
+      "purpose": "Paul15示例与DPT/图件"
+    },
+    {
+      "label": "Publisher paper",
+      "url": "https://link.springer.com/article/10.1186/s13059-019-1663-x",
+      "purpose": "原始方法"
+    }
+  ],
+  "bioconductor": null,
+  "license": {
+    "identifier": "BSD-3-Clause",
+    "evidence": "Scanpy pyproject/license和theislab/paga license API一致",
+    "source_url": "https://raw.githubusercontent.com/scverse/scanpy/8ed52d9dad906c260e52405380ed4ed1e353d4e7/pyproject.toml"
+  },
+  "environment": {
+    "declared_minimum": "稳定Scanpy1.12.4的pyproject：Python>=3.12；审查时main需>=3.13，不能混作稳定要求",
+    "dependencies": [
+      "anndata>=0.10.8",
+      "numpy>=2",
+      "scipy>=1.13",
+      "pandas>=2.3",
+      "scikit-learn>=1.6",
+      "numba>=0.60",
+      "matplotlib>=3.10",
+      "umap-learn>=0.5.12",
+      "PAGA extra: igraph",
+      "Leiden extra: igraph>=0.10.8, leidenalg>=0.10.1"
+    ],
+    "system_constraints": [
+      "PAGA本身不需GPU；Scanpy元数据列Windows/macOS/Linux，但本机未测试。",
+      "旧教程的scanpy/igraph/ForceAtlas2接口与当前稳定版可能不同；ForceAtlas2不是PAGA算法的必需输入。",
+      "不要在已锁定旧版AnnData/NumPy的RegVelo环境中直接升级到当前Scanpy栈。"
+    ],
+    "stable_release_metadata_url": "https://raw.githubusercontent.com/scverse/scanpy/1.12.4/pyproject.toml"
+  },
+  "input": {
+    "matrix": "AnnData已有低维表示和cell kNN图；adata.obs中的categorical分组",
+    "object": ".uns['neighbors']与.obsp的connectivities/distances；已有注释可作groups",
+    "upstream": "保留已有cluster/embedding，记录neighbors参数和阈值；DPT若使用需另给iroot",
+    "spliced_unspliced_required": false
+  },
+  "outputs": [
+    "partition级connectivities及tree子图（实际位于.uns['paga']）",
+    "可用于初始化UMAP/graph layout的partition位置",
+    "若另运行DPT则得到root相关dpt_pseudotime；PAGA单独不提供每细胞时钟"
+  ],
+  "representative_figures": [
+    {
+      "name": "节点大小/边权的PAGA图和单细胞layout对照",
+      "functions": [
+        "scanpy.pl.paga",
+        "scanpy.pl.paga_compare"
+      ]
+    },
+    {
+      "name": "指定PAGA path的基因表达趋势热图",
+      "functions": [
+        "scanpy.pl.paga_path"
+      ]
+    }
+  ],
+  "tutorials": [
+    {
+      "url": "https://scanpy.readthedocs.io/en/stable/tutorials/trajectories/paga-paul15.html",
+      "entry": "2730个真实小鼠造血细胞的Paul15教程"
+    }
+  ],
+  "example_data": [
+    {
+      "name": "Paul et al. 2015",
+      "url": "https://scanpy.readthedocs.io/en/stable/generated/scanpy.datasets.paul15.html",
+      "access": "scanpy.datasets.paul15()；会触发数据下载，本轮未调用",
+      "smallness": "官方PAGA README记2730细胞；文件大小未请求核实",
+      "data_kind": "REAL_PUBLIC_EXAMPLE",
+      "download_status": "NOT_TESTED"
+    }
+  ],
+  "scientific_boundaries": [
+    "边权为分组间实际/随机期望连接的比值型置信度，官方明确不是p值，也不是命运转移概率。",
+    "默认无方向；PAGA图不是谱系追踪，不能从两簇连接直接断言分化方向或细胞转换。",
+    "use_rna_velocity=True需要真实预先计算的velocity_graph，普通表达矩阵不能伪造该输入。",
+    "文档returns字段部分简写为.uns['connectivities']；固定源码实际嵌套于.uns['paga']，后续实现须按选定版本核查。"
+  ],
+  "version_caveats": [
+    "正式算法使用Scanpy1.12.4（2026-08-27）；1.13.0a2为预发布，不作当前稳定版。",
+    "另记录theislab/paga原论文notebook库SHA，避免把2019 notebook环境当现行依赖。"
+  ],
+  "paper": {
+    "title": "PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells",
+    "doi": "10.1186/s13059-019-1663-x",
+    "doi_url": "https://doi.org/10.1186/s13059-019-1663-x",
+    "journal": "Genome Biology",
+    "published_date_parts": [
+      [
+        2019,
+        3,
+        19
+      ]
+    ],
+    "crossref_url": "https://api.crossref.org/works/10.1186%2Fs13059-019-1663-x",
+    "verification_status": "VERIFIED_CROSSREF_PRIMARY_METADATA",
+    "checked_date": "2026-10-19"
+  },
+  "code": {
+    "github_url": "https://github.com/scverse/scanpy",
+    "sha_asof_date": "8ed52d9dad906c260e52405380ed4ed1e353d4e7",
+    "commit_date": "2026-10-15T12:11:54Z",
+    "commit_url": "https://github.com/scverse/scanpy/commit/8ed52d9dad906c260e52405380ed4ed1e353d4e7",
+    "query_url": "https://api.github.com/repos/scverse/scanpy/commits?until=2026-10-19T23:59:59Z&per_page=1",
+    "release_query_url": "https://api.github.com/repos/scverse/scanpy/releases?per_page=10",
+    "latest_nonprerelease_in_queried_10_releases": {
+      "tag_name": "1.12.4",
+      "published_at": "2026-08-27T11:54:49Z",
+      "html_url": "https://github.com/scverse/scanpy/releases/tag/1.12.4"
+    },
+    "checked_date": "2026-10-19",
+    "metadata_url_at_sha": "https://raw.githubusercontent.com/scverse/scanpy/8ed52d9dad906c260e52405380ed4ed1e353d4e7/pyproject.toml",
+    "description_version_at_sha": null
+  },
+  "status": {
+    "installation": "NOT_TESTED",
+    "execution": "NOT_TESTED",
+    "example_run": "NOT_TESTED",
+    "real_data_analysis": "NOT_TESTED"
+  },
+  "new_installation_status": "NOT_TESTED",
+  "small_sample_validation_status": "NOT_TESTED",
+  "runtime_status": "NOT_TESTED",
+  "scientific_validation_status": "NOT_TESTED",
+  "checked_date": "2026-10-19",
+  "paper_notebooks_code": {
+    "repository": "https://github.com/theislab/paga",
+    "sha": "d5688a38d9054c6fcea7302023afa0510cd3577a",
+    "date": "2019-04-12T08:58:35Z"
+  },
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "边权为分组间实际/随机期望连接的比值型置信度，官方明确不是p值，也不是命运转移概率。",
+    "默认无方向；PAGA图不是谱系追踪，不能从两簇连接直接断言分化方向或细胞转换。",
+    "use_rna_velocity=True需要真实预先计算的velocity_graph，普通表达矩阵不能伪造该输入。",
+    "文档returns字段部分简写为.uns['connectivities']；固定源码实际嵌套于.uns['paga']，后续实现须按选定版本核查。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

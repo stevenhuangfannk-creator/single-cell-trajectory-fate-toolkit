@@ -1,0 +1,110 @@
+{
+  "name": "FitDevo",
+  "identity_status": "RESOLVED_PRIMARY_PAPER_AND_OFFICIAL_CODE",
+  "paper": {
+    "title": "FitDevo: accurate inference of single-cell developmental potential using sample-specific gene weight",
+    "doi": "10.1093/bib/bbac293",
+    "url": "https://doi.org/10.1093/bib/bbac293",
+    "crossref_url": "https://api.crossref.org/works/10.1093/bib/bbac293",
+    "crossref_status": "VERIFIED_TITLE_DOI",
+    "published_date_parts": [
+      [
+        2022,
+        7,
+        24
+      ]
+    ]
+  },
+  "official_github": "https://github.com/jumphone/FitDevo",
+  "official_website_or_docs": "https://github.com/jumphone/FitDevo",
+  "bioconductor": {
+    "status": "NOT_APPLICABLE_OFFICIAL_DISTRIBUTION_USES_OTHER_CHANNEL",
+    "url": null,
+    "note": "核实的官方安装来源为GitHub/PyPI；未声称存在或检索排除所有Bioconductor同名包。"
+  },
+  "query_date": "2026-10-19",
+  "installation_status": "NOT_TESTED",
+  "import_status": "NOT_TESTED",
+  "run_status": "NOT_TESTED",
+  "real_data_analysis_status": "NOT_RUN",
+  "prototype_status": "NOT_RUN",
+  "version": {
+    "query_date": "2026-10-19",
+    "latest_github_release_before_cutoff": {
+      "tag_name": "v1.2.1",
+      "published_at": "2023-11-28T06:19:22Z",
+      "html_url": "https://github.com/jumphone/FitDevo/releases/tag/v1.2.1"
+    },
+    "default_branch_sha": "0c757e609489867e83f32f6571ebcfce704c3124",
+    "commit_date": "2024-04-07T03:06:59Z",
+    "policy": "GitHub commit query bounded by 2026-10-19; distinguish release and development SHA."
+  },
+  "version_note": "GitHub release v1.2.1（2023-11-28）；README更新列表最后写v1.2.0，区分release与文档文字。",
+  "license": {
+    "name": "UNKNOWN",
+    "url": null,
+    "evidence": "GitHub metadata license=null，/license 404，root无LICENSE；不能自动视为MIT/BSD。"
+  },
+  "tutorials": [
+    {
+      "label": "官方DP及DPF两例",
+      "url": "https://github.com/jumphone/FitDevo#demos"
+    },
+    {
+      "label": "官方Seurat5兼容脚本",
+      "url": "https://github.com/jumphone/FitDevo/blob/main/fitdevo_seurat5.R"
+    }
+  ],
+  "small_example_data": [
+    {
+      "label": "官方testing目录，Demo1使用1.rds",
+      "url": "https://sourceforge.net/projects/fitdevo/files/testing/",
+      "size_status": "逐文件bytes/细胞数未核实，尚未认定为小样本",
+      "download_status": "NOT_DOWNLOADED"
+    },
+    {
+      "label": "方法必需的BGW权重（不是待分析细胞数据）",
+      "url": "https://github.com/jumphone/FitDevo/blob/main/BGW.rds",
+      "download_status": "NOT_DOWNLOADED"
+    }
+  ],
+  "dependencies_os_hardware": {
+    "r": "R>=4.0.0、Seurat v4、qlcMatrix0.9.7；官方另供fitdevo_seurat5.R；DPF额外igraph、stringr。",
+    "os": "官方未给完整OS测试矩阵；Windows/macOS/Linux本轮NOT_TESTED。",
+    "hardware": "CPU/R矩阵/PCA流程，RAM随基因×细胞规模增长；官方没有可靠最低RAM/VRAM声明，本轮不造预算。"
+  },
+  "inputs": {
+    "required": "未scaled的gene×cell表达矩阵MAT、官方BGW；raw可NORM=TRUE，已Seurat LogNormalize则NORM=FALSE。",
+    "field": "DPF另需逐cell匹配的已有2D坐标VEC；PCNUM为SSGW计算参数。"
+  },
+  "outputs": [
+    "逐细胞developmental potential向量DP",
+    "可选fitdevo.field DPF网格/箭头与VALUE/POINT.COL"
+  ],
+  "representative_figures": [
+    "原UMAP按DP着色",
+    "已有嵌入上的DPF箭头/势场"
+  ],
+  "scientific_boundaries": [
+    "DP/DPF不是RNA速度；无S/U也不产生RNA动力学证据。",
+    "DP排序不是小时/疾病分期，DPF箭头是模型构造。",
+    "Seurat v4/v5脚本需显式选择，不能假设旧slot代码直接兼容Seurat5；未知许可保留。"
+  ],
+  "official_install_reference": "source官方fitdevo.R或fitdevo_seurat5.R并读取BGW；并非经验证的Bioconductor包安装（未执行）。",
+  "review_flags": [
+    "LICENSE_UNKNOWN",
+    "SEURAT_VERSION_BRANCH_REQUIRED"
+  ],
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "DP/DPF不是RNA速度；无S/U也不产生RNA动力学证据。",
+    "DP排序不是小时/疾病分期，DPF箭头是模型构造。",
+    "Seurat v4/v5脚本需显式选择，不能假设旧slot代码直接兼容Seurat5；未知许可保留。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

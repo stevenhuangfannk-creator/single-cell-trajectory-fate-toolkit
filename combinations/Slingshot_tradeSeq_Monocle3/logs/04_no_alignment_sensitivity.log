@@ -1,0 +1,33 @@
+Round3 project: C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/outputs/single-cell-trajectory-fate-toolkit ; serial cores= 1 
+No preprocess_method specified, using preprocess_method = 'PCA'
+Warning:
+  saveRDS(cds, ...) does not save annoy or hnsw nearest
+  neighbor indices, which you may need for future
+  analyses.
+
+We urge you to use the function
+
+    save_monocle_objects()
+
+  in order to save all of the information in the cds.
+  See the notes in the save_monocle_objects() help
+  documentation for additional information.
+However, we are running base::saveRDS() as you requested.
+Warning messages:
+1: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the monocle3 package.
+  Please report the issue to the authors. 
+2: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.
+ℹ The deprecated feature was likely used in the monocle3 package.
+  Please report the issue to the authors. 
+3: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.
+ℹ Please use the `linewidth` argument instead.
+ℹ The deprecated feature was likely used in the monocle3 package.
+  Please report the issue to the authors. 
+   lineage valid_cells  spearman                   pipeline
+1 Lineage1         471 0.6320917 Monocle3_without_alignment
+2 Lineage2         427 0.7424218 Monocle3_without_alignment
+SENSITIVITY_ONLY; not a replacement for the primary pipeline

@@ -1,0 +1,9 @@
+{
+  "start_utc": "2026-10-19T14:42:32.7257115Z",
+  "end_utc": "2026-10-19T14:42:40.1571834Z",
+  "exit_code": -1073741819,
+  "peak_sampled_working_set_bytes": 795967488,
+  "sampling_interval_ms": 100,
+  "threads_requested": 1,
+  "locale": "English_United States.utf8"
+}

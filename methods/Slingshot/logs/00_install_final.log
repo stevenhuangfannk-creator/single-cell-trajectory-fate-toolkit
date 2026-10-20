@@ -1,0 +1,161 @@
+R= R version 4.6.1 (2026-06-24 ucrt) 
+Library= C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library 
+Required non-base packages: 31 
+              package version
+            slingshot  2.20.0
+   DelayedMatrixStats  1.34.0
+            princurve   2.1.6
+      TrajectoryUtils  1.20.0
+               igraph   2.3.4
+          matrixStats   1.5.0
+            S4Vectors  0.50.3
+ SingleCellExperiment  1.34.0
+ SummarizedExperiment  1.42.0
+                  cli   3.6.6
+            lifecycle   1.0.5
+             magrittr   2.0.5
+            pkgconfig   2.0.3
+                rlang   1.3.0
+                vctrs   0.7.3
+                cpp11   0.5.5
+                 Rcpp   1.1.2
+         BiocGenerics  0.58.1
+        GenomicRanges  1.64.0
+         DelayedArray  0.38.2
+       MatrixGenerics  1.24.0
+              Biobase  2.72.0
+              IRanges  2.46.0
+              Seqinfo   1.2.0
+             S4Arrays  1.12.1
+             generics   0.1.4
+          SparseArray  1.12.3
+                abind   1.4-8
+                 glue   1.8.1
+              XVector  0.52.0
+    sparseMatrixStats  1.24.0
+DOWNLOAD 1 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/slingshot_2.20.0.zip remaining= 920184196 
+DOWNLOAD 2 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/DelayedMatrixStats_1.34.0.zip remaining= 920184196 
+DOWNLOAD 3 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/princurve_2.1.6.zip remaining= 920184196 
+DOWNLOAD 4 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/TrajectoryUtils_1.20.0.zip remaining= 920184196 
+DOWNLOAD 5 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/igraph_2.3.4.zip remaining= 920184196 
+DOWNLOAD 6 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/matrixStats_1.5.0.zip remaining= 920184196 
+DOWNLOAD 7 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/S4Vectors_0.50.3.zip remaining= 920184196 
+DOWNLOAD 8 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/SingleCellExperiment_1.34.0.zip remaining= 920184196 
+DOWNLOAD 9 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/SummarizedExperiment_1.42.0.zip remaining= 920184196 
+DOWNLOAD 10 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/cli_3.6.6.zip remaining= 920184196 
+DOWNLOAD 11 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/lifecycle_1.0.5.zip remaining= 920184196 
+DOWNLOAD 12 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/magrittr_2.0.5.zip remaining= 920184196 
+DOWNLOAD 13 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/pkgconfig_2.0.3.zip remaining= 920184196 
+DOWNLOAD 14 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/rlang_1.3.0.zip remaining= 920184196 
+DOWNLOAD 15 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/vctrs_0.7.3.zip remaining= 920184196 
+DOWNLOAD 16 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/cpp11_0.5.5.zip remaining= 920184196 
+DOWNLOAD 17 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/Rcpp_1.1.2.zip remaining= 920184196 
+DOWNLOAD 18 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/BiocGenerics_0.58.1.zip remaining= 920184196 
+DOWNLOAD 19 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/GenomicRanges_1.64.0.zip remaining= 920184196 
+DOWNLOAD 20 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/DelayedArray_0.38.2.zip remaining= 920184196 
+DOWNLOAD 21 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/MatrixGenerics_1.24.0.zip remaining= 920184196 
+DOWNLOAD 22 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/Biobase_2.72.0.zip remaining= 920184196 
+DOWNLOAD 23 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/IRanges_2.46.0.zip remaining= 920184196 
+DOWNLOAD 24 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/Seqinfo_1.2.0.zip remaining= 920184196 
+DOWNLOAD 25 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/S4Arrays_1.12.1.zip remaining= 920184196 
+DOWNLOAD 26 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/generics_0.1.4.zip remaining= 920184196 
+DOWNLOAD 27 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/SparseArray_1.12.3.zip remaining= 920184196 
+DOWNLOAD 28 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/abind_1.4-8.zip remaining= 920184196 
+DOWNLOAD 29 / 31 https://cloud.r-project.org/bin/windows/contrib/4.6/glue_1.8.1.zip remaining= 920184196 
+DOWNLOAD 30 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/XVector_0.52.0.zip remaining= 920184196 
+DOWNLOAD 31 / 31 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/sparseMatrixStats_1.24.0.zip remaining= 920184196 
+Loading required package: princurve
+Loading required package: TrajectoryUtils
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: 'MatrixGenerics'
+
+The following objects are masked from 'package:matrixStats':
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: generics
+
+Attaching package: 'generics'
+
+The following objects are masked from 'package:base':
+
+    as.difftime, as.factor, as.ordered, intersect, is.element, setdiff,
+    setequal, union
+
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, saveRDS, table, tapply, unique,
+    unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: 'S4Vectors'
+
+The following object is masked from 'package:utils':
+
+    findMatches
+
+The following objects are masked from 'package:base':
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: 'IRanges'
+
+The following object is masked from 'package:grDevices':
+
+    windows
+
+Loading required package: Seqinfo
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: 'Biobase'
+
+The following object is masked from 'package:MatrixGenerics':
+
+    rowMedians
+
+The following objects are masked from 'package:matrixStats':
+
+    anyMissing, rowMedians
+
+INSTALL_OK: slingshot  2.20.0 

@@ -1,0 +1,3 @@
+lineage	valid_cells	spearman	pipeline
+Lineage1	471	0.632091725574777	Monocle3_without_alignment
+Lineage2	427	0.742421767512312	Monocle3_without_alignment

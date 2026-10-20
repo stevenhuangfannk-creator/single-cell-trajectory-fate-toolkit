@@ -1,0 +1,104 @@
+{
+  "checked_date": "2026-10-19",
+  "provider": "GitHub connector list_repositories(owner=stevenhuangfannk-creator)",
+  "repositories": [
+    {
+      "name": "klf7-crlm",
+      "url": "https://github.com/stevenhuangfannk-creator/klf7-crlm",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 2
+    },
+    {
+      "name": "gprc5b-crc-endothelial",
+      "url": "https://github.com/stevenhuangfannk-creator/gprc5b-crc-endothelial",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 3
+    },
+    {
+      "name": "research-scripts-r",
+      "url": "https://github.com/stevenhuangfannk-creator/research-scripts-r",
+      "visibility": "public",
+      "default_branch": "main",
+      "size_kb": 14180
+    },
+    {
+      "name": "oral-scrna-atlas",
+      "url": "https://github.com/stevenhuangfannk-creator/oral-scrna-atlas",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 27361
+    },
+    {
+      "name": "WetLab-Methods-Atlas",
+      "url": "https://github.com/stevenhuangfannk-creator/WetLab-Methods-Atlas",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 236
+    },
+    {
+      "name": "oral-spatial-transcriptomics-database",
+      "url": "https://github.com/stevenhuangfannk-creator/oral-spatial-transcriptomics-database",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 1177
+    },
+    {
+      "name": "rogue-cluster-qc-",
+      "url": "https://github.com/stevenhuangfannk-creator/rogue-cluster-qc-",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 104
+    },
+    {
+      "name": "cadd-research-workflow",
+      "url": "https://github.com/stevenhuangfannk-creator/cadd-research-workflow",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 153
+    },
+    {
+      "name": "tf-regulatory-network-atlas",
+      "url": "https://github.com/stevenhuangfannk-creator/tf-regulatory-network-atlas",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 14396
+    },
+    {
+      "name": "bioinformatics-research-workbench",
+      "url": "https://github.com/stevenhuangfannk-creator/bioinformatics-research-workbench",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 2686
+    },
+    {
+      "name": "oral-bulk-clinical-atlas",
+      "url": "https://github.com/stevenhuangfannk-creator/oral-bulk-clinical-atlas",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 88
+    },
+    {
+      "name": "virtual-perturbation-toolkit",
+      "url": "https://github.com/stevenhuangfannk-creator/virtual-perturbation-toolkit",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 1364
+    },
+    {
+      "name": "regvelo-grn-dynamics",
+      "url": "https://github.com/stevenhuangfannk-creator/regvelo-grn-dynamics",
+      "visibility": "public",
+      "default_branch": "main",
+      "size_kb": 6620
+    },
+    {
+      "name": "single-cell-dynamics-perturbation",
+      "url": "https://github.com/stevenhuangfannk-creator/single-cell-dynamics-perturbation",
+      "visibility": "private",
+      "default_branch": "main",
+      "size_kb": 52405
+    }
+  ]
+}

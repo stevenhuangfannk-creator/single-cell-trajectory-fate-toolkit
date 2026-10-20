@@ -1,0 +1,163 @@
+{
+  "method": "Palantir",
+  "id": "palantir",
+  "language": "Python",
+  "official_sources": [
+    {
+      "label": "Official GitHub",
+      "url": "https://github.com/dpeerlab/Palantir",
+      "purpose": "原作者/官方实现代码与发行信息"
+    },
+    {
+      "label": "Documentation",
+      "url": "https://palantir.readthedocs.io/en/latest/",
+      "purpose": "API及教程入口"
+    },
+    {
+      "label": "Basic tutorial",
+      "url": "https://palantir.readthedocs.io/en/latest/notebooks/Palantir_sample_notebook.html",
+      "purpose": "输入、early cell、terminal及图件"
+    },
+    {
+      "label": "Publisher paper",
+      "url": "https://www.nature.com/articles/s41587-019-0068-4",
+      "purpose": "原始概率方法"
+    }
+  ],
+  "bioconductor": null,
+  "license": {
+    "identifier": "MIT",
+    "evidence": "v1.4.5 pyproject及当前GitHub LICENSE/API；历史许可证变动见README1.4.1说明",
+    "source_url": "https://raw.githubusercontent.com/dpeerlab/Palantir/f819d5156c8f9a24238fd77fc6d45af16761edfc/pyproject.toml"
+  },
+  "environment": {
+    "declared_minimum": "v1.4.5 pyproject Python>=3.9；最终可解环境还受Scanpy/Numba/JAX等依赖限制",
+    "dependencies": [
+      "scanpy>=1.6.0",
+      "mellon>=1.6.1",
+      "anndata>=0.8.0",
+      "ml_dtypes>=0.5.0",
+      "igraph>=0.11.8",
+      "scikit-learn",
+      "matplotlib>=3.8.0",
+      "numpy>=1.17.0",
+      "pandas>=0.22.0",
+      "scipy>=1.3",
+      "networkx>=2.1",
+      "joblib",
+      "可选gam: pygam；可选fcs: fcsparser"
+    ],
+    "system_constraints": [
+      "主流程为CPU图/稀疏求解，无强制CUDA声明；具体Mellon/JAX及绘图依赖仍需目标平台测试。",
+      "pyproject为OS Independent并列Linux；这不是本Windows环境已验证。",
+      "可选pygam的旧版与新SciPy兼容问题在README中有说明；不把可选趋势拟合当核心算法必需。"
+    ],
+    "stable_release_metadata_url": "https://raw.githubusercontent.com/dpeerlab/Palantir/v1.4.5/pyproject.toml"
+  },
+  "input": {
+    "matrix": "经明确预处理的cell×gene表达/AnnData，以及PCA、diffusion/multiscale空间",
+    "object": "AnnData推荐，或API支持的dataframe；需要有依据的early_cell，terminal可推断或指定",
+    "upstream": "既有QC/注释/根与终末依据需保留，归一化/对数转换不能重复",
+    "spliced_unspliced_required": false
+  },
+  "outputs": [
+    "root相关pseudotime",
+    "terminal fate/branch probabilities",
+    "differentiation entropy及gene trends（可选）"
+  ],
+  "representative_figures": [
+    {
+      "name": "embedding上pseudotime、entropy和各terminal概率",
+      "functions": [
+        "palantir.plot.plot_palantir_results"
+      ]
+    },
+    {
+      "name": "分支概率对比和沿lineage基因趋势/趋势聚类",
+      "functions": [
+        "palantir.plot.plot_branch_selection",
+        "palantir.plot.plot_gene_trends"
+      ]
+    }
+  ],
+  "tutorials": [
+    {
+      "url": "https://palantir.readthedocs.io/en/latest/notebooks/Palantir_sample_notebook.html",
+      "entry": "4142细胞×16106基因的骨髓样例；原notebook亦在GitHub/notebooks"
+    }
+  ],
+  "example_data": [
+    {
+      "name": "marrow_sample_scseq_counts.h5ad",
+      "url": "https://dp-lab-data-public.s3.amazonaws.com/palantir/marrow_sample_scseq_counts.h5ad",
+      "access": "作者教程直接链接，仅记录未GET数据",
+      "smallness": "教程显示4142×16106；文件大小未核实，不声称可瞬时运行",
+      "data_kind": "REAL_PUBLIC_EXAMPLE",
+      "download_status": "NOT_TESTED"
+    }
+  ],
+  "scientific_boundaries": [
+    "依赖分化过程的方向、起点、终末及表型流形/Markov假设，适用性须结合真实生物过程判断。",
+    "fate概率是模型内吸收概率，不等于每个细胞将来命运的实验频率；entropy不是已校准万能干性。",
+    "图断裂、遗漏终末、root选择和密度影响概率；不自动消除批次和非分化混杂。"
+  ],
+  "version_caveats": [
+    "GitHub正式release1.4.5（2026-07-15），latest文档标题仍1.4.4；README1.4.6标future，不当已发行。",
+    "1.4.5变更随机数Generator/PCG64，官方说明精确数值会不同于旧版；需固定版本与seed。"
+  ],
+  "paper": {
+    "title": "Characterization of cell fate probabilities in single-cell data with Palantir",
+    "doi": "10.1038/s41587-019-0068-4",
+    "doi_url": "https://doi.org/10.1038/s41587-019-0068-4",
+    "journal": "Nature Biotechnology",
+    "published_date_parts": [
+      [
+        2019,
+        3,
+        21
+      ]
+    ],
+    "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41587-019-0068-4",
+    "verification_status": "VERIFIED_CROSSREF_PRIMARY_METADATA",
+    "checked_date": "2026-10-19"
+  },
+  "code": {
+    "github_url": "https://github.com/dpeerlab/Palantir",
+    "sha_asof_date": "f819d5156c8f9a24238fd77fc6d45af16761edfc",
+    "commit_date": "2026-09-23T17:26:52Z",
+    "commit_url": "https://github.com/dpeerlab/Palantir/commit/f819d5156c8f9a24238fd77fc6d45af16761edfc",
+    "query_url": "https://api.github.com/repos/dpeerlab/Palantir/commits?until=2026-10-19T23:59:59Z&per_page=1",
+    "release_query_url": "https://api.github.com/repos/dpeerlab/Palantir/releases?per_page=10",
+    "latest_nonprerelease_in_queried_10_releases": {
+      "tag_name": "v1.4.5",
+      "published_at": "2026-07-15T20:13:00Z",
+      "html_url": "https://github.com/dpeerlab/Palantir/releases/tag/v1.4.5"
+    },
+    "checked_date": "2026-10-19",
+    "metadata_url_at_sha": "https://raw.githubusercontent.com/dpeerlab/Palantir/f819d5156c8f9a24238fd77fc6d45af16761edfc/pyproject.toml",
+    "description_version_at_sha": null
+  },
+  "status": {
+    "installation": "NOT_TESTED",
+    "execution": "NOT_TESTED",
+    "example_run": "NOT_TESTED",
+    "real_data_analysis": "NOT_TESTED"
+  },
+  "new_installation_status": "NOT_TESTED",
+  "small_sample_validation_status": "NOT_TESTED",
+  "runtime_status": "NOT_TESTED",
+  "scientific_validation_status": "NOT_TESTED",
+  "checked_date": "2026-10-19",
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "依赖分化过程的方向、起点、终末及表型流形/Markov假设，适用性须结合真实生物过程判断。",
+    "fate概率是模型内吸收概率，不等于每个细胞将来命运的实验频率；entropy不是已校准万能干性。",
+    "图断裂、遗漏终末、root选择和密度影响概率；不自动消除批次和非分化混杂。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

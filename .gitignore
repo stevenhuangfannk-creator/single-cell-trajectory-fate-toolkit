@@ -1,0 +1,50 @@
+# 本地运行时、软件缓存和真正的大对象不进入未来的Git仓库。
+work/
+.Rhistory
+.RData
+.Rproj.user/
+.venv/
+__pycache__/
+*.h5ad
+*.h5
+*.loom
+*.pt
+*.ckpt
+# 本次140点例的小型RDS及真实图件明确保留，不能忽略全部结果。
+
+# 第三轮：原Slingshot小对象保持可保留；新方法原始输入/模型本地存在但不进Git。
+.local_round3/
+methods/tradeSeq/results/*.rds
+methods/Monocle3/results/*.rds
+combinations/Slingshot_tradeSeq_Monocle3/results/*.rds
+combinations/Slingshot_tradeSeq_Monocle3/sensitivity_no_alignment/results/*.rds
+*.zip
+*.tar.gz
+*.tar.zst
+*.dll
+*.exe
+
+# 第四轮：保留本地对象，Git统一排除RDS、模型、环境与下载数据。
+*.rds
+*.RDS
+*.pth
+*.pkl
+*.pickle
+*.onnx
+*.npz
+*.h5mu
+*.hdf5
+*.parquet
+*.gz
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+venv/
+env/
+runtime/
+downloads/
+cache/
+.cache/

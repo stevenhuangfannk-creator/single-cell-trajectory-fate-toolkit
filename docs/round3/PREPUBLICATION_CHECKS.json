@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local static audit; no actual project git init, index, commit or remote action",
+  "Git_ignore_engine": "git check-ignore --no-index in scratch bare repository",
+  "candidate_files_including_indexes": 418,
+  "ignored_local_files": 14,
+  "largest_candidate": {
+    "path": "combinations/Slingshot_tradeSeq_Monocle3/example_data/worm_GO_BP_membership.tsv",
+    "bytes": 7960877
+  },
+  "candidate_files_ge_100_MiB": [],
+  "relative_markdown_links_checked": 554,
+  "local_image_links_checked": 49,
+  "README_images_checked": 4,
+  "README_images": [
+    {
+      "source": "README.md",
+      "line": 48,
+      "target": "methods/Slingshot/figures/S02_principal_curves.png",
+      "resolved": "methods/Slingshot/figures/S02_principal_curves.png",
+      "image": true
+    },
+    {
+      "source": "README.md",
+      "line": 67,
+      "target": "methods/tradeSeq/figures/T03_dynamic_gene_heatmap.png",
+      "resolved": "methods/tradeSeq/figures/T03_dynamic_gene_heatmap.png",
+      "image": true
+    },
+    {
+      "source": "README.md",
+      "line": 71,
+      "target": "methods/Monocle3/figures/M03_rooted_pseudotime.png",
+      "resolved": "methods/Monocle3/figures/M03_rooted_pseudotime.png",
+      "image": true
+    },
+    {
+      "source": "README.md",
+      "line": 75,
+      "target": "combinations/Slingshot_tradeSeq_Monocle3/figures/C02_per_lineage_pseudotime.png",
+      "resolved": "combinations/Slingshot_tradeSeq_Monocle3/figures/C02_per_lineage_pseudotime.png",
+      "image": true
+    }
+  ],
+  "broken_relative_links": [],
+  "active_broken_relative_links": [],
+  "links_to_ignored_local_targets": [],
+  "credential_pattern_scan": {
+    "status": "PASS_NO_MATCHES",
+    "findings": [],
+    "limits": "Pattern scan only; does not establish absence of every secret. Matched content never emitted."
+  },
+  "UTF8_replacement_character_files": [],
+  "private_local_path_files": [
+    "combinations/Slingshot_tradeSeq_Monocle3/logs/01_combination_run.log",
+    "combinations/Slingshot_tradeSeq_Monocle3/logs/02_ID_corrected_run.log",
+    "combinations/Slingshot_tradeSeq_Monocle3/logs/03_saved_fit_figures_function.log",
+    "combinations/Slingshot_tradeSeq_Monocle3/logs/04_no_alignment_sensitivity.log",
+    "combinations/Slingshot_tradeSeq_Monocle3/logs/model_parameters_session.txt",
+    "combinations/Slingshot_tradeSeq_Monocle3/logs/user_entry_20261019_123304_062.log",
+    "docs/first_round/trajectory_fate_review_2026-10-19/02_EXISTING_ASSETS_AUDIT.md",
+    "docs/first_round/trajectory_fate_review_2026-10-19/evidence/local_asset_audit.json",
+    "docs/first_round/trajectory_fate_review_2026-10-19/README.md",
+    "docs/round3/FINAL_USER_ENTRIES.log",
+    "environments/R-installed-packages.csv",
+    "environments/round3/install_BPCells.log",
+    "environments/round3/install_BPCells_debug.log",
+    "environments/round3/install_BPCells_final.log",
+    "environments/round3/install_BPCells_shortpath.log",
+    "environments/round3/install_Monocle3.log",
+    "environments/round3/installed_packages.csv",
+    "environments/round3/test_compile.log",
+    "methods/Monocle3/logs/01_official_run.log",
+    "methods/Monocle3/logs/02_single_partition_display_replot.log",
+    "methods/Monocle3/logs/03_local_coverage_display_replot.log",
+    "methods/Monocle3/logs/parameters_session.txt",
+    "methods/Monocle3/logs/user_entry_20261019_123211_978.log",
+    "methods/Slingshot/logs/00_install.log",
+    "methods/Slingshot/logs/00_install_attempt2.log",
+    "methods/Slingshot/logs/00_install_final.log",
+    "methods/Slingshot/logs/02_run_stdout.log",
+    "methods/Slingshot/logs/03_run_stdout.log",
+    "methods/Slingshot/logs/04_run_stdout.log",
+    "methods/Slingshot/logs/05_replot_stdout.log",
+    "methods/Slingshot/logs/20261019_095908_stdout.log",
+    "methods/Slingshot/logs/R-install.log",
+    "methods/tradeSeq/logs/01_official_run.log",
+    "methods/tradeSeq/logs/02_numerical_sensitivity_replot.log",
+    "methods/tradeSeq/logs/03_saved_fit_replot.log",
+    "methods/tradeSeq/logs/04_final_figure_export.log",
+    "methods/tradeSeq/logs/model_parameters_session.txt",
+    "methods/tradeSeq/logs/user_entry_20261019_123127_901.log"
+  ],
+  "manual_publication_review": "PENDING: original historical archive/private project references, local paths, overall license and visibility",
+  "new_RDS_ignored": {
+    "count": 14,
+    "not_ignored": []
+  },
+  "original_Slingshot": {
+    "checked": 79,
+    "changed": []
+  },
+  "numeric_replay": {
+    "checked": 47,
+    "changed": []
+  },
+  "first_round_archive": {
+    "ZIP_sha256": "9324b8877fcbf8310341bd643a613486e94d22f7ed53b3166bb29f5df134da6c",
+    "files_checked": 47,
+    "changed_or_missing": []
+  },
+  "technical_status": "PASS",
+  "scientific_consensus": "NOT_ESTABLISHED_AWA_ENDPOINT_FAIL",
+  "public_release_ready": false,
+  "remote_created_or_modified": false,
+  "manifest_policy": "PUBLICATION_FILELIST.csv lists Git candidates excluding itself and final SHA256SUMS.txt to avoid self hashes; those two indexes are extra files. Final SHA256SUMS covers all delivered files except itself.",
+  "external_links": "Sources recorded, not all external URLs re-fetched by this static audit; private links may need access."
+}

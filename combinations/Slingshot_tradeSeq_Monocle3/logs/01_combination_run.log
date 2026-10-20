@@ -1,0 +1,32 @@
+Round3 project: C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/outputs/single-cell-trajectory-fate-toolkit ; serial cores= 1 
+Round3 project: C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/outputs/single-cell-trajectory-fate-toolkit ; serial cores= 1 
+
+               ASG            ASG_AWA                AWA Neuroblast_ASG_AWA 
+               173                 99                236                142 
+COMMON_INPUT_OK 10000 650 
+$Lineage1
+[1] "Neuroblast_ASG_AWA" "ASG_AWA"            "AWA"               
+
+$Lineage2
+[1] "Neuroblast_ASG_AWA" "ASG_AWA"            "ASG"               
+
+Aligning cells from different batches using Batchelor.
+Please remember to cite:
+	 Haghverdi L, Lun ATL, Morgan MD, Marioni JC (2018). 'Batch effects in single-cell RNA-sequencing data are corrected by matching mutual nearest neighbors.' Nat. Biotechnol., 36(5), 421-427. doi: 10.1038/nbt.4091
+No preprocess_method specified, and aligned coordinates have been computed previously. Using preprocess_method = 'Aligned'
+Warning:
+  saveRDS(cds, ...) does not save annoy or hnsw nearest
+  neighbor indices, which you may need for future
+  analyses.
+
+We urge you to use the function
+
+    save_monocle_objects()
+
+  in order to save all of the information in the cds.
+  See the notes in the save_monocle_objects() help
+  documentation for additional information.
+However, we are running base::saveRDS() as you requested.
+INDEPENDENT_TRAJECTORIES_OK
+Error: identical(colnames(xC), rownames(slingReducedDim(ssC))) is not TRUE
+Execution halted

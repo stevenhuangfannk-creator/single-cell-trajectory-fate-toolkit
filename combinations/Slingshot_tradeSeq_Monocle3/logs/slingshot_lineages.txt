@@ -1,0 +1,6 @@
+$Lineage1
+[1] "Neuroblast_ASG_AWA" "ASG_AWA"            "AWA"               
+
+$Lineage2
+[1] "Neuroblast_ASG_AWA" "ASG_AWA"            "ASG"               
+

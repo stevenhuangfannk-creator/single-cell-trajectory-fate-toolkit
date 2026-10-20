@@ -1,0 +1,153 @@
+function (models, global = TRUE, lineages = FALSE, l2fc = 0, 
+    contrastType = "start", nPoints = 2 * tradeSeq::nknots(models), 
+    inverse = "Chol") 
+{
+    if (is(models, "list")) {
+        sce <- FALSE
+        stop("If working with list output, the old .associationTest_original ", 
+            "function should be used.")
+    }
+    else if (is(models, "SingleCellExperiment")) {
+        sce <- TRUE
+    }
+    if (l2fc != 0) {
+        contrastType <- match.arg(contrastType, c("start", "end", 
+            "consecutive"))
+    }
+    dm <- colData(models)$tradeSeq$dm
+    X <- colData(models)$tradeSeq$X
+    knotPoints <- S4Vectors::metadata(models)$tradeSeq$knots
+    conditions <- suppressWarnings(models$tradeSeq$conditions)
+    nCurves <- length(grep(x = colnames(dm), pattern = "t[1-9]"))
+    maxT <- sapply(seq_len(nCurves), function(cc) {
+        max(dm[, paste0("t", cc)][dm[, paste0("l", cc)] == 1])
+    })
+    slingshotColData <- colData(models)$crv
+    pseudotime <- slingshotColData[, grep(x = colnames(slingshotColData), 
+        pattern = "pseudotime"), drop = FALSE]
+    if (nCurves == 1) {
+        L1 <- matrix(0, nrow = ncol(X), ncol = nPoints - 1)
+        colnames(L1) <- paste0("point", seq_len(nPoints)[-1])
+        contrastPoints <- seq(0, maxT, length.out = nPoints)
+        dfPoints <- do.call(rbind, sapply(contrastPoints, .getPredictCustomPointDf, 
+            dm = dm, lineageId = 1, simplify = FALSE))
+        XPoints <- predictGAM(lpmatrix = X, df = dfPoints, pseudotime = pseudotime, 
+            conditions = conditions)
+        if (contrastType == "start") {
+            for (pp in seq_len(nPoints)[-1]) {
+                L1[, pp - 1] <- XPoints[pp, ] - XPoints[1, ]
+            }
+        }
+        else if (contrastType == "end") {
+            for (pp in seq_len(nPoints)[-nPoints]) {
+                L1[, pp] <- XPoints[pp, ] - XPoints[nPoints, 
+                  ]
+            }
+        }
+        else if (contrastType == "consecutive") {
+            for (pp in seq_len(nPoints)[-nPoints]) {
+                L1[, pp] <- XPoints[pp + 1, ] - XPoints[pp, ]
+            }
+        }
+    }
+    else if (nCurves > 1) {
+        for (jj in seq_len(nCurves)) {
+            tmax <- maxT[jj]
+            C <- matrix(0, nrow = ncol(X), ncol = nPoints - 1)
+            colnames(C) <- paste0("lineage", jj, "point", seq_len(nPoints)[-1])
+            contrastPoints <- seq(0, maxT[jj], length.out = nPoints)
+            dfPoints <- do.call(rbind, sapply(contrastPoints, 
+                .getPredictCustomPointDf, dm = dm, lineageId = jj, 
+                simplify = FALSE))
+            XPoints <- predictGAM(lpmatrix = X, df = dfPoints, 
+                pseudotime = pseudotime, conditions = conditions)
+            if (contrastType == "start") {
+                for (pp in seq_len(nPoints)[-1]) {
+                  C[, pp - 1] <- XPoints[pp, ] - XPoints[1, ]
+                }
+            }
+            else if (contrastType == "end") {
+                for (pp in seq_len(nPoints)[-nPoints]) {
+                  C[, pp] <- XPoints[pp, ] - XPoints[nPoints, 
+                    ]
+                }
+            }
+            else if (contrastType == "consecutive") {
+                for (pp in seq_len(nPoints)[-nPoints]) {
+                  C[, pp] <- XPoints[pp + 1, ] - XPoints[pp, 
+                    ]
+                }
+            }
+            assign(paste0("L", jj), C)
+        }
+    }
+    L <- do.call(cbind, list(mget(paste0("L", seq_len(nCurves))))[[1]])
+    if (global) {
+        betaAll <- rowData(models)$tradeSeq$beta[[1]]
+        SigmaAll <- rowData(models)$tradeSeq$Sigma
+        waldResultsOmnibus <- lapply(seq_len(nrow(models)), function(ii) {
+            beta <- t(betaAll[ii, ])
+            Sigma <- SigmaAll[[ii]]
+            if (any(is.na(beta))) 
+                return(c(NA, NA, NA))
+            waldTestFC(beta, Sigma, L, l2fc, inverse)
+        })
+        names(waldResultsOmnibus) <- names(models)
+        waldResults <- do.call(rbind, waldResultsOmnibus)
+        colnames(waldResults) <- c("waldStat", "df", "pvalue")
+        waldResults <- as.data.frame(waldResults)
+    }
+    if (lineages) {
+        betaAll <- rowData(models)$tradeSeq$beta[[1]]
+        SigmaAll <- rowData(models)$tradeSeq$Sigma
+        waldResultsLineages <- lapply(seq_len(nrow(models)), 
+            function(ii) {
+                beta <- t(betaAll[ii, ])
+                Sigma <- SigmaAll[[ii]]
+                t(vapply(seq_len(nCurves), function(ll) {
+                  if (any(is.na(beta))) 
+                    return(c(NA, NA, NA))
+                  waldTestFC(beta, Sigma, get(paste0("L", ll)), 
+                    l2fc, inverse)
+                }, FUN.VALUE = c(0.1, 1, 0.1)))
+            })
+        names(waldResultsLineages) <- names(models)
+        colNames <- c(paste0("waldStat_", seq_len(nCurves)), 
+            paste0("df_", seq_len(nCurves)), paste0("pvalue_", 
+                seq_len(nCurves)))
+        orderByContrast <- unlist(c(mapply(seq, seq_len(nCurves), 
+            3 * nCurves, by = nCurves)))
+        waldResAllLineages <- do.call(rbind, lapply(waldResultsLineages, 
+            function(x) {
+                matrix(x, nrow = 1, dimnames = list(NULL, colNames))[, 
+                  orderByContrast]
+            }))
+    }
+    betaAll <- as.matrix(rowData(models)$tradeSeq$beta[[1]])
+    fcAll <- apply(betaAll, 1, function(betam) {
+        if (any(is.na(betam))) 
+            return(NA)
+        .getFoldChanges(betam, L)
+    })
+    if (is(fcAll, "list")) 
+        fcAll <- do.call(rbind, fcAll)
+    if (is.null(dim(fcAll))) {
+        fcMean <- abs(unlist(fcAll))
+    }
+    else {
+        if (nrow(fcAll) == nrow(models)) {
+            fcMean <- matrix(rowMeans(abs(fcAll)), ncol = 1)
+        }
+        else {
+            fcMean <- matrix(rowMeans(abs(t(fcAll))), ncol = 1)
+        }
+    }
+    if (global == TRUE & lineages == FALSE) 
+        return(cbind(waldResults, meanLogFC = fcMean))
+    if (global == FALSE & lineages == TRUE) 
+        return(cbind(waldResAllLineages, meanLogFC = fcMean))
+    if (global == TRUE & lineages == TRUE) {
+        waldAll <- cbind(waldResults, waldResAllLineages, meanLogFC = fcMean)
+        return(waldAll)
+    }
+}

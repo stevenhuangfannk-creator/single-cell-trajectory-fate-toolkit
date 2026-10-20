@@ -1,0 +1,36 @@
+Round3 project: C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/outputs/single-cell-trajectory-fate-toolkit ; serial cores= 1 
+Round3 project: C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/outputs/single-cell-trajectory-fate-toolkit ; serial cores= 1 
+INPUT_OK genes= 240 cells= 2660 lineages= 2 
+celltype
+              Basophils             Erythrocyte                     GMP 
+                    369                    1095                     216 
+         Megakaryocytes               Monocytes Multipotent progenitors 
+                     68                     559                     167 
+            Neutrophils 
+                    186 
+$Lineage1
+[1] "1" "4" "3" "7" "5"
+
+$Lineage2
+[1] "1" "2" "6"
+
+calcNormFactors has been renamed to normLibSizes
+MODEL convergence:conv3
+TRUE 
+ 240 
+   user  system elapsed 
+  30.47    0.83   31.19 
+TEST association 
+TEST association_eigen_sensitivity 
+TEST startVsEnd 
+TEST pattern 
+TEST diffEnd 
+TEST earlyDE_knots1_2 
+                           test genes valid_p significant
+1                   association   240     114         110
+2 association_eigen_sensitivity   240     240         240
+3                    startVsEnd   240     240         230
+4                       pattern   240     240         235
+5                       diffEnd   240     240         206
+6              earlyDE_knots1_2   240     240         170
+FIGURE export completed

@@ -1,0 +1,26 @@
+[
+  {
+    "package": "cli",
+    "exit_code": -1073741819
+  },
+  {
+    "package": "rlang",
+    "exit_code": -1073741819
+  },
+  {
+    "package": "vctrs",
+    "exit_code": -1073741819
+  },
+  {
+    "package": "magrittr",
+    "exit_code": 0
+  },
+  {
+    "package": "pkgconfig",
+    "exit_code": 0
+  },
+  {
+    "package": "lifecycle",
+    "exit_code": -1073741819
+  }
+]

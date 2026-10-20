@@ -1,0 +1,51 @@
+START_UTC 2026-10-19 14:42:32 UTC 
+Project: C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/outputs/single-cell-trajectory-fate-toolkit 
+Method: Slingshot 
+Run 01 -> 02 -> 03. No automatic installation.
+
+STEP 01_Load_and_Check.R 
+INPUT_OK
+              metric value
+1              cells   140
+2         dimensions     2
+3           clusters     5
+4 finite_coordinates   280
+5 duplicate_cell_ids     0
+cl
+ 1  2  3  4  5 
+36 36 24 22 22 
+
+STEP 02_Infer_Lineages_and_Curves.R 
+RUN_OK
+          lineage     cluster_path
+Lineage1 Lineage1 1 -> 2 -> 3 -> 5
+Lineage2 Lineage2 1 -> 2 -> 3 -> 4
+   lineage cells_total finite_pseudotime missing_pseudotime minimum  maximum
+1 Lineage1         140               107                 33       0 15.04536
+2 Lineage2         140               108                 32       0 15.12633
+  weight_min weight_max
+1          0          1
+2          0          1
+Fit elapsed seconds: 0.4136181 
+
+STEP 03_Plot_and_Export.R 
+EXPORTED S01_cluster_MST.png 26221 bytes
+EXPORTED S01_cluster_MST.pdf 13764 bytes
+EXPORTED S01_cluster_MST.svg 116283 bytes
+EXPORTED S02_principal_curves.png 26648 bytes
+EXPORTED S02_principal_curves.pdf 15142 bytes
+EXPORTED S02_principal_curves.svg 120833 bytes
+EXPORTED S03_Lineage1_pseudotime.png 30191 bytes
+EXPORTED S03_Lineage1_pseudotime.pdf 15657 bytes
+EXPORTED S03_Lineage1_pseudotime.svg 146583 bytes
+EXPORTED S04_Lineage1_curve_weight.png 30562 bytes
+EXPORTED S04_Lineage1_curve_weight.pdf 15388 bytes
+EXPORTED S04_Lineage1_curve_weight.svg 147643 bytes
+EXPORTED S03_Lineage2_pseudotime.png 30297 bytes
+EXPORTED S03_Lineage2_pseudotime.pdf 15667 bytes
+EXPORTED S03_Lineage2_pseudotime.svg 147347 bytes
+EXPORTED S04_Lineage2_curve_weight.png 30583 bytes
+EXPORTED S04_Lineage2_curve_weight.pdf 15362 bytes
+EXPORTED S04_Lineage2_curve_weight.svg 148403 bytes
+FIGURE_FILES_CREATED; visual verification remains a separate check.
+END_UTC 2026-10-19 14:42:37 UTC 

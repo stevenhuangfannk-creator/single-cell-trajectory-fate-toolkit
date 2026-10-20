@@ -1,0 +1,133 @@
+{
+  "name": "WOT",
+  "identity_status": "RESOLVED_PRIMARY_PAPER_AND_OFFICIAL_CODE",
+  "paper": {
+    "title": "Optimal-Transport Analysis of Single-Cell Gene Expression Identifies Developmental Trajectories in Reprogramming",
+    "doi": "10.1016/j.cell.2019.01.006",
+    "url": "https://doi.org/10.1016/j.cell.2019.01.006",
+    "crossref_url": "https://api.crossref.org/works/10.1016/j.cell.2019.01.006",
+    "crossref_status": "VERIFIED_TITLE_DOI",
+    "published_date_parts": [
+      [
+        2019,
+        2
+      ]
+    ]
+  },
+  "official_github": "https://github.com/broadinstitute/wot",
+  "official_website_or_docs": "https://broadinstitute.github.io/wot/",
+  "bioconductor": {
+    "status": "NOT_APPLICABLE_OFFICIAL_DISTRIBUTION_USES_OTHER_CHANNEL",
+    "url": null,
+    "note": "核实的官方安装来源为GitHub/PyPI；未声称存在或检索排除所有Bioconductor同名包。"
+  },
+  "query_date": "2026-10-19",
+  "installation_status": "NOT_TESTED",
+  "import_status": "NOT_TESTED",
+  "run_status": "NOT_TESTED",
+  "real_data_analysis_status": "NOT_RUN",
+  "prototype_status": "NOT_RUN",
+  "version": {
+    "query_date": "2026-10-19",
+    "latest_github_release_before_cutoff": null,
+    "default_branch_sha": "ca5e94f05699997b01cf5ae13383f9810f0613f6",
+    "commit_date": "2021-03-31T15:27:28Z",
+    "policy": "GitHub commit query bounded by 2026-10-19; distinguish release and development SHA.",
+    "pypi": {
+      "url": "https://pypi.org/project/wot/",
+      "current_info_version": "1.0.8.post2",
+      "requires_python": ">= 3",
+      "requires_dist": [
+        "numpy",
+        "pandas",
+        "h5py",
+        "anndata",
+        "scikit-learn",
+        "scipy",
+        "matplotlib",
+        "POT"
+      ],
+      "latest_uploads_before_cutoff": [
+        {
+          "version": "1.0.8.post2",
+          "upload_time": "2020-08-24T11:40:48.303188Z"
+        },
+        {
+          "version": "1.0.8.post1",
+          "upload_time": "2020-04-22T00:25:44.298962Z"
+        },
+        {
+          "version": "1.0.8",
+          "upload_time": "2019-10-16T22:09:42.458779Z"
+        }
+      ]
+    }
+  },
+  "license": {
+    "name": "BSD-3-Clause",
+    "url": "https://github.com/broadinstitute/wot/blob/master/LICENSE"
+  },
+  "tutorials": [
+    {
+      "label": "官方8个notebook及CLI教程",
+      "url": "https://broadinstitute.github.io/wot/tutorial/"
+    },
+    {
+      "label": "官方notebooks源码",
+      "url": "https://github.com/broadinstitute/wot/tree/master/notebooks"
+    }
+  ],
+  "small_example_data": [
+    {
+      "label": "教程input data与precomputed transport maps链接位于此页",
+      "url": "https://broadinstitute.github.io/wot/tutorial/",
+      "size_status": "NOT_CONFIRMED_SMALL：教程39时间点/18天，input zip/maps zip bytes未查，不默认下载全量",
+      "download_status": "NOT_DOWNLOADED"
+    }
+  ],
+  "dependencies_os_hardware": {
+    "python": "PyPI1.0.8.post2（2020-08-24），requires_python>=3；setup.py依赖numpy/pandas/h5py/anndata/scikit-learn/scipy/matplotlib/POT，未充分限定现代版本，不能由宽下限宣称新栈兼容。",
+    "os": "历史setup classifiers包含Windows/macOS/Linux及Python3.5/3.6，本轮均NOT_TESTED。",
+    "hardware": "OT成本/耦合可按源×目标细胞增长；CPU/RAM预算须按timepoint sizes预估，最低RAM未知。官方FLE作图例另用Java，非OT核心强制依赖。",
+    "maintenance": "官方CellRank2.3 stable将WOT标unmaintained；WOT默认分支最近commit为2021-03-31。"
+  },
+  "inputs": {
+    "required": "真实采样time-course；expression与cell_days逐cell ID匹配，至少可比较的多个时间点。",
+    "optional": "growth/proliferation/apoptosis rates及定义；教程log-normalized TPM与局部PCA cost。",
+    "not_allowed": "把疾病组别/拟时序直接冒充实验采样day。"
+  },
+  "outputs": [
+    "相邻真实时间点间OT transport maps（descendant mass）",
+    "ancestor/descendant trajectories、fate matrices",
+    "可选interpolation/trajectory gene trends"
+  ],
+  "representative_figures": [
+    "temporal transport map热图/流图",
+    "ancestor/descendant/fate可视化",
+    "随真实时间的trajectory gene trends"
+  ],
+  "scientific_boundaries": [
+    "transport mass不是原始行归一化概率；growth与采样/成本/正则化假设影响结果。",
+    "横断面静态组不能给出真实时间耦合；模型最优耦合不是观测细胞谱系。",
+    "CellRank.from_wot since2.2 deprecated，3.0将移除；保留WOT需冻结兼容环境或显式couplings。moscot是需另行确认的方法变化，本轮不替换。"
+  ],
+  "official_install_reference": "pip install wot或官方environment.yml（仅记录，未执行）。",
+  "review_flags": [
+    "UNMAINTAINED_OFFICIAL_CELLRANK_NOTICE",
+    "LEGACY_DEPENDENCIES",
+    "TRUE_EXPERIMENTAL_TIME_REQUIRED",
+    "CELLRANK_COUPLING_ROUTE_DECISION_PENDING"
+  ],
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "transport mass不是原始行归一化概率；growth与采样/成本/正则化假设影响结果。",
+    "横断面静态组不能给出真实时间耦合；模型最优耦合不是观测细胞谱系。",
+    "CellRank.from_wot since2.2 deprecated，3.0将移除；保留WOT需冻结兼容环境或显式couplings。moscot是需另行确认的方法变化，本轮不替换。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

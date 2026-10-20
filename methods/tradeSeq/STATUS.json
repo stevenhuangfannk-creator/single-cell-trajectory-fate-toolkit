@@ -1,0 +1,27 @@
+{
+  "method": "tradeSeq",
+  "scope": "Official 240-gene Paul15 subset with supplied Slingshot trajectories; extra eigen sensitivity",
+  "INSTALL": "PASS",
+  "INPUT": "PASS",
+  "RUN": "PASS_WITH_NUMERICAL_LIMITATIONS",
+  "FIGURE": "PASS",
+  "TUTORIAL_CN": "COMPLETE_REVIEWED",
+  "converged": 240,
+  "genes": 240,
+  "cells": 2660,
+  "lineages": 2,
+  "association_default_valid": 114,
+  "association_default_NA": 126,
+  "FDR_family_n": 240,
+  "figure_groups": 5,
+  "limitations": [
+    "default association Cholesky numerical NA retained",
+    "eigen is sensitivity, not selected for significance",
+    "prescreened gene panel; no whole-genome GSEA",
+    "no donor-level or causal inference"
+  ],
+  "remote_modified": false,
+  "user_entry_fresh_session": "PASS",
+  "numeric_repeat_check": "47 TSV hashes unchanged across three modules",
+  "RNG": "R 4.6 default Mersenne-Twister/Inversion/Rejection; seed 7; legacy RNGversion(3.5.0) not used"
+}

@@ -1,0 +1,19 @@
+{
+  "module": "Slingshot + tradeSeq + Monocle3",
+  "INSTALL": "PASS",
+  "INPUT": "PASS",
+  "RUN": "PASS_AFTER_RECORDED_ID_AND_PLOT_FIXES",
+  "FIGURE": "PASS",
+  "TUTORIAL_CN": "COMPLETE_REVIEWED",
+  "COMBINATION_VALIDATION_RUN": "PASS_ACTUAL_SAME_DATA",
+  "SCIENTIFIC_COMPARABILITY": "PARTIAL",
+  "AWA_ENDPOINT": "FAIL",
+  "CONSENSUS": "NOT_ESTABLISHED",
+  "FUNCTION_ORA": "PASS_CONDITIONAL_WITH_ANNOTATION_LIMITS",
+  "GENOME_WIDE_GSEA": "NOT_APPLICABLE_TO_PRESCREENED_NONDIRECTIONAL_PANEL",
+  "real_PI_data_run": false,
+  "figures_primary": 7,
+  "figures_sensitivity": 1,
+  "user_entry_fresh_session": "PASS",
+  "numeric_repeat_check": "47 TSV hashes unchanged across three modules"
+}

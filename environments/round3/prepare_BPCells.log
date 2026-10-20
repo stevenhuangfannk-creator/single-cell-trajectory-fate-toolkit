@@ -1,0 +1,41 @@
+                package version
+readr             readr   2.2.0
+patchwork     patchwork   1.3.2
+scattermore scattermore     1.2
+hexbin           hexbin  1.28.6
+clipr             clipr   0.8.1
+crayon           crayon   1.5.3
+hms                 hms   1.1.4
+vroom             vroom   1.7.1
+tzdb               tzdb   0.5.0
+bit64             bit64   4.8.6
+progress       progress   1.2.3
+bit                 bit   4.6.0
+prettyunits prettyunits   1.2.0
+DOWNLOAD 1 / 13 readr 
+package 'readr' successfully unpacked and MD5 sums checked
+DOWNLOAD 2 / 13 patchwork 
+package 'patchwork' successfully unpacked and MD5 sums checked
+DOWNLOAD 3 / 13 scattermore 
+package 'scattermore' successfully unpacked and MD5 sums checked
+DOWNLOAD 4 / 13 hexbin 
+package 'hexbin' successfully unpacked and MD5 sums checked
+DOWNLOAD 5 / 13 clipr 
+package 'clipr' successfully unpacked and MD5 sums checked
+DOWNLOAD 6 / 13 crayon 
+package 'crayon' successfully unpacked and MD5 sums checked
+DOWNLOAD 7 / 13 hms 
+package 'hms' successfully unpacked and MD5 sums checked
+DOWNLOAD 8 / 13 vroom 
+package 'vroom' successfully unpacked and MD5 sums checked
+DOWNLOAD 9 / 13 tzdb 
+package 'tzdb' successfully unpacked and MD5 sums checked
+DOWNLOAD 10 / 13 bit64 
+package 'bit64' successfully unpacked and MD5 sums checked
+DOWNLOAD 11 / 13 progress 
+package 'progress' successfully unpacked and MD5 sums checked
+DOWNLOAD 12 / 13 bit 
+package 'bit' successfully unpacked and MD5 sums checked
+DOWNLOAD 13 / 13 prettyunits 
+package 'prettyunits' successfully unpacked and MD5 sums checked
+BINARY_DEPENDENCIES_OK

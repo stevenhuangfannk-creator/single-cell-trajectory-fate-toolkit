@@ -1,0 +1,18 @@
+START_UTC 2026-10-19 14:40:52 UTC 
+Project: C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/outputs/single-cell-trajectory-fate-toolkit 
+Method: Slingshot 
+Run 01 -> 02 -> 03. No automatic installation.
+
+STEP 01_Load_and_Check.R 
+INPUT_OK
+              metric value
+1              cells   140
+2         dimensions     2
+3           clusters     5
+4 finite_coordinates   280
+5 duplicate_cell_ids     0
+cl
+ 1  2  3  4  5 
+36 36 24 22 22 
+
+STEP 02_Infer_Lineages_and_Curves.R 

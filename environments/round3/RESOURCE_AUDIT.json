@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-19",
+  "physical_RAM_KiB": 16555320,
+  "execution": "Serial method/model runs; cores=1; OpenMP/BLAS=1; SerialParam and sequential future in delivered entry",
+  "approx_observed_free_RAM_GiB": [
+    3.2,
+    5.0
+  ],
+  "exact_peak_RAM": "NOT_MEASURED_CONTINUOUSLY; no exact full-process-tree peak claimed",
+  "runtime_directory_bytes_snapshot": 3993672859,
+  "round3_cache_source_build_bytes_snapshot": 809210496,
+  "round3_download_archive_cache_bytes": 696504336,
+  "runtime_archives_in_Git": false,
+  "old_scTour_RegVelo_changed": false,
+  "Q_drive": "Temporary runtime-only mapping removed after source installation"
+}

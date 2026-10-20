@@ -1,0 +1,160 @@
+{
+  "method": "Monocle2",
+  "id": "monocle2",
+  "language": "R",
+  "official_sources": [
+    {
+      "label": "Official GitHub",
+      "url": "https://github.com/cole-trapnell-lab/monocle-release",
+      "purpose": "原作者/官方实现代码与发行信息"
+    },
+    {
+      "label": "Author documentation",
+      "url": "https://cole-trapnell-lab.github.io/monocle-release/docs/",
+      "purpose": "输入、DDRTree、root_state、BEAM和绘图"
+    },
+    {
+      "label": "Bioconductor 3.23 monocle",
+      "url": "https://bioconductor.org/packages/3.23/bioc/html/monocle.html",
+      "purpose": "发行版、许可、依赖及平台包"
+    },
+    {
+      "label": "Author paper",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5764547/",
+      "purpose": "Monocle 2原始方法"
+    }
+  ],
+  "bioconductor": {
+    "package": "monocle",
+    "release": "3.23",
+    "version": "2.40.0",
+    "release_R": "4.6",
+    "url": "https://bioconductor.org/packages/3.23/bioc/html/monocle.html",
+    "package_doi": "10.18129/B9.bioc.monocle"
+  },
+  "license": {
+    "identifier": "Artistic-2.0",
+    "evidence": "DESCRIPTION及Bioconductor；GitHub license API为null，不据此称无许可",
+    "source_url": "https://raw.githubusercontent.com/cole-trapnell-lab/monocle-release/7df105006756801a305ff43321b26d289cd6e890/DESCRIPTION"
+  },
+  "environment": {
+    "declared_minimum": "DESCRIPTION R>=2.10.0；旧README写R>=3.0；BioC3.23对应R4.6",
+    "dependencies": [
+      "Matrix>=1.2-6",
+      "Biobase",
+      "VGAM>=1.0-6",
+      "DDRTree>=0.1.4",
+      "igraph>=1.0.1",
+      "ggplot2",
+      "BiocGenerics",
+      "Rcpp>=0.12.0",
+      "HSMMSingleCell"
+    ],
+    "system_constraints": [
+      "历史README仅确认Mac/Linux，Windows当时未测试；BioC3.23现在提供Windows及macOS二进制，二者不等价于本机测试通过。",
+      "源码依赖DDRTree/Rcpp等编译组件，旧igraph/Matrix接口与新R栈兼容性需独立环境验证。",
+      "建议按所选BioC/R配套固定依赖，不直接套用2017教程的biocLite指令。"
+    ]
+  },
+  "input": {
+    "matrix": "gene×cell表达矩阵；UMI counts或相对表达需选匹配的expressionFamily，不混用尺度",
+    "object": "CellDataSet；phenoData和featureData名称与矩阵对齐，gene_short_name用于标签",
+    "upstream": "已完成QC/归一化审查、已有细胞注释；显式ordering genes及有证据的root_state",
+    "spliced_unspliced_required": false
+  },
+  "outputs": [
+    "DDRTree主树及细胞投影",
+    "Pseudotime、State与root选择记录",
+    "differentialGeneTest/BEAM表（按明确假设）"
+  ],
+  "representative_figures": [
+    {
+      "name": "轨迹树按注释/State/Pseudotime着色",
+      "functions": [
+        "plot_cell_trajectory"
+      ]
+    },
+    {
+      "name": "基因沿伪时序曲线及分支热图",
+      "functions": [
+        "plot_genes_in_pseudotime",
+        "plot_genes_branched_heatmap"
+      ]
+    }
+  ],
+  "tutorials": [
+    {
+      "url": "https://cole-trapnell-lab.github.io/monocle-release/docs/",
+      "entry": "Tutorial: HSMM myoblast differentiation；reduceDimension/orderCells/BEAM"
+    }
+  ],
+  "example_data": [
+    {
+      "name": "HSMMSingleCell/HSMM官方示例",
+      "url": "https://bioconductor.org/packages/3.23/data/experiment/html/HSMMSingleCell.html",
+      "access": "Bioconductor示例数据包；教程load_HSMM()入口",
+      "smallness": "教程用小规模HSMM；本轮未下载，未独立检查细胞数/文件大小",
+      "data_kind": "REAL_PUBLIC_EXAMPLE",
+      "download_status": "NOT_TESTED"
+    }
+  ],
+  "scientific_boundaries": [
+    "DDRTree默认学习树结构，不能据其证明真实循环、汇聚或谱系亲缘。",
+    "根、ordering genes、降维和细胞选择改变伪时序；伪时序不等于采样小时。",
+    "BEAM表达关联不等于直接调控或因果分支决定；不替代真实谱系/扰动验证。"
+  ],
+  "version_caveats": [
+    "官方旧GitHub固定SHA的DESCRIPTION是2.9.0，BioC3.23的monocle是2.40.0；不同来源必须分别记录，不能把旧repo称现行BioC发行。"
+  ],
+  "paper": {
+    "title": "Reversed graph embedding resolves complex single-cell trajectories",
+    "doi": "10.1038/nmeth.4402",
+    "doi_url": "https://doi.org/10.1038/nmeth.4402",
+    "journal": "Nature Methods",
+    "published_date_parts": [
+      [
+        2017,
+        8,
+        21
+      ]
+    ],
+    "crossref_url": "https://api.crossref.org/works/10.1038%2Fnmeth.4402",
+    "verification_status": "VERIFIED_CROSSREF_PRIMARY_METADATA",
+    "checked_date": "2026-10-19"
+  },
+  "code": {
+    "github_url": "https://github.com/cole-trapnell-lab/monocle-release",
+    "sha_asof_date": "7df105006756801a305ff43321b26d289cd6e890",
+    "commit_date": "2019-01-04T21:39:40Z",
+    "commit_url": "https://github.com/cole-trapnell-lab/monocle-release/commit/7df105006756801a305ff43321b26d289cd6e890",
+    "query_url": "https://api.github.com/repos/cole-trapnell-lab/monocle-release/commits?until=2026-10-19T23:59:59Z&per_page=1",
+    "release_query_url": "https://api.github.com/repos/cole-trapnell-lab/monocle-release/releases?per_page=10",
+    "latest_nonprerelease_in_queried_10_releases": null,
+    "checked_date": "2026-10-19",
+    "metadata_url_at_sha": "https://raw.githubusercontent.com/cole-trapnell-lab/monocle-release/7df105006756801a305ff43321b26d289cd6e890/DESCRIPTION",
+    "description_version_at_sha": "2.9.0"
+  },
+  "status": {
+    "installation": "NOT_TESTED",
+    "execution": "NOT_TESTED",
+    "example_run": "NOT_TESTED",
+    "real_data_analysis": "NOT_TESTED"
+  },
+  "new_installation_status": "NOT_TESTED",
+  "small_sample_validation_status": "NOT_TESTED",
+  "runtime_status": "NOT_TESTED",
+  "scientific_validation_status": "NOT_TESTED",
+  "checked_date": "2026-10-19",
+  "review_project_status": {
+    "INSTALL_OK": "NOT_TESTED",
+    "INPUT_OK": "NOT_TESTED",
+    "RUN_OK": "NOT_TESTED",
+    "FIGURE_OK": "NOT_TESTED"
+  },
+  "BIOLOGICAL_INTERPRETATION_LIMITS": [
+    "DDRTree默认学习树结构，不能据其证明真实循环、汇聚或谱系亲缘。",
+    "根、ordering genes、降维和细胞选择改变伪时序；伪时序不等于采样小时。",
+    "BEAM表达关联不等于直接调控或因果分支决定；不替代真实谱系/扰动验证。"
+  ],
+  "limits_review_status": "DOCUMENT_REVIEWED_NOT_BIOLOGICALLY_VALIDATED"
+}

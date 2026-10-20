@@ -1,0 +1,9 @@
+{
+  "start_utc": "2026-10-19T14:40:20.2150487Z",
+  "end_utc": "2026-10-19T14:40:20.5774715Z",
+  "exit_code": 1,
+  "peak_sampled_working_set_bytes": 7274496,
+  "sampling_interval_ms": 150,
+  "scope": "Process working set sampled; not a strict memory reservation",
+  "bootstrap_exit_code": -1073741819
+}

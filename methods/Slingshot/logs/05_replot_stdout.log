@@ -1,0 +1,24 @@
+[1] "LC_COLLATE=English_United States.utf8;LC_CTYPE=English_United States.utf8;LC_MONETARY=English_United States.utf8;LC_NUMERIC=C;LC_TIME=English_United States.utf8"
+Project: C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/outputs/single-cell-trajectory-fate-toolkit 
+Method: Slingshot 
+Run 01 -> 02 -> 03. No automatic installation.
+EXPORTED S01_cluster_MST.png 25402 bytes
+EXPORTED S01_cluster_MST.pdf 13684 bytes
+EXPORTED S01_cluster_MST.svg 110827 bytes
+EXPORTED S02_principal_curves.png 25806 bytes
+EXPORTED S02_principal_curves.pdf 15027 bytes
+EXPORTED S02_principal_curves.svg 115409 bytes
+EXPORTED S03_Lineage1_pseudotime.png 31560 bytes
+EXPORTED S03_Lineage1_pseudotime.pdf 15594 bytes
+EXPORTED S03_Lineage1_pseudotime.svg 152957 bytes
+EXPORTED S04_Lineage1_curve_weight.png 31601 bytes
+EXPORTED S04_Lineage1_curve_weight.pdf 15431 bytes
+EXPORTED S04_Lineage1_curve_weight.svg 153071 bytes
+EXPORTED S03_Lineage2_pseudotime.png 31714 bytes
+EXPORTED S03_Lineage2_pseudotime.pdf 15595 bytes
+EXPORTED S03_Lineage2_pseudotime.svg 153703 bytes
+EXPORTED S04_Lineage2_curve_weight.png 31596 bytes
+EXPORTED S04_Lineage2_curve_weight.pdf 15384 bytes
+EXPORTED S04_Lineage2_curve_weight.svg 153814 bytes
+FIGURE_FILES_CREATED; visual verification remains a separate check.
+REPLOT_ONLY_OK

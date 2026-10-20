@@ -1,0 +1,26 @@
+[
+  {
+    "package": "Matrix",
+    "exit_code": 0
+  },
+  {
+    "package": "Rcpp",
+    "exit_code": 0
+  },
+  {
+    "package": "igraph",
+    "exit_code": -1073741819
+  },
+  {
+    "package": "S4Vectors",
+    "exit_code": 0
+  },
+  {
+    "package": "SingleCellExperiment",
+    "exit_code": 0
+  },
+  {
+    "package": "princurve",
+    "exit_code": 0
+  }
+]

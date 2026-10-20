@@ -1,0 +1,392 @@
+                      package    version
+assertthat         assertthat      0.2.1
+batchelor           batchelor     1.28.0
+digest                 digest     0.6.39
+dplyr                   dplyr      1.2.1
+future                 future     1.80.0
+ggdist                 ggdist      3.3.3
+ggforce               ggforce      0.5.0
+ggrastr               ggrastr      1.0.2
+ggrepel               ggrepel      0.9.8
+HDF5Array           HDF5Array     1.40.0
+irlba                   irlba      2.4.1
+leidenbase         leidenbase     0.1.37
+lme4                     lme4      2.0-6
+lmtest                 lmtest     0.9-40
+openssl               openssl      2.4.2
+pbmcapply           pbmcapply      1.5.1
+pheatmap             pheatmap     1.0.13
+plotly                 plotly     4.12.1
+plyr                     plyr      1.8.9
+proxy                   proxy     0.4-29
+pscl                     pscl      1.5.9
+purrr                   purrr      1.2.2
+RANN                     RANN      2.6.3
+reshape2             reshape2      1.4.5
+rsample               rsample      1.3.2
+RhpcBLASctl       RhpcBLASctl    0.23-42
+RcppAnnoy           RcppAnnoy     0.0.23
+RcppHNSW             RcppHNSW      0.7.0
+Rtsne                   Rtsne       0.17
+sf                         sf      1.1-3
+shiny                   shiny     1.14.0
+slam                     slam     0.1-56
+spdep                   spdep      1.4-2
+speedglm             speedglm      0.3-5
+stringr               stringr      1.6.0
+uwot                     uwot      0.2.5
+tidyr                   tidyr      1.3.2
+BiocNeighbors   BiocNeighbors      2.6.0
+BiocSingular     BiocSingular     1.28.1
+scuttle               scuttle     1.22.0
+ResidualMatrix ResidualMatrix     1.22.0
+ScaledMatrix     ScaledMatrix     1.20.0
+beachmat             beachmat     2.28.0
+assorthead         assorthead      1.6.4
+rsvd                     rsvd      1.0.6
+tidyselect         tidyselect      1.2.1
+globals               globals     0.20.0
+listenv               listenv      1.1.0
+parallelly         parallelly     1.48.0
+distributional distributional      0.9.0
+numDeriv             numDeriv 2016.8-1.1
+quadprog             quadprog      1.5-8
+tweenr                 tweenr      2.0.3
+polyclip             polyclip     1.10-7
+systemfonts       systemfonts      1.3.2
+base64enc           base64enc      0.1-6
+jsonlite             jsonlite      2.0.0
+Cairo                   Cairo      1.7-0
+ggbeeswarm         ggbeeswarm      0.7.3
+png                       png      0.1-9
+ragg                     ragg      1.5.2
+beeswarm             beeswarm      0.4.0
+vipor                   vipor      0.4.7
+textshaping       textshaping      1.0.5
+stringi               stringi      1.8.9
+h5mread               h5mread      1.4.1
+rhdf5                   rhdf5     2.56.1
+rhdf5filters     rhdf5filters     1.24.1
+Rhdf5lib             Rhdf5lib      2.0.0
+biocmake             biocmake      1.4.0
+dir.expiry         dir.expiry     1.20.0
+filelock             filelock      1.0.3
+Rdpack                 Rdpack      2.6.6
+minqa                   minqa      1.2.8
+nloptr                 nloptr      2.2.1
+reformulas         reformulas      0.4.4
+RcppEigen           RcppEigen  0.3.4.0.2
+rbibutils           rbibutils      2.4.1
+zoo                       zoo      1.9-1
+askpass               askpass      1.2.1
+sys                       sys      3.4.3
+httr                     httr      1.4.9
+htmltools           htmltools      0.5.9
+htmlwidgets       htmlwidgets      1.6.4
+crosstalk           crosstalk      1.2.2
+data.table         data.table   1.18.6.1
+promises             promises      1.5.0
+lazyeval             lazyeval      0.2.3
+fastmap               fastmap      1.2.0
+knitr                   knitr       1.52
+rmarkdown           rmarkdown       2.32
+yaml                     yaml     2.3.12
+curl                     curl      8.1.0
+mime                     mime       0.13
+later                   later      1.4.8
+otel                     otel      0.2.0
+evaluate             evaluate      1.0.5
+highr                   highr       0.12
+xfun                     xfun       0.62
+bslib                   bslib     0.12.0
+fontawesome       fontawesome      0.5.3
+jquerylib           jquerylib      0.1.4
+tinytex               tinytex       0.61
+cachem                 cachem      1.1.0
+memoise               memoise      2.0.1
+sass                     sass     0.4.10
+fs                         fs      2.1.0
+rappdirs             rappdirs      0.3.4
+furrr                   furrr      0.4.0
+slider                 slider      0.3.3
+warp                     warp      0.2.3
+classInt             classInt     0.4-11
+DBI                       DBI      1.3.0
+s2                         s2     1.1.13
+units                   units      1.0-1
+e1071                   e1071     1.7-17
+wk                         wk      0.9.5
+commonmark         commonmark      2.0.0
+httpuv                 httpuv     1.6.17
+sourcetools       sourcetools    0.1.7-2
+xtable                 xtable      1.8-8
+spData                 spData      2.3.5
+deldir                 deldir      2.0-4
+sp                         sp      2.2-4
+biglm                   biglm      0.9-3
+FNN                       FNN    1.1.4.1
+RSpectra             RSpectra     0.16-2
+dqrng                   dqrng      0.4.1
+RcppProgress     RcppProgress      0.4.2
+sitmo                   sitmo      2.0.2
+DOWNLOAD 1 / 130 assertthat 
+package 'assertthat' successfully unpacked and MD5 sums checked
+DOWNLOAD 2 / 130 batchelor 
+package 'batchelor' successfully unpacked and MD5 sums checked
+DOWNLOAD 3 / 130 digest 
+package 'digest' successfully unpacked and MD5 sums checked
+DOWNLOAD 4 / 130 dplyr 
+package 'dplyr' successfully unpacked and MD5 sums checked
+DOWNLOAD 5 / 130 future 
+package 'future' successfully unpacked and MD5 sums checked
+DOWNLOAD 6 / 130 ggdist 
+package 'ggdist' successfully unpacked and MD5 sums checked
+DOWNLOAD 7 / 130 ggforce 
+package 'ggforce' successfully unpacked and MD5 sums checked
+DOWNLOAD 8 / 130 ggrastr 
+package 'ggrastr' successfully unpacked and MD5 sums checked
+DOWNLOAD 9 / 130 ggrepel 
+package 'ggrepel' successfully unpacked and MD5 sums checked
+DOWNLOAD 10 / 130 HDF5Array 
+package 'HDF5Array' successfully unpacked and MD5 sums checked
+DOWNLOAD 11 / 130 irlba 
+package 'irlba' successfully unpacked and MD5 sums checked
+DOWNLOAD 12 / 130 leidenbase 
+package 'leidenbase' successfully unpacked and MD5 sums checked
+DOWNLOAD 13 / 130 lme4 
+package 'lme4' successfully unpacked and MD5 sums checked
+DOWNLOAD 14 / 130 lmtest 
+package 'lmtest' successfully unpacked and MD5 sums checked
+DOWNLOAD 15 / 130 openssl 
+package 'openssl' successfully unpacked and MD5 sums checked
+DOWNLOAD 16 / 130 pbmcapply 
+package 'pbmcapply' successfully unpacked and MD5 sums checked
+DOWNLOAD 17 / 130 pheatmap 
+package 'pheatmap' successfully unpacked and MD5 sums checked
+DOWNLOAD 18 / 130 plotly 
+package 'plotly' successfully unpacked and MD5 sums checked
+DOWNLOAD 19 / 130 plyr 
+package 'plyr' successfully unpacked and MD5 sums checked
+DOWNLOAD 20 / 130 proxy 
+package 'proxy' successfully unpacked and MD5 sums checked
+DOWNLOAD 21 / 130 pscl 
+package 'pscl' successfully unpacked and MD5 sums checked
+DOWNLOAD 22 / 130 purrr 
+package 'purrr' successfully unpacked and MD5 sums checked
+DOWNLOAD 23 / 130 RANN 
+package 'RANN' successfully unpacked and MD5 sums checked
+DOWNLOAD 24 / 130 reshape2 
+package 'reshape2' successfully unpacked and MD5 sums checked
+DOWNLOAD 25 / 130 rsample 
+package 'rsample' successfully unpacked and MD5 sums checked
+DOWNLOAD 26 / 130 RhpcBLASctl 
+package 'RhpcBLASctl' successfully unpacked and MD5 sums checked
+DOWNLOAD 27 / 130 RcppAnnoy 
+package 'RcppAnnoy' successfully unpacked and MD5 sums checked
+DOWNLOAD 28 / 130 RcppHNSW 
+package 'RcppHNSW' successfully unpacked and MD5 sums checked
+DOWNLOAD 29 / 130 Rtsne 
+package 'Rtsne' successfully unpacked and MD5 sums checked
+DOWNLOAD 30 / 130 sf 
+package 'sf' successfully unpacked and MD5 sums checked
+DOWNLOAD 31 / 130 shiny 
+package 'shiny' successfully unpacked and MD5 sums checked
+DOWNLOAD 32 / 130 slam 
+package 'slam' successfully unpacked and MD5 sums checked
+DOWNLOAD 33 / 130 spdep 
+package 'spdep' successfully unpacked and MD5 sums checked
+DOWNLOAD 34 / 130 speedglm 
+package 'speedglm' successfully unpacked and MD5 sums checked
+DOWNLOAD 35 / 130 stringr 
+package 'stringr' successfully unpacked and MD5 sums checked
+DOWNLOAD 36 / 130 uwot 
+package 'uwot' successfully unpacked and MD5 sums checked
+DOWNLOAD 37 / 130 tidyr 
+package 'tidyr' successfully unpacked and MD5 sums checked
+DOWNLOAD 38 / 130 BiocNeighbors 
+package 'BiocNeighbors' successfully unpacked and MD5 sums checked
+DOWNLOAD 39 / 130 BiocSingular 
+package 'BiocSingular' successfully unpacked and MD5 sums checked
+DOWNLOAD 40 / 130 scuttle 
+package 'scuttle' successfully unpacked and MD5 sums checked
+DOWNLOAD 41 / 130 ResidualMatrix 
+package 'ResidualMatrix' successfully unpacked and MD5 sums checked
+DOWNLOAD 42 / 130 ScaledMatrix 
+package 'ScaledMatrix' successfully unpacked and MD5 sums checked
+DOWNLOAD 43 / 130 beachmat 
+package 'beachmat' successfully unpacked and MD5 sums checked
+DOWNLOAD 44 / 130 assorthead 
+package 'assorthead' successfully unpacked and MD5 sums checked
+DOWNLOAD 45 / 130 rsvd 
+package 'rsvd' successfully unpacked and MD5 sums checked
+DOWNLOAD 46 / 130 tidyselect 
+package 'tidyselect' successfully unpacked and MD5 sums checked
+DOWNLOAD 47 / 130 globals 
+package 'globals' successfully unpacked and MD5 sums checked
+DOWNLOAD 48 / 130 listenv 
+package 'listenv' successfully unpacked and MD5 sums checked
+DOWNLOAD 49 / 130 parallelly 
+package 'parallelly' successfully unpacked and MD5 sums checked
+DOWNLOAD 50 / 130 distributional 
+package 'distributional' successfully unpacked and MD5 sums checked
+DOWNLOAD 51 / 130 numDeriv 
+package 'numDeriv' successfully unpacked and MD5 sums checked
+DOWNLOAD 52 / 130 quadprog 
+package 'quadprog' successfully unpacked and MD5 sums checked
+DOWNLOAD 53 / 130 tweenr 
+package 'tweenr' successfully unpacked and MD5 sums checked
+DOWNLOAD 54 / 130 polyclip 
+package 'polyclip' successfully unpacked and MD5 sums checked
+DOWNLOAD 55 / 130 systemfonts 
+package 'systemfonts' successfully unpacked and MD5 sums checked
+DOWNLOAD 56 / 130 base64enc 
+package 'base64enc' successfully unpacked and MD5 sums checked
+DOWNLOAD 57 / 130 jsonlite 
+package 'jsonlite' successfully unpacked and MD5 sums checked
+DOWNLOAD 58 / 130 Cairo 
+package 'Cairo' successfully unpacked and MD5 sums checked
+DOWNLOAD 59 / 130 ggbeeswarm 
+package 'ggbeeswarm' successfully unpacked and MD5 sums checked
+DOWNLOAD 60 / 130 png 
+package 'png' successfully unpacked and MD5 sums checked
+DOWNLOAD 61 / 130 ragg 
+package 'ragg' successfully unpacked and MD5 sums checked
+DOWNLOAD 62 / 130 beeswarm 
+package 'beeswarm' successfully unpacked and MD5 sums checked
+DOWNLOAD 63 / 130 vipor 
+package 'vipor' successfully unpacked and MD5 sums checked
+DOWNLOAD 64 / 130 textshaping 
+package 'textshaping' successfully unpacked and MD5 sums checked
+DOWNLOAD 65 / 130 stringi 
+package 'stringi' successfully unpacked and MD5 sums checked
+DOWNLOAD 66 / 130 h5mread 
+package 'h5mread' successfully unpacked and MD5 sums checked
+DOWNLOAD 67 / 130 rhdf5 
+package 'rhdf5' successfully unpacked and MD5 sums checked
+DOWNLOAD 68 / 130 rhdf5filters 
+package 'rhdf5filters' successfully unpacked and MD5 sums checked
+DOWNLOAD 69 / 130 Rhdf5lib 
+package 'Rhdf5lib' successfully unpacked and MD5 sums checked
+DOWNLOAD 70 / 130 biocmake 
+package 'biocmake' successfully unpacked and MD5 sums checked
+DOWNLOAD 71 / 130 dir.expiry 
+package 'dir.expiry' successfully unpacked and MD5 sums checked
+DOWNLOAD 72 / 130 filelock 
+package 'filelock' successfully unpacked and MD5 sums checked
+DOWNLOAD 73 / 130 Rdpack 
+package 'Rdpack' successfully unpacked and MD5 sums checked
+DOWNLOAD 74 / 130 minqa 
+package 'minqa' successfully unpacked and MD5 sums checked
+DOWNLOAD 75 / 130 nloptr 
+package 'nloptr' successfully unpacked and MD5 sums checked
+DOWNLOAD 76 / 130 reformulas 
+package 'reformulas' successfully unpacked and MD5 sums checked
+DOWNLOAD 77 / 130 RcppEigen 
+package 'RcppEigen' successfully unpacked and MD5 sums checked
+DOWNLOAD 78 / 130 rbibutils 
+package 'rbibutils' successfully unpacked and MD5 sums checked
+DOWNLOAD 79 / 130 zoo 
+package 'zoo' successfully unpacked and MD5 sums checked
+DOWNLOAD 80 / 130 askpass 
+package 'askpass' successfully unpacked and MD5 sums checked
+DOWNLOAD 81 / 130 sys 
+package 'sys' successfully unpacked and MD5 sums checked
+DOWNLOAD 82 / 130 httr 
+package 'httr' successfully unpacked and MD5 sums checked
+DOWNLOAD 83 / 130 htmltools 
+package 'htmltools' successfully unpacked and MD5 sums checked
+DOWNLOAD 84 / 130 htmlwidgets 
+package 'htmlwidgets' successfully unpacked and MD5 sums checked
+DOWNLOAD 85 / 130 crosstalk 
+package 'crosstalk' successfully unpacked and MD5 sums checked
+DOWNLOAD 86 / 130 data.table 
+package 'data.table' successfully unpacked and MD5 sums checked
+DOWNLOAD 87 / 130 promises 
+package 'promises' successfully unpacked and MD5 sums checked
+DOWNLOAD 88 / 130 lazyeval 
+package 'lazyeval' successfully unpacked and MD5 sums checked
+DOWNLOAD 89 / 130 fastmap 
+package 'fastmap' successfully unpacked and MD5 sums checked
+DOWNLOAD 90 / 130 knitr 
+package 'knitr' successfully unpacked and MD5 sums checked
+DOWNLOAD 91 / 130 rmarkdown 
+package 'rmarkdown' successfully unpacked and MD5 sums checked
+DOWNLOAD 92 / 130 yaml 
+package 'yaml' successfully unpacked and MD5 sums checked
+DOWNLOAD 93 / 130 curl 
+package 'curl' successfully unpacked and MD5 sums checked
+DOWNLOAD 94 / 130 mime 
+package 'mime' successfully unpacked and MD5 sums checked
+DOWNLOAD 95 / 130 later 
+package 'later' successfully unpacked and MD5 sums checked
+DOWNLOAD 96 / 130 otel 
+package 'otel' successfully unpacked and MD5 sums checked
+DOWNLOAD 97 / 130 evaluate 
+package 'evaluate' successfully unpacked and MD5 sums checked
+DOWNLOAD 98 / 130 highr 
+package 'highr' successfully unpacked and MD5 sums checked
+DOWNLOAD 99 / 130 xfun 
+package 'xfun' successfully unpacked and MD5 sums checked
+DOWNLOAD 100 / 130 bslib 
+package 'bslib' successfully unpacked and MD5 sums checked
+DOWNLOAD 101 / 130 fontawesome 
+package 'fontawesome' successfully unpacked and MD5 sums checked
+DOWNLOAD 102 / 130 jquerylib 
+package 'jquerylib' successfully unpacked and MD5 sums checked
+DOWNLOAD 103 / 130 tinytex 
+package 'tinytex' successfully unpacked and MD5 sums checked
+DOWNLOAD 104 / 130 cachem 
+package 'cachem' successfully unpacked and MD5 sums checked
+DOWNLOAD 105 / 130 memoise 
+package 'memoise' successfully unpacked and MD5 sums checked
+DOWNLOAD 106 / 130 sass 
+package 'sass' successfully unpacked and MD5 sums checked
+DOWNLOAD 107 / 130 fs 
+package 'fs' successfully unpacked and MD5 sums checked
+DOWNLOAD 108 / 130 rappdirs 
+package 'rappdirs' successfully unpacked and MD5 sums checked
+DOWNLOAD 109 / 130 furrr 
+package 'furrr' successfully unpacked and MD5 sums checked
+DOWNLOAD 110 / 130 slider 
+package 'slider' successfully unpacked and MD5 sums checked
+DOWNLOAD 111 / 130 warp 
+package 'warp' successfully unpacked and MD5 sums checked
+DOWNLOAD 112 / 130 classInt 
+package 'classInt' successfully unpacked and MD5 sums checked
+DOWNLOAD 113 / 130 DBI 
+package 'DBI' successfully unpacked and MD5 sums checked
+DOWNLOAD 114 / 130 s2 
+package 's2' successfully unpacked and MD5 sums checked
+DOWNLOAD 115 / 130 units 
+package 'units' successfully unpacked and MD5 sums checked
+DOWNLOAD 116 / 130 e1071 
+package 'e1071' successfully unpacked and MD5 sums checked
+DOWNLOAD 117 / 130 wk 
+package 'wk' successfully unpacked and MD5 sums checked
+DOWNLOAD 118 / 130 commonmark 
+package 'commonmark' successfully unpacked and MD5 sums checked
+DOWNLOAD 119 / 130 httpuv 
+package 'httpuv' successfully unpacked and MD5 sums checked
+DOWNLOAD 120 / 130 sourcetools 
+package 'sourcetools' successfully unpacked and MD5 sums checked
+DOWNLOAD 121 / 130 xtable 
+package 'xtable' successfully unpacked and MD5 sums checked
+DOWNLOAD 122 / 130 spData 
+package 'spData' successfully unpacked and MD5 sums checked
+DOWNLOAD 123 / 130 deldir 
+package 'deldir' successfully unpacked and MD5 sums checked
+DOWNLOAD 124 / 130 sp 
+package 'sp' successfully unpacked and MD5 sums checked
+DOWNLOAD 125 / 130 biglm 
+package 'biglm' successfully unpacked and MD5 sums checked
+DOWNLOAD 126 / 130 FNN 
+package 'FNN' successfully unpacked and MD5 sums checked
+DOWNLOAD 127 / 130 RSpectra 
+package 'RSpectra' successfully unpacked and MD5 sums checked
+DOWNLOAD 128 / 130 dqrng 
+package 'dqrng' successfully unpacked and MD5 sums checked
+DOWNLOAD 129 / 130 RcppProgress 
+package 'RcppProgress' successfully unpacked and MD5 sums checked
+DOWNLOAD 130 / 130 sitmo 
+package 'sitmo' successfully unpacked and MD5 sums checked
+BINARY_DEPENDENCIES_OK

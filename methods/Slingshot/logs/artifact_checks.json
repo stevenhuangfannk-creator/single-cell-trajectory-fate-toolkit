@@ -1,0 +1,185 @@
+{
+  "scope": "File opening, PDF rasterization, SVG XML/vector checks, numeric tables and process exit; visual inspection recorded separately",
+  "files": [
+    {
+      "figure": "S01_cluster_MST",
+      "png_dimensions": [
+        1584,
+        1210
+      ],
+      "pdf_pages": 1,
+      "svg_paths": 229,
+      "embedded_raster_images": 0,
+      "formats": {
+        "png": {
+          "bytes": 25402,
+          "sha256": "8dc3995c52877171043d2298b7d4b3c7c2a9c35b0d96318da7d17e2d6298156c"
+        },
+        "pdf": {
+          "bytes": 13684,
+          "sha256": "65ae2610f289bbd17b664c16565bc604537323865918571b9ddf35bd166fbf39"
+        },
+        "svg": {
+          "bytes": 110827,
+          "sha256": "735ec169eb8ee8733ea15776ce85fc5d648b2e8044e4d093debf3db54670f4ab"
+        }
+      }
+    },
+    {
+      "figure": "S02_principal_curves",
+      "png_dimensions": [
+        1584,
+        1210
+      ],
+      "pdf_pages": 1,
+      "svg_paths": 221,
+      "embedded_raster_images": 0,
+      "formats": {
+        "png": {
+          "bytes": 25806,
+          "sha256": "c387c4a4d026f8ce7ffa12e67963e582324a3cf81d2ae0f91141a8236f7e25e0"
+        },
+        "pdf": {
+          "bytes": 15027,
+          "sha256": "377126691ed33b1adb89e96a4c2a83e0ba4dd427601281e569ac379f408beb41"
+        },
+        "svg": {
+          "bytes": 115409,
+          "sha256": "77093e0e62ed7445f4e33607accaaae0e88debc40aa87393066355a93ae7244f"
+        }
+      }
+    },
+    {
+      "figure": "S03_Lineage1_pseudotime",
+      "png_dimensions": [
+        1584,
+        1210
+      ],
+      "pdf_pages": 1,
+      "svg_paths": 337,
+      "embedded_raster_images": 0,
+      "formats": {
+        "png": {
+          "bytes": 31560,
+          "sha256": "5448e897c1be0d6f81bba03baf5ef220705f75591951fa39be476bf2cd1aa33d"
+        },
+        "pdf": {
+          "bytes": 15594,
+          "sha256": "1c9621d7dad4d30e7705b5bf7d92e0e8ff71e1d7fe27d07428084cd82a68fadc"
+        },
+        "svg": {
+          "bytes": 152957,
+          "sha256": "2ab405f28b07e7ca7ef907e373f0ae5d83734895ecaeac15616f5cb4058af6ef"
+        }
+      }
+    },
+    {
+      "figure": "S03_Lineage2_pseudotime",
+      "png_dimensions": [
+        1584,
+        1210
+      ],
+      "pdf_pages": 1,
+      "svg_paths": 337,
+      "embedded_raster_images": 0,
+      "formats": {
+        "png": {
+          "bytes": 31714,
+          "sha256": "b33374c8d0a1277bb6752833f7e6fa75cd71ad54454829d112af9b7954ae5bdd"
+        },
+        "pdf": {
+          "bytes": 15595,
+          "sha256": "9217e3556efd5eb553e19c3c715386ae7dd94b23a2b9bb00281f81c03f4b33d4"
+        },
+        "svg": {
+          "bytes": 153703,
+          "sha256": "c4d049612cf4590f6ff25824d6c89c41d7c66d2a4c0aed3f87ee0fe2447f969d"
+        }
+      }
+    },
+    {
+      "figure": "S04_Lineage1_curve_weight",
+      "png_dimensions": [
+        1584,
+        1210
+      ],
+      "pdf_pages": 1,
+      "svg_paths": 344,
+      "embedded_raster_images": 0,
+      "formats": {
+        "png": {
+          "bytes": 31601,
+          "sha256": "7dec5c331495722ec8e30f33b3c48fab6a3e1fcfdecf10baccf33b6019f165ec"
+        },
+        "pdf": {
+          "bytes": 15431,
+          "sha256": "b1c2e8863551018bb73052b8bb393b2cce65970999cef1a3964aa05fe7207fac"
+        },
+        "svg": {
+          "bytes": 153071,
+          "sha256": "0c1b0694b8402eb601672a3301b38bd2cfb402be6836b6e21ab15b4fa554923a"
+        }
+      }
+    },
+    {
+      "figure": "S04_Lineage2_curve_weight",
+      "png_dimensions": [
+        1584,
+        1210
+      ],
+      "pdf_pages": 1,
+      "svg_paths": 344,
+      "embedded_raster_images": 0,
+      "formats": {
+        "png": {
+          "bytes": 31596,
+          "sha256": "d9c0b137b5a8b5bb4df8b0ddb7855945087242d386c74a4c3b1576a624b58edc"
+        },
+        "pdf": {
+          "bytes": 15384,
+          "sha256": "87cc28c240465fcddef7fc0209caf0fab24e75083872634b45c0a7b96df22139"
+        },
+        "svg": {
+          "bytes": 153814,
+          "sha256": "0aa40ce77434b9773be4bbf2d30d88437b683bd7d8c8d9d01818f07bd51a3466"
+        }
+      }
+    }
+  ],
+  "input_cells": 140,
+  "lineages": [
+    {
+      "lineage": "Lineage1",
+      "cluster_path": "1 -> 2 -> 3 -> 5"
+    },
+    {
+      "lineage": "Lineage2",
+      "cluster_path": "1 -> 2 -> 3 -> 4"
+    }
+  ],
+  "summary": [
+    {
+      "lineage": "Lineage1",
+      "cells_total": "140",
+      "finite_pseudotime": "107",
+      "missing_pseudotime": "33",
+      "minimum": "0",
+      "maximum": "15.0453643907194",
+      "weight_min": "0",
+      "weight_max": "1"
+    },
+    {
+      "lineage": "Lineage2",
+      "cells_total": "140",
+      "finite_pseudotime": "108",
+      "missing_pseudotime": "32",
+      "minimum": "0",
+      "maximum": "15.1263272650497",
+      "weight_min": "0",
+      "weight_max": "1"
+    }
+  ],
+  "id_order_match": true,
+  "curve_weights_valid": true,
+  "process_exit_code": 0
+}

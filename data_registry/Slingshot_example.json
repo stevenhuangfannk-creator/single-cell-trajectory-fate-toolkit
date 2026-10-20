@@ -1,0 +1,42 @@
+{
+  "method": "Slingshot",
+  "package_version": "2.20.0",
+  "bioconductor": "3.23",
+  "input_kind": "OFFICIAL_SIMULATED_MINIMAL_EXAMPLE",
+  "official_tutorial": "https://bioconductor.org/packages/3.23/bioc/vignettes/slingshot/inst/doc/vignette.html",
+  "source_package": {
+    "url": "https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/slingshot_2.20.0.zip",
+    "bytes": 1897803,
+    "sha256": "beb7658d6e19fe73373d68d0a37a2dc9bfcb076d1917ccd723472eccf1b96a0d",
+    "md5": "4d2f93016802421cff35f9f470c1ee0d",
+    "independent_repository_md5_available": false,
+    "internal_package_md5_check": "R reported successful unpack and MD5 sums checked"
+  },
+  "original_packaged_data": {
+    "relative_path": "methods/Slingshot/example_data/slingshotExample.rda",
+    "bytes": 3190,
+    "sha256": "f553110d1dd138196da208ae6a4ef459555c754de3a60c30c1d30e357e13f483",
+    "modified": false
+  },
+  "derived_table": {
+    "relative_path": "methods/Slingshot/results/input_coordinates.tsv",
+    "sha256": "0632a51c56bdbe4941252d46d0d0beb1a72a17489e54ed6aea423b44dce1c7ba",
+    "cells": 140,
+    "dimensions": 2,
+    "cluster_sizes": {
+      "1": 36,
+      "2": 36,
+      "3": 24,
+      "4": 22,
+      "5": 22
+    },
+    "changes": "Added local sequential unique IDs; original coordinate order and cluster labels retained"
+  },
+  "data_help": "methods/Slingshot/example_data/official_data_help.txt",
+  "license": "Artistic-2.0 as packaged material; no separate dataset license found",
+  "license_notice": "THIRD_PARTY_NOTICES.md",
+  "is_patient_data": false,
+  "has_expression_counts": false,
+  "has_real_time": false,
+  "download_date": "2026-10-19"
+}

@@ -1,0 +1,191 @@
+During startup - Warning messages:
+1: Setting LC_COLLATE=C.UTF-8 failed 
+2: Setting LC_CTYPE=C.UTF-8 failed 
+3: Setting LC_MONETARY=C.UTF-8 failed 
+4: Setting LC_TIME=C.UTF-8 failed 
+R= R version 4.6.1 (2026-06-24 ucrt) 
+Library= C:/Users/13683/Documents/Codex/2026-10-19/single-cell-trajectory-fate-toolkit-github/work/runtime/R-trajectory/library 
+Required non-base packages: 29 
+              package version
+            slingshot  2.20.0
+            princurve   2.1.6
+      TrajectoryUtils  1.20.0
+               igraph   2.3.4
+          matrixStats   1.5.0
+            S4Vectors  0.50.3
+ SingleCellExperiment  1.34.0
+ SummarizedExperiment  1.42.0
+         BiocGenerics  0.58.1
+        GenomicRanges  1.64.0
+         DelayedArray  0.38.2
+       MatrixGenerics  1.24.0
+              Biobase  2.72.0
+              IRanges  2.46.0
+              Seqinfo   1.2.0
+             S4Arrays  1.12.1
+                  cli   3.6.6
+            lifecycle   1.0.5
+             magrittr   2.0.5
+            pkgconfig   2.0.3
+                rlang   1.3.0
+                vctrs   0.7.3
+                cpp11   0.5.5
+                 Rcpp   1.1.2
+             generics   0.1.4
+          SparseArray  1.12.3
+                abind   1.4-8
+                 glue   1.8.1
+              XVector  0.52.0
+DOWNLOAD 1 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/slingshot_2.20.0.zip remaining= 960790952 
+package 'slingshot' successfully unpacked and MD5 sums checked
+DOWNLOAD 2 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/princurve_2.1.6.zip remaining= 958893149 
+package 'princurve' successfully unpacked and MD5 sums checked
+DOWNLOAD 3 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/TrajectoryUtils_1.20.0.zip remaining= 958446745 
+package 'TrajectoryUtils' successfully unpacked and MD5 sums checked
+DOWNLOAD 4 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/igraph_2.3.4.zip remaining= 958154134 
+package 'igraph' successfully unpacked and MD5 sums checked
+DOWNLOAD 5 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/matrixStats_1.5.0.zip remaining= 950545631 
+package 'matrixStats' successfully unpacked and MD5 sums checked
+DOWNLOAD 6 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/S4Vectors_0.50.3.zip remaining= 949986494 
+package 'S4Vectors' successfully unpacked and MD5 sums checked
+DOWNLOAD 7 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/SingleCellExperiment_1.34.0.zip remaining= 948085850 
+package 'SingleCellExperiment' successfully unpacked and MD5 sums checked
+DOWNLOAD 8 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/SummarizedExperiment_1.42.0.zip remaining= 946933030 
+package 'SummarizedExperiment' successfully unpacked and MD5 sums checked
+DOWNLOAD 9 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/BiocGenerics_0.58.1.zip remaining= 945425110 
+package 'BiocGenerics' successfully unpacked and MD5 sums checked
+DOWNLOAD 10 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/GenomicRanges_1.64.0.zip remaining= 944759533 
+package 'GenomicRanges' successfully unpacked and MD5 sums checked
+DOWNLOAD 11 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/DelayedArray_0.38.2.zip remaining= 942800492 
+package 'DelayedArray' successfully unpacked and MD5 sums checked
+DOWNLOAD 12 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/MatrixGenerics_1.24.0.zip remaining= 940684247 
+package 'MatrixGenerics' successfully unpacked and MD5 sums checked
+DOWNLOAD 13 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/Biobase_2.72.0.zip remaining= 940223869 
+package 'Biobase' successfully unpacked and MD5 sums checked
+DOWNLOAD 14 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/IRanges_2.46.0.zip remaining= 938163502 
+package 'IRanges' successfully unpacked and MD5 sums checked
+DOWNLOAD 15 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/Seqinfo_1.2.0.zip remaining= 935668883 
+package 'Seqinfo' successfully unpacked and MD5 sums checked
+DOWNLOAD 16 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/S4Arrays_1.12.1.zip remaining= 935234263 
+package 'S4Arrays' successfully unpacked and MD5 sums checked
+DOWNLOAD 17 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/cli_3.6.6.zip remaining= 934201836 
+package 'cli' successfully unpacked and MD5 sums checked
+DOWNLOAD 18 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/lifecycle_1.0.5.zip remaining= 932791928 
+package 'lifecycle' successfully unpacked and MD5 sums checked
+DOWNLOAD 19 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/magrittr_2.0.5.zip remaining= 932641260 
+package 'magrittr' successfully unpacked and MD5 sums checked
+DOWNLOAD 20 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/pkgconfig_2.0.3.zip remaining= 932409932 
+package 'pkgconfig' successfully unpacked and MD5 sums checked
+DOWNLOAD 21 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/rlang_1.3.0.zip remaining= 932386685 
+package 'rlang' successfully unpacked and MD5 sums checked
+DOWNLOAD 22 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/vctrs_0.7.3.zip remaining= 930736484 
+package 'vctrs' successfully unpacked and MD5 sums checked
+DOWNLOAD 23 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/cpp11_0.5.5.zip remaining= 928815368 
+package 'cpp11' successfully unpacked and MD5 sums checked
+DOWNLOAD 24 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/Rcpp_1.1.2.zip remaining= 928488512 
+package 'Rcpp' successfully unpacked and MD5 sums checked
+DOWNLOAD 25 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/generics_0.1.4.zip remaining= 925519074 
+package 'generics' successfully unpacked and MD5 sums checked
+DOWNLOAD 26 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/SparseArray_1.12.3.zip remaining= 925432562 
+package 'SparseArray' successfully unpacked and MD5 sums checked
+DOWNLOAD 27 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/abind_1.4-8.zip remaining= 923639341 
+package 'abind' successfully unpacked and MD5 sums checked
+DOWNLOAD 28 / 29 https://cloud.r-project.org/bin/windows/contrib/4.6/glue_1.8.1.zip remaining= 923571783 
+package 'glue' successfully unpacked and MD5 sums checked
+DOWNLOAD 29 / 29 https://bioconductor.org/packages/3.23/bioc/bin/windows/contrib/4.6/XVector_0.52.0.zip remaining= 923379777 
+package 'XVector' successfully unpacked and MD5 sums checked
+Loading required package: princurve
+Loading required package: TrajectoryUtils
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: 'MatrixGenerics'
+
+The following objects are masked from 'package:matrixStats':
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: generics
+
+Attaching package: 'generics'
+
+The following objects are masked from 'package:base':
+
+    as.difftime, as.factor, as.ordered, intersect, is.element, setdiff,
+    setequal, union
+
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, is.unsorted, lapply,
+    mapply, match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    rank, rbind, rownames, sapply, saveRDS, table, tapply, unique,
+    unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: 'S4Vectors'
+
+The following object is masked from 'package:utils':
+
+    findMatches
+
+The following objects are masked from 'package:base':
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+
+Attaching package: 'IRanges'
+
+The following object is masked from 'package:grDevices':
+
+    windows
+
+Loading required package: Seqinfo
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: 'Biobase'
+
+The following object is masked from 'package:MatrixGenerics':
+
+    rowMedians
+
+The following objects are masked from 'package:matrixStats':
+
+    anyMissing, rowMedians
+
+INSTALL_OK: slingshot  2.20.0 
