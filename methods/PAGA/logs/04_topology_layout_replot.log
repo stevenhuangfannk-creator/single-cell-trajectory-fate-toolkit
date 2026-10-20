@@ -1,0 +1,13 @@
+C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\methods\PAGA\scripts\00_Start.py:21: FutureWarning: The method set_figure_params is deprecated and will be removed in the future. Use :func:`scanpy.set_figure_params` instead
+PAGA configuration {'seed': 0, 'n_pcs': 20, 'first_neighbors': 4, 'diffmap_components': 15, 'final_neighbors': 10, 'display_threshold': 0.03, 'group': 'paul15_clusters', 'root_index': 840}
+  sc.settings.set_figure_params(dpi=100,dpi_save=180,facecolor='white',frameon=False)
+Traceback (most recent call last):
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\methods\PAGA\scripts\run_example.py", line 7, in <module>
+    for name in sequence:exec(compile((scripts/name).read_text(encoding='utf-8'),str(scripts/name),'exec'),scope)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\methods\PAGA\scripts\03_Plot_and_Export.py", line 3, in <module>
+    sc.pl.paga(adata,threshold=CFG['display_threshold'],show=False,random_state=CFG['seed'],title='PAGA population connectivity',figsize=(10,8),fontsize=8,node_size_scale=.7,edge_width_scale=.4)
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\legacy_api_wrap\__init__.py", line 88, in fn_compatible
+    return fn(*args_all, **kw)
+           ^^^^^^^^^^^^^^^^^^^
+TypeError: paga() got an unexpected keyword argument 'figsize'

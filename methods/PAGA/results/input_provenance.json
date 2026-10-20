@@ -1,0 +1,16 @@
+{
+  "url": "https://exampledata.scverse.org/scanpy/paul15.h5",
+  "bytes": 10297693,
+  "sha256": "6161984f758dd464992edc23f1a8ab89b2081600130c6aa93a1ab12b3ada5bfb",
+  "cells": 2730,
+  "provided_genes": 3451,
+  "minimum": 0.0,
+  "fraction_noninteger": 0.0,
+  "species": "mouse",
+  "data_note": "Official data.debatched nonlog informative-gene matrix; not unqualified raw integer counts or full library depth",
+  "unique_cell_ids": true,
+  "unique_gene_ids": true,
+  "root_index": 840,
+  "root_cell": "W37022",
+  "root_cluster": "8Mk"
+}

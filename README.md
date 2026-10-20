@@ -1,6 +1,8 @@
 # 单细胞轨迹与命运：中文科研教学与应用手册
 
-当前本地版本：2026-10-19，第三轮。已真实运行 **Slingshot、tradeSeq、Monocle3**，并完成同650细胞的组合检查。本轮新增19组科研图、57个PNG/PDF/SVG文件；原Slingshot 79个既有文件校验不变。**组合出现AWA排序/终点冲突，未确认轨迹共识**，详见[第三轮中文交付报告](docs/ROUND3_DELIVERY_CN.md)。其他11种方法仍为来源审查/后续复现。远程仓库尚未创建或修改。
+当前版本：2026-10-20，第四轮建设中。已建立[Private GitHub仓库](https://github.com/stevenhuangfannk-creator/single-cell-trajectory-fate-toolkit)，首发main提交99228954aa4872f97d6f844fae92396a31e94b91含423个文件。本轮PAGA已新增真实4组/12格式，中文教程与图卡已验收；CytoTRACE2等待Stanford非商业使用资格确认，CellRank按顺序尚未启动。当前进展见[第四轮记录](docs/round4/README_CN.md)。
+
+第三轮Slingshot、tradeSeq、Monocle3及同650细胞组合的脚本、日志、图件和指南保持不变；**AWA排序/终点冲突与预处理敏感性保留，轨迹共识未成立**。见[第三轮历史总结](docs/ROUND3_DELIVERY_CN.md)。四轮当前累计29组实际科研图、87个PNG/PDF/SVG文件；其余方法没有用占位图冒充运行。
 
 第一轮审查、scTour资产审查及六组合设计继续保留：[历史资料](docs/first_round/trajectory_fate_review_2026-10-19/README.md)。scTour历史科学状态仍为PARTIAL；RegVelo独立。本轮PI仅为研究设计。
 
@@ -12,7 +14,7 @@
 4. **数据要满足什么条件？** 细胞ID、计数/归一化尺度、谱系纯度、供者与批次须可追溯；根和终末需要依据。见 [数据契约](docs/DATA_CONTRACT_CN.md)。
 5. **哪些可以组合？** 已有[Slingshot+tradeSeq+Monocle3同数据示范](combinations/Slingshot_tradeSeq_Monocle3/README_CN.md)，另保留[A–F设计教程](combinations/README_CN.md)。组合是待验证工作流，不是官方联合算法。
 6. **先运行哪个脚本？** 本轮先读[第三轮00入口](round3/00_Start.R)，运行 `./run_round3.ps1 -Module tradeSeq`，再Monocle3、再combination；[详细环境](environments/round3/README_CN.md)。原[Slingshot指南](methods/Slingshot/README_CN.md)及脚本保持原样，不需重跑旧例。
-7. **得到什么图与统计？** 累计25组真实图、75个PNG/PDF/SVG文件，包括轨迹、拟时序、动态曲线/热图、分支差异、方法比较与GO富集，另有收敛、FDR和输入校验表，见 [Gallery](gallery/README.md)。
+7. **得到什么图与统计？** 累计29组真实图、87个PNG/PDF/SVG文件，包括轨迹、拟时序、动态曲线/热图、分支差异、方法比较与GO富集，另有收敛、FDR和输入校验表，见 [Gallery](gallery/README.md)。
 8. **能支持什么结论？** 当前示例支持在记录的输入/模型条件下描述状态结构与动态表达；组合冲突显示预处理敏感性。不能据此证明PI状态转化、分化命运或疾病机制。
 
 常用缩写与概念见[中文术语表](docs/GLOSSARY_CN.md)。
@@ -26,7 +28,7 @@
 | 轨迹、拟时序：[Monocle2](methods/Monocle2/SOURCE_CARD.md) | 表达与元数据；历史 DDRTree 降维与树样轨迹；旧依赖独立隔离 | 轨迹树、拟时序、分支相关表达与统计 | 适合历史研究复现；不以旧版树替代谱系追踪，不全局降级依赖 |
 | 轨迹、拟时序：[Monocle3](methods/Monocle3/README_CN.md) | 原始计数、细胞/基因元数据；分区内主图与根锚定距离 | UMAP、主图、分区、拟时序、graph_test 统计 | A模块；不可达细胞可为 Inf；图上关联不能证明调控因果 |
 | 轨迹、拟时序：[Slingshot](methods/Slingshot/README_CN.md) | 细胞×低维坐标、聚类、可说明依据的起点；最小例不需表达矩阵 | 最小生成树、主曲线、各谱系拟时序和曲线归属权重 | A/B模块；权重不是命运概率；结构依赖聚类与拟合空间 |
-| 群体拓扑：[PAGA](methods/PAGA/SOURCE_CARD.md) | 表达衍生的邻居图与群标签；连接图是群级抽象 | 群间连接图、嵌入；另运行 DPT 才有根依赖拟时序 | A的补充视角；连接强度不是方向、转移率或命运概率 |
+| 群体拓扑：[PAGA](methods/PAGA/README_CN.md) | 表达衍生的邻居图与群标签；连接图是群级抽象 | 群间连接图、嵌入；另运行 DPT 才有根依赖拟时序 | A的补充视角；连接强度不是方向、转移率或命运概率 |
 | 动态排序：[scTour](methods/scTour/SOURCE_CARD.md) | 按官方要求准备表达；神经常微分方程学习潜在动态与时间 | 推断时间、潜空间、向量场、训练诊断 | A/C模块；先引用历史资产，不重训；时间不等于潜能或剪接速度 |
 | 动态基因：[tradeSeq](methods/tradeSeq/README_CN.md) | 基因×细胞原始计数、谱系拟时序与权重；负二项广义加性模型 | 平滑曲线、热图、检验表、收敛率、多重检验校正 | B模块；不推断轨迹；整合矩阵不能替代计数；显著关联不是驱动机制 |
 | 预测潜能：[CytoTRACE2](methods/CytoTRACE2/SOURCE_CARD.md) | 官方允许的未取对数表达、物种和基因覆盖 | 潜能分数、类别、嵌入图及技术混杂检查 | C模块；受训练域和输入影响；非商业许可需核查；不是实测干性 |
@@ -76,4 +78,11 @@ UMAP 指统一流形近似与投影（Uniform Manifold Approximation and Project
 
 [组合教程](combinations/Slingshot_tradeSeq_Monocle3/README_CN.md) · [一致性/冲突报告](combinations/Slingshot_tradeSeq_Monocle3/AGREEMENT_LIMITATIONS_CN.md) · [Slingshot第三轮补充](methods/Slingshot/ROUND3_SUPPLEMENT_CN.md) · [PI动态程序设计](case_studies/PI_Fibroblast_State_Reprogramming/ROUND3_DYNAMIC_DESIGN_CN.md)。
 
-[GitHub发布前审查](docs/GITHUB_PREPUBLICATION_CN.md)：本地复现与文件检查完成；远程创建、Private/Public与push仍待你确认。项目自写内容的总许可及历史资料公开范围尚待确定，不能把工程检查通过误写为已可无条件公开。
+[第三轮发布前审查（历史）](docs/GITHUB_PREPUBLICATION_CN.md)及[第四轮实际Private发布](docs/round4/FIRST_PRIVATE_PUSH.json)分别保留。用户已授权Private仓库与push；没有授权Public。自写内容尚未授予开源许可证，第三方权利仍适用。
+
+
+## 第四轮PAGA实际教学示范
+
+![PAGA群连接](methods/PAGA/figures/P01_population_topology.png)
+
+[完整PAGA中文指南](methods/PAGA/README_CN.md)：官方2730细胞×3451基因小例，19群、58条非零连接、54条显示边。根条件DPT有限2671个、不可达59个，默认根位于8Mk，不能直接叫干祖起点。[四轮PI预设设计](case_studies/PI_Fibroblast_State_Reprogramming/ROUND4_METHOD_DESIGN_CN.md)说明如何研究State1/6/7、ECM、机械转导与炎症；未运行真实PI。

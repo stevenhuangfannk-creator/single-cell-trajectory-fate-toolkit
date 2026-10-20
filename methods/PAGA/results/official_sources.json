@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://scanpy.readthedocs.io/en/stable/tutorials/trajectories/paga-paul15.html",
+    "bytes": 121790,
+    "sha256": "0e28debc73f42fe1810710fb41c83c73399aa7a0af4c8c00015e9c48351609ea"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/scverse/scanpy/1.12.4/src/scanpy/datasets/_datasets.py",
+    "bytes": 20501,
+    "sha256": "ceefc1191dbb2af1153245278a2ea115d9b763166a8fa56ce930947c96f76a00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/scverse/scanpy/1.12.4/LICENSE",
+    "bytes": 1568,
+    "sha256": "fb02749e4f251401f2c4023b7a30e71f40a21e138b87025036f74c980cfa63b2"
+  }
+]

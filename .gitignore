@@ -14,6 +14,7 @@ __pycache__/
 
 # 第三轮：原Slingshot小对象保持可保留；新方法原始输入/模型本地存在但不进Git。
 .local_round3/
+.local_round4/
 methods/tradeSeq/results/*.rds
 methods/Monocle3/results/*.rds
 combinations/Slingshot_tradeSeq_Monocle3/results/*.rds

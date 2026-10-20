@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-20",
+  "method": "CytoTRACE2",
+  "INSTALL": "NOT_ATTEMPTED_LICENSE_GATE",
+  "INPUT": "NOT_DOWNLOADED",
+  "RUN": "BLOCKED_LICENSE_ELIGIBILITY_PENDING",
+  "FIGURE": "NOT_RUN_NO_PLACEHOLDERS",
+  "TUTORIAL_CN": "OFFICIAL_SOURCE_CARD_AND_LICENSE_REVIEW_ONLY_NOT_RUNTIME_GUIDE",
+  "official_license_review": "COMPLETE_STANFORD_NONCOMMERCIAL",
+  "reason": "Commercial entities prohibited even for research; user noncommercial/not-for-profit eligibility not yet confirmed",
+  "upstream_code_models_data_redistributed": false,
+  "real_PI_run": false
+}

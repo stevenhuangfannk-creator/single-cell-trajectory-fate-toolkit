@@ -1,0 +1,12 @@
+"""重绘读取已保存对象，不重新计算邻居、PAGA或DPT。"""
+if 'adata' not in globals():adata=sc.read_h5ad(DATA/'processed.h5ad')
+fig,ax=plt.subplots(figsize=(10,8))
+sc.pl.paga(adata,threshold=CFG['display_threshold'],show=False,random_state=CFG['seed'],title='PAGA population connectivity',ax=ax,fontsize=8,node_size_scale=.7,edge_width_scale=.4)
+export('P01_population_topology')
+sc.pl.umap(adata,color=CFG['group'],legend_loc='right margin',show=False,title='PAGA-initialized UMAP')
+export('P02_PAGA_initialized_UMAP')
+sc.pl.umap(adata,color='dpt_pseudotime',show=False,title='DPT from official dataset root (index 840)',color_map='viridis')
+export('P03_DPT_pseudotime')
+sc.pl.umap(adata,color=['marker_Hba-a2','marker_Elane','marker_Irf8','marker_Itga2b'],ncols=2,show=False,title=['Hba-a2','Elane','Irf8','Itga2b'],color_map='viridis')
+export('P04_marker_expression')
+print('FIGURE_PASS 4 groups / 12 files',flush=True)

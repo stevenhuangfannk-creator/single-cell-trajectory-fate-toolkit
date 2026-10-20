@@ -1,0 +1,49 @@
+{
+  "groups": 4,
+  "formats": 12,
+  "status": "PASS",
+  "figures": [
+    {
+      "figure": "P01_population_topology",
+      "png_size": [
+        1440,
+        1170
+      ],
+      "png_sha256": "1f83a80092c04fb91eef3ee2c33807802b70f00416c8164ac9af0890a55b4b0e",
+      "pdf_rendered": true,
+      "svg_xml_paths": 120
+    },
+    {
+      "figure": "P02_PAGA_initialized_UMAP",
+      "png_size": [
+        1002,
+        623
+      ],
+      "png_sha256": "3678b14d20d267c1f3d51408ac7c6e04a08890facc694d46cba2302c9427ddde",
+      "pdf_rendered": true,
+      "svg_xml_paths": 60
+    },
+    {
+      "figure": "P03_DPT_pseudotime",
+      "png_size": [
+        698,
+        643
+      ],
+      "png_sha256": "d22f736cf2334c63458f8e2761dac9c54433b92e6e924c406ee30e087b75766c",
+      "pdf_rendered": true,
+      "svg_xml_paths": 31
+    },
+    {
+      "figure": "P04_marker_expression",
+      "png_size": [
+        1422,
+        1277
+      ],
+      "png_sha256": "f9cbf84997cce14bc45a0f4aee72ce6b7d15d32e1bf5a04feacc7e93520b21c0",
+      "pdf_rendered": true,
+      "svg_xml_paths": 31
+    }
+  ],
+  "visual_review": "All four PNGs reviewed; larger P01 labels inspected, all PDFs rendered and SVG paths validated",
+  "SVG_actual_render": "All four SVGs rasterized successfully via sharp; source PNGs and representative large topology visually inspected"
+}

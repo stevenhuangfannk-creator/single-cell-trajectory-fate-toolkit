@@ -28,3 +28,10 @@ tradeSeq包MIT声明的2019版权持有人为Koen Van den Berge、Hector Roux de
 GO派生基因集来自Gene Ontology Consortium及WormBase，以[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)使用，遵循[GO许可与引用政策](https://geneontology.org/docs/go-citation-policy/)。本次GAF头日期2026-05-21，OBO标注releases/2026-07-26，均于2026-10-19获取；不可将它们写成同一个统一新发布。处理包括线虫/生物过程筛选、排除NOT/IEA、沿is_a/part_of传播、与官方10,000基因宇宙相交和去重。来源URL、原文件SHA256及修改规则见[GO_provenance](combinations/Slingshot_tradeSeq_Monocle3/example_data/GO_provenance.json)。派生文件不是GO或WormBase官方发布品。依CC BY 4.0第5条，许可材料按现状提供，不提供担保。保留Gene Ontology Consortium及WormBase的署名、原始来源与许可；原始文件若有附加版权/归属通知，应一并遵循。
 
 项目自写代码/中文说明的统一许可证尚待仓库所有者决定；目前不为所有材料强加一个总许可。公开前还须复核原样历史档案中的私人路径、Private项目链接和其他作者条款。见[发布前审查](docs/GITHUB_PREPUBLICATION_CN.md)。
+
+
+## 第四轮新增审查
+
+Scanpy 1.12.4的BSD-3-Clause全文见[许可](third_party/Scanpy/LICENSE.txt)，原数据Paul等及PAGA论文引用见[PAGA指南](methods/PAGA/README_CN.md)。本轮仅上传自写运行/绘图脚本、派生统计和实际图件，官方Paul15 HDF5不上传。软件许可不自动覆盖全部原始研究数据。
+
+CytoTRACE2使用Stanford非商业协议，商业实体研究也禁止；详见[审查与执行门槛](docs/round4/CYTOTRACE2_LICENSE_REVIEW_CN.md)。用户资格未确认前未安装、未运行，未上传上游代码/模型/输入数据。Private不解除许可证限制。已有历史审查和归属保持可追溯；第四轮已获Private发布授权，不代表Public授权。

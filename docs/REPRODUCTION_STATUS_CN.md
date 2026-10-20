@@ -1,3 +1,9 @@
+# 当前验收：第四轮建设中
+
+PAGA已完成INSTALL/INPUT/RUN/FIGURE及中文教程独立验收；CytoTRACE2已完成官方许可审查，等待使用资格确认；CellRank按用户串行验收顺序尚未开始。实际Private首发已完成。详见[第四轮记录](round4/README_CN.md)。
+
+下面保留第三轮状态语境；第三轮未创建远程是当时事实，现已按新授权建立Private。三方法及组合的既有文件未改变。
+
 # 当前复现验收（第三轮）
 
 | 对象 | INSTALL | INPUT | RUN | FIGURE | 中文教程/科学边界 |

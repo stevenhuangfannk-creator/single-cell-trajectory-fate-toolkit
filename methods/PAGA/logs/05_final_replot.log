@@ -1,0 +1,5 @@
+PAGA configuration {'seed': 0, 'n_pcs': 20, 'first_neighbors': 4, 'diffmap_components': 15, 'final_neighbors': 10, 'display_threshold': 0.03, 'group': 'paul15_clusters', 'root_index': 840}
+C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\methods\PAGA\scripts\00_Start.py:21: FutureWarning: The method set_figure_params is deprecated and will be removed in the future. Use :func:`scanpy.set_figure_params` instead
+  sc.settings.set_figure_params(dpi=100,dpi_save=180,facecolor='white',frameon=False)
+--> added 'pos', the PAGA positions (adata.uns['paga'])
+FIGURE_PASS 4 groups / 12 files

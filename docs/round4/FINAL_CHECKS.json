@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-20",
+  "stage": "PAGA complete; licence eligibility pause",
+  "git_files_including_generated_indexes": 476,
+  "relative_links_checked": 627,
+  "broken_local_links": [],
+  "links_to_not_committed_files": [],
+  "prohibited_or_large_files": [],
+  "credential_pattern_findings_paths_only": [],
+  "replacement_character_files": [],
+  "third_round_protected_files_checked": 275,
+  "third_round_protected_changed": [],
+  "new_PAGA_groups": 4,
+  "new_PAGA_image_formats": 12,
+  "PNG_visual_review": "All 4; topology enlarged to avoid label collisions",
+  "PDF_render": "4/4",
+  "SVG_render": "4/4",
+  "all_RDS_excluded": true,
+  "runtime_not_committed": true,
+  "real_PI_run": false,
+  "old_research_repositories_modified": false,
+  "remote_visibility": "PRIVATE",
+  "new_methods_fully_accepted": [
+    "PAGA"
+  ],
+  "CytoTRACE2": "BLOCKED_LICENSE_ELIGIBILITY_PENDING",
+  "CellRank": "NOT_STARTED_SEQUENCE_GATE",
+  "manifest_policy": "GIT_PUBLICATION_MANIFEST.csv and SHA256SUMS.txt hash canonical Git-index bytes, excluding these two manifests. For local CRLF text use git show HEAD:path; preserved method/archive files have -text attributes.",
+  "technical_file_audit": "PASS"
+}

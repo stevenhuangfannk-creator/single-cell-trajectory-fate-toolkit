@@ -1,0 +1,14 @@
+{
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "isPrivate": true,
+  "nameWithOwner": "stevenhuangfannk-creator/single-cell-trajectory-fate-toolkit",
+  "url": "https://github.com/stevenhuangfannk-creator/single-cell-trajectory-fate-toolkit",
+  "date": "2026-10-20",
+  "first_commit": "99228954aa4872f97d6f844fae92396a31e94b91",
+  "first_commit_file_count": 423,
+  "branch": "main",
+  "remote_commit_matches": true,
+  "force_push": false
+}

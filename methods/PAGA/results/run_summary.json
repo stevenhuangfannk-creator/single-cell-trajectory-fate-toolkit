@@ -1,0 +1,26 @@
+{
+  "cells": 2730,
+  "selected_genes": 999,
+  "groups": 19,
+  "nonzero_undirected_edges": 58,
+  "displayed_edges": 54,
+  "finite_DPT": 2671,
+  "infinite_DPT": 59,
+  "parameters": {
+    "seed": 0,
+    "n_pcs": 20,
+    "first_neighbors": 4,
+    "diffmap_components": 15,
+    "final_neighbors": 10,
+    "display_threshold": 0.03,
+    "group": "paul15_clusters",
+    "root_index": 840
+  },
+  "seconds": 46.288415100003476,
+  "threads": 1,
+  "workflow_adaptations": [
+    "official supplied paul15_clusters instead of new louvain labels/manual renaming",
+    "PAGA-initialized UMAP instead of ForceAtlas2 draw_graph",
+    "dataset default root index 840; not retuned for attractive ordering"
+  ]
+}

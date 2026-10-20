@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\numba\core\typeconv\typeconv.py", line 4, in <module>
+    from numba.core.typeconv import _typeconv
+ImportError: DLL load failed while importing _typeconv: 找不到指定的模块。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\methods\PAGA\scripts\run_example.py", line 7, in <module>
+    for name in sequence:exec(compile((scripts/name).read_text(encoding='utf-8'),str(scripts/name),'exec'),scope)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\methods\PAGA\scripts\00_Start.py", line 8, in <module>
+    import numpy as np,pandas as pd,scanpy as sc
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\scanpy\__init__.py", line 39, in <module>
+    from . import datasets, experimental, external, get, logging, metrics, queries
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\scanpy\datasets\__init__.py", line 5, in <module>
+    from ._datasets import (
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\scanpy\datasets\_datasets.py", line 13, in <module>
+    from .. import _utils
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\scanpy\_utils\__init__.py", line 39, in <module>
+    from ._numba import _numba_thread_limit
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\scanpy\_utils\_numba.py", line 6, in <module>
+    import numba
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\numba\__init__.py", line 77, in <module>
+    from numba.misc.special import (
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\numba\misc\special.py", line 3, in <module>
+    from numba.core.typing.typeof import typeof
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\numba\core\typing\__init__.py", line 1, in <module>
+    from .context import BaseContext, Context
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\numba\core\typing\context.py", line 11, in <module>
+    from numba.core.typeconv import Conversion, rules
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\numba\core\typeconv\rules.py", line 2, in <module>
+    from .typeconv import TypeManager, TypeCastingRules
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\numba\core\typeconv\typeconv.py", line 16, in <module>
+    raise ImportError(msg)
+ImportError: Numba could not be imported.
+--------------------------------------------------------------------------------
+If you are seeing this message and are undertaking Numba development work, you may need to rebuild Numba.
+Please see the development set up guide:
+
+https://numba.readthedocs.io/en/stable/developer/contributing.html.
+
+--------------------------------------------------------------------------------
+If you are not working on Numba development, the original error was: 'DLL load failed while importing _typeconv: 找不到指定的模块。'.
+For help, please visit:
+
+https://numba.readthedocs.io/en/stable/user/faq.html#numba-could-not-be-imported
+

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "ct-license.txt",
+    "url": "https://raw.githubusercontent.com/digitalcytometry/cytotrace2/33b9c6bbb0f8591ae7c5f7799e19d6ce5fec9789/LICENSE",
+    "bytes": 2027,
+    "sha256": "61cfcc46ed85923d98d33dcce863c56fbefe2532b01a05074d27823d7597fa27"
+  },
+  {
+    "file": "ct-readme.md",
+    "url": "https://raw.githubusercontent.com/digitalcytometry/cytotrace2/33b9c6bbb0f8591ae7c5f7799e19d6ce5fec9789/README.md",
+    "bytes": 44038,
+    "sha256": "e2b3d376bc6f50ecfdd60dd30241358830854ddb4eede04d8424c772abfeb09b"
+  },
+  {
+    "file": "ct-python-readme.md",
+    "url": "https://raw.githubusercontent.com/digitalcytometry/cytotrace2/33b9c6bbb0f8591ae7c5f7799e19d6ce5fec9789/cytotrace2_python/README.md",
+    "bytes": 26734,
+    "sha256": "827f48aaecc25978fa3a125bae1587f85345901ceed4ee666eb26f5126ba0937"
+  },
+  {
+    "file": "ct-tree.json",
+    "url": "https://api.github.com/repos/digitalcytometry/cytotrace2/git/trees/33b9c6bbb0f8591ae7c5f7799e19d6ce5fec9789?recursive=1",
+    "bytes": 29821,
+    "sha256": "d03141622f3ae479fc2c9668efea5ebdd13af226a153f7ea6e6341fa441610c7"
+  },
+  {
+    "file": "ct-pypi.json",
+    "url": "https://pypi.org/pypi/cytotrace2-py/json",
+    "bytes": 20001,
+    "sha256": "2d417247a92b9b3fd42541db02570fa6d9dacc48623b7a6d78c219684951c9dc"
+  }
+]

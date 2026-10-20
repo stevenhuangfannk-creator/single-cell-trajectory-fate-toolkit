@@ -90,3 +90,15 @@ UMAP、动态基因、预测潜能、命运概率、RNA速度、热图、真实�
 | 轨迹/敏感性 | [C08_no_alignment_sensitivity](../combinations/Slingshot_tradeSeq_Monocle3/figure_notes/C08_no_alignment_sensitivity_CN.md) |
 
 潜能、命运概率和RNA速度尚未在本轮生成；不以占位图代替运行。共同数据AWA冲突见组合报告，图件完成不等于生物学一致性通过。
+
+
+## 第四轮PAGA分类索引
+
+| 分类 | 实际图件与逐图解释 |
+|---|---|
+| 群体连接拓扑 | [P01 群连接](../methods/PAGA/figure_notes/P01_population_topology_CN.md) |
+| UMAP | [P02 PAGA初始化UMAP](../methods/PAGA/figure_notes/P02_PAGA_initialized_UMAP_CN.md) |
+| 根条件拟时序 | [P03 DPT（59个不可达）](../methods/PAGA/figure_notes/P03_DPT_pseudotime_CN.md) |
+| 基因表达 | [P04 四个造血标志](../methods/PAGA/figure_notes/P04_marker_expression_CN.md) |
+
+每张均来自实际官方小数据本地计算并提供三格式。CytoTRACE2许可资格尚待确认，未生成潜能图；CellRank尚未运行，未生成命运概率图。第三轮AWA冲突未被新图替换。

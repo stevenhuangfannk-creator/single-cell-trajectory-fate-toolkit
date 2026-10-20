@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-20",
+  "method": "PAGA",
+  "INSTALL": "PASS_WITH_ENV_LOCAL_DLL_FIX",
+  "INPUT": "PASS",
+  "RUN": "PASS_OFFICIAL_SMALL_WORKFLOW_WITH_DOCUMENTED_ADAPTATIONS",
+  "FIGURE": "PASS_4_GROUPS_12_FORMATS",
+  "TUTORIAL_CN": "COMPLETE_REVIEWED",
+  "DPT_finite": 2671,
+  "DPT_nonfinite": 59,
+  "root": "Official dataset index 840, W37022, 8Mk; not independently validated stem root",
+  "real_PI_run": false,
+  "threads": 1
+}

@@ -1,0 +1,63 @@
+PAGA configuration {'seed': 0, 'n_pcs': 20, 'first_neighbors': 4, 'diffmap_components': 15, 'final_neighbors': 10, 'display_threshold': 0.03, 'group': 'paul15_clusters', 'root_index': 840}
+C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\methods\PAGA\scripts\00_Start.py:21: FutureWarning: The method set_figure_params is deprecated and will be removed in the future. Use :func:`scanpy.set_figure_params` instead
+  sc.settings.set_figure_params(dpi=100,dpi_save=180,facecolor='white',frameon=False)
+INPUT_PASS AnnData object with n_obs × n_vars = 2730 × 3451
+    obs: 'paul15_clusters', 'provided_gene_sum', 'detected_provided_genes', 'marker_Hba-a2', 'marker_Elane', 'marker_Irf8', 'marker_Itga2b'
+    uns: 'iroot'
+    layers: None (.X)
+running recipe zheng17
+normalizing counts per cell
+    finished (0:00:00)
+C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\paga-py312\Lib\site-packages\scanpy\preprocessing\_recipes.py:185: FutureWarning: The function filter_genes_dispersion is deprecated and will be removed in the future:
+    Use :func:`~scanpy.pp.highly_variable_genes` instead.
+    The new function is equivalent to the present function, except that
+
+    * the new function always expects logarithmized data
+    * `subset=False` in the new function, it suffices to
+        merely annotate the genes, tools like `pp.pca` will
+        detect the annotation
+    * you can now call: `sc.pl.highly_variable_genes(adata)`
+    * `copy` is replaced by `inplace`
+  filter_result = filter_genes_dispersion(
+extracting highly variable genes
+    finished (0:00:01)
+normalizing counts per cell
+    finished (0:00:00)
+    finished (0:00:01)
+computing PCA
+    with n_comps=50
+    finished (0:00:07)
+computing neighbors
+    using 'X_pca' with n_pcs = 20
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:32)
+computing Diffusion Maps using n_comps=15(=n_dcs)
+computing transitions
+    finished (0:00:00)
+    eigenvalues of transition matrix
+    [1.         1.         0.99896455 0.99678516 0.9944013  0.9892854
+     0.98826367 0.9871257  0.9838318  0.98297554 0.97893256 0.9768993
+     0.9744095  0.9727857  0.9661874 ]
+    finished: added
+    'X_diffmap', diffmap coordinates (adata.obsm)
+    'diffmap_evals', eigenvalues of transition matrix (adata.uns) (0:00:00)
+computing neighbors
+    finished: added to `.uns['neighbors']`
+    `.obsp['distances']`, distances for each pair of neighbors
+    `.obsp['connectivities']`, weighted adjacency matrix (0:00:00)
+running PAGA
+    finished: added
+    'paga/connectivities', connectivities adjacency (adata.uns)
+    'paga/connectivities_tree', connectivities subtree (adata.uns) (0:00:00)
+--> added 'pos', the PAGA positions (adata.uns['paga'])
+computing UMAP
+    finished: added
+    'X_umap', UMAP coordinates (adata.obsm)
+    'umap', UMAP parameters (adata.uns) (0:00:02)
+computing Diffusion Pseudotime using n_dcs=10
+    finished: added
+    'dpt_pseudotime', the pseudotime (adata.obs) (0:00:00)
+RUN_PASS
+--> added 'pos', the PAGA positions (adata.uns['paga'])
+FIGURE_PASS 4 groups / 12 files
