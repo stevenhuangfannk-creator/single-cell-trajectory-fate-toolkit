@@ -1,12 +1,18 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "method": "CellRank",
-  "INSTALL": "NOT_ATTEMPTED",
-  "INPUT": "NOT_DOWNLOADED",
-  "RUN": "NOT_STARTED_SEQUENCE_GATE",
+  "INSTALL": "PASS_INDEPENDENT_ENVIRONMENT_IMPORT_AND_PIP_CHECK",
+  "INPUT": "BLOCKED_OFFICIAL_FIGSHARE_HTTP_403",
+  "RUN": "BLOCKED_NO_INPUT_NOT_EXECUTED",
   "FIGURE": "NOT_RUN_NO_PLACEHOLDERS",
-  "TUTORIAL_CN": "HISTORICAL_SOURCE_CARD_ONLY",
-  "reason": "User requires each method to pass before starting next; CytoTRACE2 eligibility pending. This is not a CellRank installation failure.",
-  "RNA_velocity_run": false,
-  "real_PI_run": false
+  "TUTORIAL_CN": "DETAILED_CONCEPT_AND_EXECUTION_DESIGN_NOT_REPRODUCTION_ACCEPTED",
+  "official_input_downloaded": false,
+  "official_input_sha256": null,
+  "successfully_generated_scientific_figure_groups": 0,
+  "attempt_log": "logs/run_20261021_050635.log",
+  "real_PI_run": false,
+  "threads": 1,
+  "upstream_source_modified": false,
+  "recovery_condition": "Official file reachable, metadata/size/licence/checksum reviewed, then input-scale and root audit; downstream computation still required",
+  "full_method_acceptance": "BLOCKED"
 }

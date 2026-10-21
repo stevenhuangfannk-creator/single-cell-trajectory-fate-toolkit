@@ -1,0 +1,58 @@
+{
+  "groups": 5,
+  "formats": 15,
+  "status": "PASS_FORMAT_AND_VISUAL_REVIEW",
+  "figures": [
+    {
+      "figure": "CT01_potency_UMAP",
+      "png_size": [
+        1812,
+        844
+      ],
+      "png_sha256": "144b312e313151b02b8310d991c2b8233f2090df86a83da1ac55eb6e6cbc0f20",
+      "pdf_rendered": true,
+      "svg_xml_paths": 26
+    },
+    {
+      "figure": "CT02_potency_categories",
+      "png_size": [
+        1799,
+        844
+      ],
+      "png_sha256": "32d715a075c95addc021274d776d8d9205904c714292ff30887c985f1534f475",
+      "pdf_rendered": true,
+      "svg_xml_paths": 26
+    },
+    {
+      "figure": "CT03_phenotype_violin",
+      "png_size": [
+        1640,
+        1117
+      ],
+      "png_sha256": "0e4d872c37751bda310e66477c838b965bacd82db0d5f602598148c4c8623f01",
+      "pdf_rendered": true,
+      "svg_xml_paths": 24
+    },
+    {
+      "figure": "CT04_technical_confounding",
+      "png_size": [
+        2192,
+        844
+      ],
+      "png_sha256": "07bd11f7083fe7a3726ca48ea7c35b340fe1427ef0da854be49ae02a2cdae6b1",
+      "pdf_rendered": true,
+      "svg_xml_paths": 22
+    },
+    {
+      "figure": "CT05_smoothing_comparison",
+      "png_size": [
+        988,
+        844
+      ],
+      "png_sha256": "babafd85efa301ff5326a4f447eace1ef4b82bf12defcf14274a9be5507544ff",
+      "pdf_rendered": true,
+      "svg_xml_paths": 13
+    }
+  ],
+  "SVG_actual_render": "All 5 final SVGs rasterized using Sharp; all 5 earlier same-data plots visually reviewed and final UMAP inspected"
+}

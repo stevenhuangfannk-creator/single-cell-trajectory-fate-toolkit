@@ -1,0 +1,40 @@
+{
+  "exit_code": 1,
+  "abort_reason": null,
+  "log": "run_20261021_050635.log",
+  "sampling_interval_seconds": 1,
+  "max_sampled_process_tree_RSS": 259710976,
+  "min_sampled_available_RAM": 5601943552,
+  "samples": [
+    {
+      "unix_time": 1792577195.1301563,
+      "process_tree_RSS": 4345856,
+      "available_RAM": 5858787328
+    },
+    {
+      "unix_time": 1792577196.1366787,
+      "process_tree_RSS": 91652096,
+      "available_RAM": 5774168064
+    },
+    {
+      "unix_time": 1792577197.1439912,
+      "process_tree_RSS": 148869120,
+      "available_RAM": 5713936384
+    },
+    {
+      "unix_time": 1792577198.150396,
+      "process_tree_RSS": 215461888,
+      "available_RAM": 5627850752
+    },
+    {
+      "unix_time": 1792577199.1565883,
+      "process_tree_RSS": 259710976,
+      "available_RAM": 5601943552
+    },
+    {
+      "unix_time": 1792577200.1639407,
+      "process_tree_RSS": 256163840,
+      "available_RAM": 5620834304
+    }
+  ]
+}

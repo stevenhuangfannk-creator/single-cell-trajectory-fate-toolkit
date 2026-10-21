@@ -1,0 +1,121 @@
+CytoTRACE2 CONFIG {'species': 'mouse', 'seed': 14, 'batch_size': 2850, 'smooth_batch_size': 1000, 'disable_parallelization': True, 'max_cores': 1, 'disable_plotting': True, 'embedding_hvg': 2000, 'embedding_pcs': 50, 'embedding_neighbors': 15}
+Downloading model1.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1nyZeMTn3oSCO0bKrR0Pynu7cr6xfs3yY
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model1.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:03, 2.32MB/s] 32%|███▏      | 2.62M/8.24M [00:00<00:00, 8.77MB/s] 64%|██████▎   | 5.24M/8.24M [00:00<00:00, 14.4MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 15.8MB/s]
+Downloading model2.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1x7JYdmiyKG7y_7U37prGTTqtkKGqyZND
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model2.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:03, 2.12MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 5.15MB/s] 51%|█████     | 4.19M/8.24M [00:00<00:00, 12.3MB/s] 83%|████████▎ | 6.82M/8.24M [00:00<00:00, 16.8MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 13.0MB/s]
+Downloading model3.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1vOjvGWa2Vb8QEfKkKYMTaNiS3e0UjjMo
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model3.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:09, 803kB/s] 13%|█▎        | 1.05M/8.24M [00:00<00:05, 1.20MB/s] 19%|█▉        | 1.57M/8.24M [00:01<00:04, 1.45MB/s] 25%|██▌       | 2.10M/8.24M [00:01<00:03, 1.66MB/s] 32%|███▏      | 2.62M/8.24M [00:01<00:03, 1.82MB/s] 38%|███▊      | 3.15M/8.24M [00:01<00:02, 2.06MB/s] 45%|████▍     | 3.67M/8.24M [00:02<00:01, 2.45MB/s] 51%|█████     | 4.19M/8.24M [00:02<00:01, 2.84MB/s] 57%|█████▋    | 4.72M/8.24M [00:02<00:01, 3.24MB/s] 64%|██████▎   | 5.24M/8.24M [00:02<00:00, 3.47MB/s] 70%|███████   | 5.77M/8.24M [00:02<00:00, 3.65MB/s] 76%|███████▋  | 6.29M/8.24M [00:02<00:00, 3.54MB/s] 89%|████████▉ | 7.34M/8.24M [00:02<00:00, 4.47MB/s]100%|██████████| 8.24M/8.24M [00:02<00:00, 2.84MB/s]
+Downloading model4.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1IqMXiKf3Td_h251JO3mhj9pu4FhnH4Le
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model4.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.88MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 4.49MB/s] 32%|███▏      | 2.62M/8.24M [00:00<00:00, 5.86MB/s] 64%|██████▎   | 5.24M/8.24M [00:00<00:00, 11.3MB/s] 89%|████████▉ | 7.34M/8.24M [00:00<00:00, 13.6MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 10.5MB/s]
+Downloading model5.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1AMIjVnZ4m7cdGv5VJiSwISF2J5hLwWP2
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model5.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.91MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 4.52MB/s] 45%|████▍     | 3.67M/8.24M [00:00<00:00, 9.65MB/s] 83%|████████▎ | 6.82M/8.24M [00:00<00:00, 16.1MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 12.8MB/s]
+Downloading model6.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1FWy81_asx_KM2VokIncF9pZ3RYcNdjvb
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model6.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:07, 1.04MB/s] 13%|█▎        | 1.05M/8.24M [00:00<00:03, 1.87MB/s] 25%|██▌       | 2.10M/8.24M [00:00<00:01, 3.29MB/s] 38%|███▊      | 3.15M/8.24M [00:00<00:01, 4.59MB/s] 57%|█████▋    | 4.72M/8.24M [00:01<00:00, 6.14MB/s] 89%|████████▉ | 7.34M/8.24M [00:01<00:00, 10.1MB/s]100%|██████████| 8.24M/8.24M [00:01<00:00, 5.86MB/s]
+Downloading model7.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1oF7LAlIwPGZEUX-AXwI7gCg3XybXi8Rb
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model7.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:05, 1.50MB/s] 13%|█▎        | 1.05M/8.24M [00:00<00:03, 2.18MB/s] 25%|██▌       | 2.10M/8.24M [00:00<00:01, 3.54MB/s] 51%|█████     | 4.19M/8.24M [00:00<00:00, 7.42MB/s] 64%|██████▎   | 5.24M/8.24M [00:00<00:00, 7.34MB/s]100%|██████████| 8.24M/8.24M [00:01<00:00, 11.7MB/s]100%|██████████| 8.24M/8.24M [00:01<00:00, 7.54MB/s]
+Downloading model8.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=19LTGwF0oyyGQ-oJ4-5X7iSW4By8sxvTb
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model8.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.83MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 4.42MB/s] 32%|███▏      | 2.62M/8.24M [00:00<00:00, 6.24MB/s] 51%|█████     | 4.19M/8.24M [00:00<00:00, 7.06MB/s] 64%|██████▎   | 5.24M/8.24M [00:00<00:00, 6.52MB/s] 76%|███████▋  | 6.29M/8.24M [00:01<00:00, 5.67MB/s] 89%|████████▉ | 7.34M/8.24M [00:01<00:00, 5.71MB/s]100%|██████████| 8.24M/8.24M [00:01<00:00, 5.88MB/s]
+Downloading model9.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1UXTXvH996VUJXzJyjVmd9FpKYLdoWOb4
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model9.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.61MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 3.64MB/s] 45%|████▍     | 3.67M/8.24M [00:00<00:00, 7.96MB/s] 83%|████████▎ | 6.82M/8.24M [00:00<00:00, 13.9MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 11.0MB/s]
+Downloading model10.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1bVcokMtrRfQF8YMHQvRLxTZ0IOBtiO4O
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model10.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:05, 1.43MB/s] 13%|█▎        | 1.05M/8.24M [00:00<00:03, 2.16MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:02, 2.35MB/s] 32%|███▏      | 2.62M/8.24M [00:00<00:01, 3.89MB/s] 38%|███▊      | 3.15M/8.24M [00:01<00:01, 3.82MB/s] 57%|█████▋    | 4.72M/8.24M [00:01<00:00, 5.34MB/s] 70%|███████   | 5.77M/8.24M [00:01<00:00, 5.98MB/s] 89%|████████▉ | 7.34M/8.24M [00:01<00:00, 6.94MB/s]100%|██████████| 8.24M/8.24M [00:01<00:00, 5.18MB/s]
+Downloading model11.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1EUBCAWNXTayD1tLjVpGnD32-rVOUZ-es
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model11.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.84MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 4.29MB/s] 38%|███▊      | 3.15M/8.24M [00:00<00:00, 7.54MB/s] 70%|███████   | 5.77M/8.24M [00:00<00:00, 12.5MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 11.5MB/s]
+Downloading model12.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1d-MXKxZy8qH9FVHZJ3piaDjwzBtEIntm
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model12.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.70MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 4.13MB/s] 45%|████▍     | 3.67M/8.24M [00:00<00:00, 8.91MB/s] 83%|████████▎ | 6.82M/8.24M [00:00<00:00, 14.9MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 11.8MB/s]
+Downloading model13.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1yaezqWaMCVN7WOd5KCLz3DbKIevi5imL
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model13.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.83MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 4.67MB/s] 32%|███▏      | 2.62M/8.24M [00:00<00:00, 6.52MB/s] 57%|█████▋    | 4.72M/8.24M [00:00<00:00, 10.6MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 17.9MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 11.7MB/s]
+Downloading model14.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1nNLwCvGrsJ0iYflaysh6YWIKanPaxG-r
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model14.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.70MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 4.42MB/s] 51%|█████     | 4.19M/8.24M [00:00<00:00, 10.3MB/s] 70%|███████   | 5.77M/8.24M [00:00<00:00, 9.60MB/s] 89%|████████▉ | 7.34M/8.24M [00:00<00:00, 10.7MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 9.22MB/s]
+Downloading model15.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1dGSjNn3-YAA390Z-wCP5pCWBRo1aOs50
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model15.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:06, 1.27MB/s] 13%|█▎        | 1.05M/8.24M [00:00<00:03, 2.28MB/s] 25%|██▌       | 2.10M/8.24M [00:00<00:01, 4.45MB/s] 51%|█████     | 4.19M/8.24M [00:00<00:00, 8.97MB/s] 89%|████████▉ | 7.34M/8.24M [00:00<00:00, 15.0MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 9.64MB/s]
+Downloading model16.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1QovpMD_tdGOszSDx8qEFrNLpq4PFnQtp
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model16.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.66MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 3.73MB/s] 32%|███▏      | 2.62M/8.24M [00:00<00:01, 5.02MB/s] 45%|████▍     | 3.67M/8.24M [00:00<00:00, 6.38MB/s] 64%|██████▎   | 5.24M/8.24M [00:00<00:00, 7.41MB/s] 76%|███████▋  | 6.29M/8.24M [00:01<00:00, 7.40MB/s] 89%|████████▉ | 7.34M/8.24M [00:01<00:00, 7.84MB/s]100%|██████████| 8.24M/8.24M [00:01<00:00, 6.98MB/s]
+Downloading model17.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1ZMgukaZNzVAkyQCvYvAQJ53qk2RwsW-i
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model17.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:06, 1.15MB/s] 13%|█▎        | 1.05M/8.24M [00:00<00:03, 1.92MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:02, 2.50MB/s] 25%|██▌       | 2.10M/8.24M [00:01<00:06, 943kB/s]  32%|███▏      | 2.62M/8.24M [00:01<00:04, 1.27MB/s] 45%|████▍     | 3.67M/8.24M [00:02<00:02, 1.85MB/s] 51%|█████     | 4.19M/8.24M [00:02<00:01, 2.16MB/s] 57%|█████▋    | 4.72M/8.24M [00:02<00:01, 2.55MB/s] 70%|███████   | 5.77M/8.24M [00:02<00:00, 3.75MB/s] 83%|████████▎ | 6.82M/8.24M [00:02<00:00, 4.19MB/s] 95%|█████████▌| 7.86M/8.24M [00:03<00:00, 4.41MB/s]100%|██████████| 8.24M/8.24M [00:03<00:00, 2.65MB/s]
+Downloading model18.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1yUC9ndmr6t3nLzIVc8LRIxT4qV-kVrVg
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model18.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:04, 1.59MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:01, 3.84MB/s] 45%|████▍     | 3.67M/8.24M [00:00<00:00, 8.42MB/s] 70%|███████   | 5.77M/8.24M [00:00<00:00, 11.9MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 11.0MB/s]
+Downloading model19.pt from Google Drive...
+Downloading...
+From: https://drive.google.com/uc?id=1iszGCGC6M1MND5CPwLtH97dWmQy1lOqW
+To: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\work\runtime\cytotrace2-py312\Lib\site-packages\cytotrace2_py\resources\models\model19.pt
+  0%|          | 0.00/8.24M [00:00<?, ?B/s]  6%|▋         | 524k/8.24M [00:00<00:06, 1.26MB/s] 19%|█▉        | 1.57M/8.24M [00:00<00:02, 3.31MB/s] 51%|█████     | 4.19M/8.24M [00:00<00:00, 8.86MB/s] 89%|████████▉ | 7.34M/8.24M [00:00<00:00, 14.7MB/s]100%|██████████| 8.24M/8.24M [00:00<00:00, 10.4MB/s]
+All model files are present.
+A subdirectory or file inference already exists.
+Error occurred while processing: inference.
+cytotrace2: Input parameters
+    Input file: C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\.local_round4\CytoTRACE2\Pancreas_10x_downsampled_expression.txt
+    Species: mouse
+    Parallelization enabled: False
+    Batch size: 2850
+    Smoothing batch size: 1000
+    Seed: 14
+    Output directory: inference
+    Plotting enabled: False
+    Verbose mode enabled: True
+    User-provided limit for number of cores to use: 1
+cytotrace2: Loading dataset
+cytotrace2: Dataset characteristics
+    Number of input genes:  27998
+    Number of input cells:  2850
+cytotrace2: Checking models...
+All model files are present.
+cytotrace2: Preprocessing
+cytotrace2: Initiated processing batch 1/1 with 2850 cells
+    14247 input genes are present in the model features.
+cytotrace2: Performing initial model prediction
+cytotrace2: Performing smoothing by diffusion

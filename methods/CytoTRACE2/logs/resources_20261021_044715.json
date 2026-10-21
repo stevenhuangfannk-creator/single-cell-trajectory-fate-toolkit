@@ -1,0 +1,140 @@
+{
+  "exit_code": 1,
+  "abort_reason": null,
+  "log": "run_20261021_044715.log",
+  "sampling_interval_seconds": 1,
+  "max_sampled_process_tree_RSS": 447692800,
+  "min_sampled_available_RAM": 3410235392,
+  "samples": [
+    {
+      "unix_time": 1792576035.3910458,
+      "process_tree_RSS": 4354048,
+      "available_RAM": 3965685760
+    },
+    {
+      "unix_time": 1792576036.396523,
+      "process_tree_RSS": 33239040,
+      "available_RAM": 3934322688
+    },
+    {
+      "unix_time": 1792576037.403375,
+      "process_tree_RSS": 33665024,
+      "available_RAM": 3933720576
+    },
+    {
+      "unix_time": 1792576038.4091182,
+      "process_tree_RSS": 33665024,
+      "available_RAM": 3932782592
+    },
+    {
+      "unix_time": 1792576039.4157581,
+      "process_tree_RSS": 42962944,
+      "available_RAM": 3921948672
+    },
+    {
+      "unix_time": 1792576040.428717,
+      "process_tree_RSS": 67506176,
+      "available_RAM": 3897774080
+    },
+    {
+      "unix_time": 1792576041.4352076,
+      "process_tree_RSS": 84566016,
+      "available_RAM": 3845091328
+    },
+    {
+      "unix_time": 1792576042.44054,
+      "process_tree_RSS": 90238976,
+      "available_RAM": 3870117888
+    },
+    {
+      "unix_time": 1792576043.4475875,
+      "process_tree_RSS": 96088064,
+      "available_RAM": 3758202880
+    },
+    {
+      "unix_time": 1792576044.4546542,
+      "process_tree_RSS": 96088064,
+      "available_RAM": 3410235392
+    },
+    {
+      "unix_time": 1792576045.4600668,
+      "process_tree_RSS": 181972992,
+      "available_RAM": 3796697088
+    },
+    {
+      "unix_time": 1792576046.46721,
+      "process_tree_RSS": 221966336,
+      "available_RAM": 3733057536
+    },
+    {
+      "unix_time": 1792576047.4726384,
+      "process_tree_RSS": 237748224,
+      "available_RAM": 3660853248
+    },
+    {
+      "unix_time": 1792576048.479662,
+      "process_tree_RSS": 264609792,
+      "available_RAM": 3724333056
+    },
+    {
+      "unix_time": 1792576049.4867868,
+      "process_tree_RSS": 283881472,
+      "available_RAM": 3696603136
+    },
+    {
+      "unix_time": 1792576050.4924774,
+      "process_tree_RSS": 292802560,
+      "available_RAM": 3678347264
+    },
+    {
+      "unix_time": 1792576051.5000482,
+      "process_tree_RSS": 302645248,
+      "available_RAM": 3679633408
+    },
+    {
+      "unix_time": 1792576052.507351,
+      "process_tree_RSS": 316149760,
+      "available_RAM": 3667369984
+    },
+    {
+      "unix_time": 1792576053.5137877,
+      "process_tree_RSS": 355962880,
+      "available_RAM": 3622051840
+    },
+    {
+      "unix_time": 1792576054.5203888,
+      "process_tree_RSS": 383885312,
+      "available_RAM": 3601625088
+    },
+    {
+      "unix_time": 1792576055.5268764,
+      "process_tree_RSS": 399822848,
+      "available_RAM": 3587710976
+    },
+    {
+      "unix_time": 1792576056.5316353,
+      "process_tree_RSS": 413589504,
+      "available_RAM": 3574374400
+    },
+    {
+      "unix_time": 1792576057.5418816,
+      "process_tree_RSS": 419786752,
+      "available_RAM": 3563216896
+    },
+    {
+      "unix_time": 1792576058.5494585,
+      "process_tree_RSS": 434356224,
+      "available_RAM": 3551707136
+    },
+    {
+      "unix_time": 1792576059.5559065,
+      "process_tree_RSS": 447692800,
+      "available_RAM": 3540750336
+    },
+    {
+      "unix_time": 1792576060.5618093,
+      "process_tree_RSS": 442445824,
+      "available_RAM": 3537190912
+    }
+  ]
+}

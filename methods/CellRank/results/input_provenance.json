@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-21",
+  "url": "https://ndownloader.figshare.com/files/35826944",
+  "official_reference": "https://github.com/scverse/cellrank/blob/v2.3.3/src/cellrank/datasets.py",
+  "expected_shape": [
+    5780,
+    27876
+  ],
+  "budget_bytes": 536870912,
+  "raw_data_redistributed": false,
+  "status": "BLOCKED_OFFICIAL_DOWNLOAD",
+  "error": "HTTPError: HTTP Error 403: Forbidden",
+  "download_completed": false,
+  "sha256": null,
+  "HTTP_status": 403
+}

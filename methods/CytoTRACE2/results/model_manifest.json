@@ -1,0 +1,106 @@
+{
+  "model_count": 19,
+  "models": [
+    {
+      "file": "model1.pt",
+      "bytes": 8238318,
+      "sha256": "141b892cad5050925189cb6438751a010655fe90b3c936292f01869d822fabf3"
+    },
+    {
+      "file": "model10.pt",
+      "bytes": 8238272,
+      "sha256": "c0389dfd0d50aba6eab5ae154b740433d02e732fdc663d633330c0e8d02d86ca"
+    },
+    {
+      "file": "model11.pt",
+      "bytes": 8238088,
+      "sha256": "951bd44181f967c4d92871fcab991c48025da4516c28f61dba5c60dea61e2095"
+    },
+    {
+      "file": "model12.pt",
+      "bytes": 8238088,
+      "sha256": "cfd348a260509e8ddf57a5292a7eed591fc48a9a45e9f38ed99103c85a9d76da"
+    },
+    {
+      "file": "model13.pt",
+      "bytes": 8238042,
+      "sha256": "8ece02ac16d0a8bd5744173db2dca817c01b71177d23b8cda5531b6d7180d49e"
+    },
+    {
+      "file": "model14.pt",
+      "bytes": 8237592,
+      "sha256": "b5e06f40dea923acca1812482faecc5cd78391159769ab2823bc4c086f5cbc7b"
+    },
+    {
+      "file": "model15.pt",
+      "bytes": 8238612,
+      "sha256": "6630c8e99d4a53455b117d4e01c409e9f3e61f0f834d8c966ac3afc31aae4f91"
+    },
+    {
+      "file": "model16.pt",
+      "bytes": 8238134,
+      "sha256": "cf637bb9bfbe76d5eb00f0ed9e12d96d7bc76e6e2f2516171a3d3c62880f0401"
+    },
+    {
+      "file": "model17.pt",
+      "bytes": 8238272,
+      "sha256": "c26a2f90cc5e200057c40b08ca1d828b8b632821bd4eb172e37cd56281aaf7ff"
+    },
+    {
+      "file": "model18.pt",
+      "bytes": 8237996,
+      "sha256": "aceb6a261cc0cb977305ce611df2ff3e46d2461c63a9a295d63f6569c456b92c"
+    },
+    {
+      "file": "model19.pt",
+      "bytes": 8238088,
+      "sha256": "c95f025648969395419d50d856cbe00b597c50a69eeee7a6e72f956afa2bbad2"
+    },
+    {
+      "file": "model2.pt",
+      "bytes": 8238042,
+      "sha256": "947d3228303651dd7e91e437ed678e2ff529fff743298fe38f77beecfef136e7"
+    },
+    {
+      "file": "model3.pt",
+      "bytes": 8238704,
+      "sha256": "14361b27e2206e994c47ecdb333acc7579c2b04f889465bf459b52bb43683ec8"
+    },
+    {
+      "file": "model4.pt",
+      "bytes": 8238226,
+      "sha256": "4311a5e0eb773e6f282d7aff072e7e6d24eb167093f320cc3e2ced19c6b4ce01"
+    },
+    {
+      "file": "model5.pt",
+      "bytes": 8238318,
+      "sha256": "dc74b3e0448cce23f513b9a83cfc3ef83760b8f9e69abdbfc3899eb1066f2018"
+    },
+    {
+      "file": "model6.pt",
+      "bytes": 8237858,
+      "sha256": "8b0fa94038cf48b536726de14b074f95cadaf5e19cbdaef1d43e9b92f367e988"
+    },
+    {
+      "file": "model7.pt",
+      "bytes": 8238226,
+      "sha256": "c1484e385edcc196a4c3d06aacf48820277ebfd4453cfa47697e5256ccc4d453"
+    },
+    {
+      "file": "model8.pt",
+      "bytes": 8238134,
+      "sha256": "9133750e93199cf11fcefc224e72aba0520cbade51d971f3ce105410da337b6b"
+    },
+    {
+      "file": "model9.pt",
+      "bytes": 8238226,
+      "sha256": "2ede7e512379ddecdd5fbbb74e300422e97cd2b379024e86c768c4b5704b50bd"
+    },
+    {
+      "file": "background.pt",
+      "bytes": 28543091,
+      "sha256": "89ba42de916ebf123dd5bd67d59f0caba470d0ff716d0b496d61a7c5a9d62c33"
+    }
+  ],
+  "official_source": "cytotrace2-py 1.1.0.4 PyPI distribution; upstream source/model not redistributed"
+}

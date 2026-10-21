@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-21",
+  "software_tag": "v2.3.3",
+  "notebook_commit": "0df43b039e5299a55a254f9636852906a641a7d4",
+  "official_software": "https://github.com/scverse/cellrank",
+  "official_notebooks": "https://github.com/scverse/cellrank_notebooks",
+  "source_hashes": [
+    {
+      "file": "cellrank-datasets.py",
+      "bytes": 10556,
+      "sha256": "0df2a82f81ddfa1192e0ddf8d1bcac4396bd954d1183bcb85cf22bd23a9fe95e"
+    },
+    {
+      "file": "cellrank-pseudotime.py",
+      "bytes": 7547,
+      "sha256": "07c72a9a978c244fc60353b71f451efb3afeb2b4eb61065f8ee45cd09b662f8a"
+    },
+    {
+      "file": "cellrank-official-pseudotime.ipynb",
+      "bytes": 2867272,
+      "sha256": "ee3df94ddedf505bfc78e117aaf5317f8cd342f93f56283e8542b69791fb8ddf"
+    },
+    {
+      "file": "cellrank-600_initial_terminal.ipynb",
+      "bytes": 2657850,
+      "sha256": "42e520b7d38ec96fce8fdbc15c3cd3637294d54e619f22de015b65f5fe0c3806"
+    },
+    {
+      "file": "cellrank-700_fate_probabilities.ipynb",
+      "bytes": 4886291,
+      "sha256": "2a53f99f3a804381d5d663296537bf4b44d9a10d4ec0ca71e4de2daeb1b4228f"
+    },
+    {
+      "file": "cellrank-800_gene_trends.ipynb",
+      "bytes": 26181063,
+      "sha256": "ce353abd80ebf5d4f279496c0be4e716f6882709d9d598b38d84555419b04585"
+    }
+  ],
+  "readthedocs_HTTP_status": 403,
+  "notebook_images_not_reproduced": true,
+  "scope": "PseudotimeKernel bone_marrow; no velocity model or precomputed velocity kernel"
+}

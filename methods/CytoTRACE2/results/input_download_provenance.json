@@ -1,0 +1,16 @@
+[
+  {
+    "file": "Pancreas_10x_downsampled_expression.txt",
+    "url": "https://drive.usercontent.google.com/download?id=11eI1gSBoBqn9ccvBbthZ2nPW3CENsKbT&export=download&confirm=t",
+    "official_link": "https://drive.google.com/file/d/11eI1gSBoBqn9ccvBbthZ2nPW3CENsKbT/view",
+    "bytes": 160322553,
+    "sha256": "61b060fef7a711092a51da7f5475fb37e5f626dbb07495eff3d0afdae64f651e"
+  },
+  {
+    "file": "Pancreas_10x_downsampled_annotation.txt",
+    "url": "https://drive.usercontent.google.com/download?id=1UESeZJDl2qWYnSu0VQQA5igpEbtxZPgq&export=download&confirm=t",
+    "official_link": "https://drive.google.com/file/d/1UESeZJDl2qWYnSu0VQQA5igpEbtxZPgq/view",
+    "bytes": 126301,
+    "sha256": "c19dd76a7bdf9d5034d92e7bc4c76156ae968c13c3dd4466a8794fa7fba72b25"
+  }
+]

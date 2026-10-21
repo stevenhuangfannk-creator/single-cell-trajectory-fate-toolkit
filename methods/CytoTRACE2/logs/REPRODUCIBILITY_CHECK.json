@@ -1,0 +1,66 @@
+{
+  "status": "PASS_FINAL_FULL_ENTRY_VS_EARLIER_PREDICT_RESUME",
+  "cells": 2850,
+  "full_entry_log": "run_20261021_051649.log",
+  "final_config": {
+    "species": "mouse",
+    "seed": 14,
+    "batch_size": 1000,
+    "smooth_batch_size": 1000,
+    "disable_parallelization": true,
+    "max_cores": 1,
+    "disable_plotting": true,
+    "embedding_hvg": 2000,
+    "embedding_pcs": 50,
+    "embedding_neighbors": 15
+  },
+  "numeric_comparison": {
+    "n_counts": {
+      "max_absolute_difference": 0.0,
+      "tolerance": 1E-12
+    },
+    "n_genes": {
+      "max_absolute_difference": 0.0,
+      "tolerance": 1E-12
+    },
+    "mito_fraction": {
+      "max_absolute_difference": 0.0,
+      "tolerance": 1E-12
+    },
+    "UMAP1": {
+      "max_absolute_difference": 0.0,
+      "tolerance": 1E-06
+    },
+    "UMAP2": {
+      "max_absolute_difference": 0.0,
+      "tolerance": 1E-06
+    },
+    "CytoTRACE2_Score": {
+      "max_absolute_difference": 0.0,
+      "tolerance": 1E-12
+    },
+    "CytoTRACE2_Relative": {
+      "max_absolute_difference": 0.0,
+      "tolerance": 1E-12
+    },
+    "preKNN_CytoTRACE2_Score": {
+      "max_absolute_difference": 0.0,
+      "tolerance": 1E-12
+    }
+  },
+  "categorical_equal": {
+    "phenotype": true,
+    "CytoTRACE2_Potency": true,
+    "preKNN_CytoTRACE2_Potency": true
+  },
+  "CSV_byte_hash_matches": {
+    "potency_category_counts.csv": true,
+    "potency_cell_statistics.csv": false,
+    "QC_correlations.csv": true,
+    "input_QC_embedding.csv": true,
+    "phenotype_score_summary.csv": true
+  },
+  "scope": "Same-machine repeated inference; no second-machine reinstall test",
+  "baseline": "Earlier successful --predict-only run_20261021_045713.log; all input IDs match; UMAP CSV roundtrip allowed 1e-6; predictions and QC 1e-12",
+  "CSV_text_difference": "QC mito_fraction first differing line is 0.0225024727992087 vs 0.022502472799208705 after CSV roundtrip; parsed numeric comparisons pass. Per-cell CSV byte hash intentionally not claimed equal."
+}

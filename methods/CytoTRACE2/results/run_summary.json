@@ -1,0 +1,35 @@
+{
+  "cells": 2850,
+  "predictions_finite": true,
+  "score_min": 0.0041432466118802155,
+  "score_max": 0.6460637917533006,
+  "category_counts": {
+    "Differentiated": 1673,
+    "Multipotent": 452,
+    "Oligopotent": 426,
+    "Unipotent": 299,
+    "Pluripotent": 0,
+    "Totipotent": 0
+  },
+  "parameters": {
+    "species": "mouse",
+    "seed": 14,
+    "batch_size": 1000,
+    "smooth_batch_size": 1000,
+    "disable_parallelization": true,
+    "max_cores": 1,
+    "disable_plotting": true,
+    "embedding_hvg": 2000,
+    "embedding_pcs": 50,
+    "embedding_neighbors": 15
+  },
+  "inference_seconds": 147.28806990000885,
+  "pre_post_spearman": 0.963147998133502,
+  "CPU_threads": 1,
+  "model_source_not_modified": true,
+  "limitations": [
+    "cell-level descriptive correlations; no donors/causal claims",
+    "independent lightweight UMAP instead of upstream built-in rendering",
+    "small official example not PI or inflammation reprogramming evidence"
+  ]
+}

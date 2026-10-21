@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "round": 4,
-  "status": "PARTIAL_PAUSED_AT_CYTOTRACE2_LICENSE_ELIGIBILITY",
+  "status": "PARTIAL_CELLRANK_OFFICIAL_INPUT_HTTP403",
   "remote_created": true,
   "remote_visibility": "PRIVATE",
   "push_executed": true,
@@ -10,14 +10,15 @@
   "first_commit_files": 423,
   "branch": "main",
   "new_methods_passed": [
-    "PAGA"
+    "PAGA",
+    "CytoTRACE2"
   ],
-  "CytoTRACE2": "BLOCKED_LICENSE_ELIGIBILITY_PENDING",
-  "CellRank": "NOT_STARTED_SEQUENCE_GATE",
-  "new_scientific_figure_groups": 4,
-  "new_scientific_image_files": 12,
-  "cumulative_groups": 29,
-  "cumulative_image_files": 87,
+  "CytoTRACE2": "PASS_OFFICIAL_API_BATCH1000_2850_CELLS",
+  "CellRank": "INSTALL_PASS_INPUT_HTTP403_RUN_FIGURE_BLOCKED",
+  "new_scientific_figure_groups": 9,
+  "new_scientific_image_files": 27,
+  "cumulative_groups": 34,
+  "cumulative_image_files": 102,
   "PI": "DESIGN_ONLY_NO_REAL_DATA",
   "round3_protected_files": 275,
   "AWA_endpoint": "FAIL_PRESERVED",
@@ -28,5 +29,6 @@
     "methods/PAGA/STATUS.json",
     "methods/CytoTRACE2/STATUS.json",
     "methods/CellRank/STATUS.json"
-  ]
+  ],
+  "new_combination_validation": "NOT_RUN_DISTINCT_OFFICIAL_DATASETS_NOT_POOLED"
 }

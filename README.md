@@ -1,8 +1,8 @@
 # 单细胞轨迹与命运：中文科研教学与应用手册
 
-当前版本：2026-10-20，第四轮建设中。已建立[Private GitHub仓库](https://github.com/stevenhuangfannk-creator/single-cell-trajectory-fate-toolkit)，首发main提交99228954aa4872f97d6f844fae92396a31e94b91含423个文件。本轮PAGA已新增真实4组/12格式，中文教程与图卡已验收；CytoTRACE2等待Stanford非商业使用资格确认，CellRank按顺序尚未启动。当前进展见[第四轮记录](docs/round4/README_CN.md)。
+当前版本：2026-10-21，第四轮部分完成。[Private GitHub仓库](https://github.com/stevenhuangfannk-creator/single-cell-trajectory-fate-toolkit)已发布第三轮与PAGA成果。本次非商业用途确认后，CytoTRACE2已完成官方预测、5组15格式实际图及完整中文教程；CellRank2.3.3安装通过，但官方数据403，INPUT/RUN/FIGURE阻塞。详见[第四轮报告](docs/round4/README_CN.md)。
 
-第三轮Slingshot、tradeSeq、Monocle3及同650细胞组合的脚本、日志、图件和指南保持不变；**AWA排序/终点冲突与预处理敏感性保留，轨迹共识未成立**。见[第三轮历史总结](docs/ROUND3_DELIVERY_CN.md)。四轮当前累计29组实际科研图、87个PNG/PDF/SVG文件；其余方法没有用占位图冒充运行。
+第三轮Slingshot、tradeSeq、Monocle3及同650细胞组合的脚本、日志、图件和指南保持不变；**AWA排序/终点冲突与预处理敏感性保留，轨迹共识未成立**。见[第三轮历史总结](docs/ROUND3_DELIVERY_CN.md)。四轮当前累计34组实际科研图、102个PNG/PDF/SVG文件；其余方法没有用占位图冒充运行。
 
 第一轮审查、scTour资产审查及六组合设计继续保留：[历史资料](docs/first_round/trajectory_fate_review_2026-10-19/README.md)。scTour历史科学状态仍为PARTIAL；RegVelo独立。本轮PI仅为研究设计。
 
@@ -14,7 +14,7 @@
 4. **数据要满足什么条件？** 细胞ID、计数/归一化尺度、谱系纯度、供者与批次须可追溯；根和终末需要依据。见 [数据契约](docs/DATA_CONTRACT_CN.md)。
 5. **哪些可以组合？** 已有[Slingshot+tradeSeq+Monocle3同数据示范](combinations/Slingshot_tradeSeq_Monocle3/README_CN.md)，另保留[A–F设计教程](combinations/README_CN.md)。组合是待验证工作流，不是官方联合算法。
 6. **先运行哪个脚本？** 本轮先读[第三轮00入口](round3/00_Start.R)，运行 `./run_round3.ps1 -Module tradeSeq`，再Monocle3、再combination；[详细环境](environments/round3/README_CN.md)。原[Slingshot指南](methods/Slingshot/README_CN.md)及脚本保持原样，不需重跑旧例。
-7. **得到什么图与统计？** 累计29组真实图、87个PNG/PDF/SVG文件，包括轨迹、拟时序、动态曲线/热图、分支差异、方法比较与GO富集，另有收敛、FDR和输入校验表，见 [Gallery](gallery/README.md)。
+7. **得到什么图与统计？** 累计34组真实图、102个PNG/PDF/SVG文件，包括轨迹、拟时序、动态曲线/热图、分支差异、方法比较与GO富集，另有收敛、FDR和输入校验表，见 [Gallery](gallery/README.md)。
 8. **能支持什么结论？** 当前示例支持在记录的输入/模型条件下描述状态结构与动态表达；组合冲突显示预处理敏感性。不能据此证明PI状态转化、分化命运或疾病机制。
 
 常用缩写与概念见[中文术语表](docs/GLOSSARY_CN.md)。
@@ -31,10 +31,10 @@
 | 群体拓扑：[PAGA](methods/PAGA/README_CN.md) | 表达衍生的邻居图与群标签；连接图是群级抽象 | 群间连接图、嵌入；另运行 DPT 才有根依赖拟时序 | A的补充视角；连接强度不是方向、转移率或命运概率 |
 | 动态排序：[scTour](methods/scTour/SOURCE_CARD.md) | 按官方要求准备表达；神经常微分方程学习潜在动态与时间 | 推断时间、潜空间、向量场、训练诊断 | A/C模块；先引用历史资产，不重训；时间不等于潜能或剪接速度 |
 | 动态基因：[tradeSeq](methods/tradeSeq/README_CN.md) | 基因×细胞原始计数、谱系拟时序与权重；负二项广义加性模型 | 平滑曲线、热图、检验表、收敛率、多重检验校正 | B模块；不推断轨迹；整合矩阵不能替代计数；显著关联不是驱动机制 |
-| 预测潜能：[CytoTRACE2](methods/CytoTRACE2/SOURCE_CARD.md) | 官方允许的未取对数表达、物种和基因覆盖 | 潜能分数、类别、嵌入图及技术混杂检查 | C模块；受训练域和输入影响；非商业许可需核查；不是实测干性 |
+| 预测潜能：[CytoTRACE2](methods/CytoTRACE2/README_CN.md) | 官方允许的未取对数表达、物种和基因覆盖 | 潜能分数、类别、嵌入图及技术混杂检查 | C模块；受训练域和输入影响；已确认本次非商业用途，模型/输入不再分发；不是实测干性 |
 | 预测潜能：[FitDevo](methods/FitDevo/SOURCE_CARD.md) | 官方要求的表达尺度与基因匹配；区分是否已归一化 | 预测分化潜能及与标志物、深度的关系 | C的后续独立比较；许可未明确；不平均不同方法分数造新指数 |
 | 命运、分化不确定性：[Palantir](methods/Palantir/SOURCE_CARD.md) | 表达/扩散空间、早期细胞、终末定义及连续谱系 | 拟时序、分支概率、分化不确定性 | D模块；概率熵不同于 CytoTRACE2 潜能；共享先验会造成一致性 |
-| 命运：[CellRank](methods/CellRank/SOURCE_CARD.md) | 细胞图及可信方向输入；方向可来自拟时序、速度或真实时间 | 宏状态、终末状态、命运概率、驱动关联 | D/E及F后续衔接；必须说明核函数来源；概率不是实测转化频率 |
+| 命运：[CellRank](methods/CellRank/README_CN.md) | 细胞图及可信方向输入；方向可来自拟时序、速度或真实时间 | 宏状态、终末状态、命运概率、驱动关联 | D/E及F后续衔接；本轮INPUT被官方403阻塞；必须说明核函数来源，概率不是实测转化频率 |
 | RNA velocity：[scVelo](methods/scVelo/SOURCE_CARD.md) | 真实已剪接/未剪接计数、合适基因和动态信号 | 相图、速度流线、潜在时间、拟合诊断 | E模块；二维箭头是投影，不能据此证明细胞迁移或状态转化 |
 | RNA 动力学：[Cell2fate](methods/Cell2fate/SOURCE_CARD.md) | 真实原始剪接层；独立历史依赖、训练和后验预算 | 动态模块、速度、拟合与后验不确定性 | E的后续独立比较；不能把 scVelo moments 当原始计数输入 |
 | 真实时间序列：[WOT](methods/WOT/SOURCE_CARD.md) | 有单位的真实采样时间、可比表达空间、增长/死亡假设 | 最优传输耦合、祖先/后代分布、流量及敏感性 | F模块；PI/Healthy 不是时间；耦合不是单细胞真实谱系；旧接口需审查 |
@@ -61,7 +61,7 @@ UMAP 指统一流形近似与投影（Uniform Manifold Approximation and Project
 - [当前验收与局限](docs/REPRODUCTION_STATUS_CN.md)：三方法分别验收、组合单独验收，默认关联检验NA和AWA冲突均保留。
 - [第三方许可与来源](THIRD_PARTY_NOTICES.md)：示例、改写代码与第一轮资产分别说明；大数据、模型和运行时不入库。
 
-本轮保留14方法来源、scTour资产审查、环境隔离和六组合设计。所有来源卡的第一轮 NOT_TESTED 均为历史快照；新的实际状态在当前方法 STATUS.json 中查看。未把来源登记、历史图或预期图冒充本次运行。第三轮实际结果见[新验收](ACCEPTANCE.json)；下一步先解决组合结构敏感性，再逐步扩展PAGA、CellRank、CytoTRACE2。
+本轮保留14方法来源、scTour资产审查、环境隔离和六组合设计。所有来源卡的第一轮 NOT_TESTED 均为历史快照；新的实际状态在当前方法 STATUS.json 中查看。未把来源登记、历史图或预期图冒充本次运行。第三轮实际结果见[新验收](ACCEPTANCE.json)；下一步先恢复CellRank官方输入并完成单方法验收，再开展有独立方向依据的同数据比较；第三轮结构敏感性仍需独立研究。
 
 
 ## 第三轮实际图件与学习入口
@@ -86,3 +86,15 @@ UMAP 指统一流形近似与投影（Uniform Manifold Approximation and Project
 ![PAGA群连接](methods/PAGA/figures/P01_population_topology.png)
 
 [完整PAGA中文指南](methods/PAGA/README_CN.md)：官方2730细胞×3451基因小例，19群、58条非零连接、54条显示边。根条件DPT有限2671个、不可达59个，默认根位于8Mk，不能直接叫干祖起点。[四轮PI预设设计](case_studies/PI_Fibroblast_State_Reprogramming/ROUND4_METHOD_DESIGN_CN.md)说明如何研究State1/6/7、ECM、机械转导与炎症；未运行真实PI。
+
+
+## 第四轮潜能学习入口
+
+![本次实际CytoTRACE2潜能结果](methods/CytoTRACE2/figures/CT01_potency_UMAP.png)
+
+官方鼠胰腺2850细胞，分数0.0041–0.6461，完整保留当前官方文件。该图的展示UMAP独立计算，模型接收未取对数表达；分批是已记录的内存适配，不等同完整单批。全局潜能与总计数rho=0.275、检测基因rho=0.134，不能宣布混杂消除。预测潜能不证明真实去分化或炎症可塑性。
+
+- [CytoTRACE2完整中文指南与5张图卡](methods/CytoTRACE2/README_CN.md)：00配置→01输入/展示→02预测→03绘图，实际日志/模型hash/环境锁齐全。
+- [PAGA完整指南与4张图卡](methods/PAGA/README_CN.md)：群连接、PAGA初始化UMAP、DPT与标志表达；59个不可达DPT保留。
+- [CellRank中文原理及执行设计](methods/CellRank/README_CN.md)：独立环境安装通过，官方骨髓下载403，当前没有宏状态或命运概率图。
+- [本轮比较边界](docs/round4/COMPARISON_SCOPE_CN.md)：不同官方小例不能作为同细胞组合验证，未新增轨迹共识。

@@ -1,0 +1,6 @@
+{
+  "source": "Existing bundled Python NumPy MSVC runtime, copied only into new venv/runtime_dlls; not redistributed in Git",
+  "sha256": "a4c2229bdc2a2a630acdc095b4d86008e5c3e3bc7773174354f3da4f5beb9cde",
+  "system_install": false,
+  "other_environments_modified": false
+}

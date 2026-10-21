@@ -1,3 +1,5 @@
+第四轮当前环境：[PAGA](round4/PAGA/README_CN.md)、[CytoTRACE2](round4/CytoTRACE2/README_CN.md)、[CellRank](round4/CellRank/README_CN.md)。三者独立；CytoTRACE2已运行通过，CellRank安装通过但输入403阻塞。以下保留第二轮Slingshot安装记录，第三轮环境见[第三轮](round3/README_CN.md)。
+
 # Slingshot独立环境与复现说明
 
 本次真实使用 Windows x64、R 4.6.1、Bioconductor 3.23、slingshot 2.20.0。完整版本见 [R-installed-packages.csv](R-installed-packages.csv)，实际会话见 [sessionInfo-install.txt](sessionInfo-install.txt)。锁来自实际安装结果，不是计划依赖。

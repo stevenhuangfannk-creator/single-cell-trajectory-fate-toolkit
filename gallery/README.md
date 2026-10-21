@@ -1,6 +1,6 @@
 # Figure Gallery：真实结果与图形学习
 
-当前累计25组真实图、75个三格式文件；包括原Slingshot 6组和第三轮19组。每图链接具体数据、脚本、解释和局限。历史scTour仍为PARTIAL，入口见[第一轮Gallery](../docs/first_round/trajectory_fate_review_2026-10-19/gallery/README.md)，未复制为本次结果。
+当前累计34组真实图、102个三格式文件；包括原Slingshot 6组、第三轮19组、PAGA 4组及CytoTRACE2 5组。每图链接具体数据、脚本、解释和局限。历史scTour仍为PARTIAL，入口见[第一轮Gallery](../docs/first_round/trajectory_fate_review_2026-10-19/gallery/README.md)，未复制为本次结果。
 
 ## 轨迹：S01：Slingshot 聚类层级最小生成树
 
@@ -89,7 +89,7 @@ UMAP、动态基因、预测潜能、命运概率、RNA速度、热图、真实�
 | 功能注释 | [C07_GO_dynamic_programs](../combinations/Slingshot_tradeSeq_Monocle3/figure_notes/C07_GO_dynamic_programs_CN.md) |
 | 轨迹/敏感性 | [C08_no_alignment_sensitivity](../combinations/Slingshot_tradeSeq_Monocle3/figure_notes/C08_no_alignment_sensitivity_CN.md) |
 
-潜能、命运概率和RNA速度尚未在本轮生成；不以占位图代替运行。共同数据AWA冲突见组合报告，图件完成不等于生物学一致性通过。
+潜能现已在第四轮生成，见下方新增索引；命运概率和RNA速度尚未生成，不以占位图代替运行。共同数据AWA冲突见组合报告，图件完成不等于生物学一致性通过。
 
 
 ## 第四轮PAGA分类索引
@@ -101,4 +101,19 @@ UMAP、动态基因、预测潜能、命运概率、RNA速度、热图、真实�
 | 根条件拟时序 | [P03 DPT（59个不可达）](../methods/PAGA/figure_notes/P03_DPT_pseudotime_CN.md) |
 | 基因表达 | [P04 四个造血标志](../methods/PAGA/figure_notes/P04_marker_expression_CN.md) |
 
-每张均来自实际官方小数据本地计算并提供三格式。CytoTRACE2许可资格尚待确认，未生成潜能图；CellRank尚未运行，未生成命运概率图。第三轮AWA冲突未被新图替换。
+每张均来自实际官方小数据本地计算并提供三格式。CytoTRACE2用途已确认并已生成潜能图；CellRank因官方数据403未生成命运概率图。第三轮AWA冲突未被新图替换。
+
+
+## 第四轮CytoTRACE2：预测潜能、分布与混杂
+
+![本次实际潜能UMAP](../methods/CytoTRACE2/figures/CT01_potency_UMAP.png)
+
+| 分类 | 实际图件与8项解读 |
+|---|---|
+| 潜能/UMAP | [CT01 表型与连续潜能](../methods/CytoTRACE2/figure_notes/CT01_potency_UMAP_CN.md) |
+| 潜能/类别 | [CT02 六类与计数](../methods/CytoTRACE2/figure_notes/CT02_potency_categories_CN.md) |
+| 分布/小提琴 | [CT03 表型内潜能分布](../methods/CytoTRACE2/figure_notes/CT03_phenotype_violin_CN.md) |
+| QC/相关性 | [CT04 深度与检测基因混杂](../methods/CytoTRACE2/figure_notes/CT04_technical_confounding_CN.md) |
+| 模型后处理 | [CT05 平滑前后对照](../methods/CytoTRACE2/figure_notes/CT05_smoothing_comparison_CN.md) |
+
+5组15格式全部本地实际生成，模型/官方输入不入Git。高潜能模型标签不是功能鉴定，邻域平滑不是状态转化证明。[CellRank](../methods/CellRank/README_CN.md)安装通过、官方数据403阻塞；本Gallery没有占位命运概率图。本轮总计34组102格式文件（不计审图联系表），各方法来自各自数据，不能跨图作逐细胞相关。

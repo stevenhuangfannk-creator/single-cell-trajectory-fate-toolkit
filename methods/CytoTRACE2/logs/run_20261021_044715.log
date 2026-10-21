@@ -1,0 +1,9 @@
+CytoTRACE2 CONFIG {'species': 'mouse', 'seed': 14, 'batch_size': 2280, 'smooth_batch_size': 1000, 'disable_parallelization': True, 'max_cores': 1, 'disable_plotting': True, 'embedding_hvg': 2000, 'embedding_pcs': 50, 'embedding_neighbors': 15}
+Traceback (most recent call last):
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\methods\CytoTRACE2\scripts\run_example.py", line 5, in <module>
+    for name in sequence:exec(compile((folder/name).read_text(encoding='utf-8'),str(folder/name),'exec'),scope)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13683\Documents\Codex\2026-10-19\single-cell-trajectory-fate-toolkit-github\outputs\single-cell-trajectory-fate-toolkit\methods\CytoTRACE2\scripts\01_Input_QC_and_Embedding.py", line 17, in <module>
+    assert len(cell_ids)==2280 and cell_ids.is_unique and pd.Index(genes).is_unique
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

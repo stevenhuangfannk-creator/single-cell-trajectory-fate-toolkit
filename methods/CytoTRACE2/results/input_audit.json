@@ -1,0 +1,25 @@
+{
+  "cells": 2850,
+  "official_readme_reported_cells": 2280,
+  "official_link_actual_cells": 2850,
+  "no_cell_subsampling": true,
+  "genes": 27998,
+  "species": "mouse",
+  "minimum": 0.0,
+  "maximum": 2312.0,
+  "noninteger_fraction": 0.0,
+  "unique_gene_cell_IDs": true,
+  "annotation_ID_set_exact": true,
+  "detected_genes_range": [
+    1383,
+    7154
+  ],
+  "count_range": [
+    3625,
+    62867
+  ],
+  "exact_model_feature_overlap": 14247,
+  "model_features": 14271,
+  "gene_symbols_before_alias_mapping": true,
+  "embedding": "Independent display only: log1p 1e4-normalized counts, 2000 HVG, PCA50, kNN15, seed14; no normalized data passed to potency model"
+}

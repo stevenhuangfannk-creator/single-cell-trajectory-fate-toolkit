@@ -1,0 +1,47 @@
+{
+  "distribution": "cytotrace2-py==1.1.0.4",
+  "source_files": [
+    {
+      "file": "cytotrace2_py.py",
+      "bytes": 10284,
+      "sha256": "15b18c7ddfd1d935f8b4efac577f8eafcbf0d70d654c5ca6c12a93044eb91310"
+    },
+    {
+      "file": "gen_utils.py",
+      "bytes": 23608,
+      "sha256": "b74565738ff5f6ff6491acede837024ddbc74e315004d5e9e460482e3beec6ae"
+    },
+    {
+      "file": "models.py",
+      "bytes": 2823,
+      "sha256": "64e1cc1cba4844fc01918cc757264b4bf28d25572f2fd1df4b964877dcf74380"
+    },
+    {
+      "file": "plot.py",
+      "bytes": 7857,
+      "sha256": "0e448abbb66a14ed74c7dbcef428d0860987deb8c8a413fed56f17315c03b575"
+    }
+  ],
+  "model_download_urls": {
+    "model1.pt": "https://drive.google.com/uc?export=download&id=1nyZeMTn3oSCO0bKrR0Pynu7cr6xfs3yY",
+    "model2.pt": "https://drive.google.com/uc?export=download&id=1x7JYdmiyKG7y_7U37prGTTqtkKGqyZND",
+    "model3.pt": "https://drive.google.com/uc?export=download&id=1vOjvGWa2Vb8QEfKkKYMTaNiS3e0UjjMo",
+    "model4.pt": "https://drive.google.com/uc?export=download&id=1IqMXiKf3Td_h251JO3mhj9pu4FhnH4Le",
+    "model5.pt": "https://drive.google.com/uc?export=download&id=1AMIjVnZ4m7cdGv5VJiSwISF2J5hLwWP2",
+    "model6.pt": "https://drive.google.com/uc?export=download&id=1FWy81_asx_KM2VokIncF9pZ3RYcNdjvb",
+    "model7.pt": "https://drive.google.com/uc?export=download&id=1oF7LAlIwPGZEUX-AXwI7gCg3XybXi8Rb",
+    "model8.pt": "https://drive.google.com/uc?export=download&id=19LTGwF0oyyGQ-oJ4-5X7iSW4By8sxvTb",
+    "model9.pt": "https://drive.google.com/uc?export=download&id=1UXTXvH996VUJXzJyjVmd9FpKYLdoWOb4",
+    "model10.pt": "https://drive.google.com/uc?export=download&id=1bVcokMtrRfQF8YMHQvRLxTZ0IOBtiO4O",
+    "model11.pt": "https://drive.google.com/uc?export=download&id=1EUBCAWNXTayD1tLjVpGnD32-rVOUZ-es",
+    "model12.pt": "https://drive.google.com/uc?export=download&id=1d-MXKxZy8qH9FVHZJ3piaDjwzBtEIntm",
+    "model13.pt": "https://drive.google.com/uc?export=download&id=1yaezqWaMCVN7WOd5KCLz3DbKIevi5imL",
+    "model14.pt": "https://drive.google.com/uc?export=download&id=1nNLwCvGrsJ0iYflaysh6YWIKanPaxG-r",
+    "model15.pt": "https://drive.google.com/uc?export=download&id=1dGSjNn3-YAA390Z-wCP5pCWBRo1aOs50",
+    "model16.pt": "https://drive.google.com/uc?export=download&id=1QovpMD_tdGOszSDx8qEFrNLpq4PFnQtp",
+    "model17.pt": "https://drive.google.com/uc?export=download&id=1ZMgukaZNzVAkyQCvYvAQJ53qk2RwsW-i",
+    "model18.pt": "https://drive.google.com/uc?export=download&id=1yUC9ndmr6t3nLzIVc8LRIxT4qV-kVrVg",
+    "model19.pt": "https://drive.google.com/uc?export=download&id=1iszGCGC6M1MND5CPwLtH97dWmQy1lOqW"
+  },
+  "upstream_code_not_redistributed": true
+}
